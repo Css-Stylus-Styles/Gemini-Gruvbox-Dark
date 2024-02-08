@@ -25,7 +25,8 @@
     /* 2.1 Dark theme color variables */
     --bg0-dh:       #1d2021;
     --bg-dark-new  :  #1F1E1D ; 
-
+/*For basic text new color added  	 */
+--text-normal :#ffd29c ;
 
     --shadow-bg:         #1d1b1a;
     
