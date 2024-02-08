@@ -1,0 +1,182 @@
+/* ==UserStyle==
+@name           gemini.google.com - Feb 2024
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    This user style will apply the google chivo font to everything page you visit 
+                I have made some changes in it 
+                this will not change the following 
+                    - monospace font
+                    - icons --> this theme is set up to ignore icons and dont mess up icons on most websites 
+@author         heybilalazhar@gmail.com
+==/UserStyle== */
+
+
+
+
+@-moz-document domain("gemini.google.com") {
+    :root
+
+{
+    /* 0 is for darkest 
+    1 is for hard 
+    higher values for hard  */
+
+
+    /* 2.1 Dark theme color variables */
+    --bg0-dh:       #1d2021;
+    --bg-dark-new  :  #1F1E1D ; 
+
+
+    --shadow-bg:         #1d1b1a;
+    
+    --bg1-dark:       #3c3836;
+    --bg-dark:        #282828;
+    --bg2-dark:       #504945;
+    --bg3-dark:       #665c54;
+    --bg4-dark:       #7c6f64;
+    --bg5-dark:       #928374;
+    --bg_visual:      #503946;
+    --bg_red:         #cc241d;
+    --bg_green:       #98971a;
+    --bg_blue:        #458588;
+    --bg_yellow:      #d79921;
+    --shadow:         #16181a;
+    --shadow-var1:         #17191b;
+    --shadow-cur:         #1a1b1d;
+
+    --fg-dark:        #ebdbb2;
+    --grey0-dark:     #7f897d;
+    --grey1-dark:     #859289;
+    --grey2-dark:     #9aa79d;
+
+    --faded-red:     #fb4934;
+    --faded-orange:  #fe8019;
+    --faded-yellow:  #fabd2f;
+    --faded-green:   #b8bb26;
+    --faded-aqua:    #8ec07c;
+    --faded-blue:    #83a598;
+    --faded-purple:  #d3869b;
+
+    --dim-red:       #cc241d;
+    --dim-orange:    #d65d0e;
+    --dim-yellow:    #d79921;
+    --dim-green:     #98971a;
+    --dim-aqua:      #689d6a;
+    --dim-blue:      #458588;
+    --dim-purple:    #b16286;
+
+
+    /* 2.2 Light theme color variables */
+    --bg0-light:     #f0edd8;
+    --bg1-light:     #f6f1dd;
+    --bg-light:      #fdf6e3;
+    --bg2-light:     #f3efda;
+    --bg3-light:     #edead5;
+    --bg4-light:     #e4e1cd;
+    --bg5-light:     #dfdbc8;
+    --grey0-light:   #a4ad9e;
+    --grey1-light:   #939f91;
+    --grey2-light:   #879686;
+    --shadow-light:  #3c474d20;
+
+
+    --text-offwhite: #fbf1c7;
+    --text-offyellowish: #f2e5bc;
+    --text-white: #f9f5d7;
+    --text-offwhite-faded: #ebdbb2;
+    --text--faded: #d5c4a1;
+    --text--veryfade: #928374;
+
+    
+
+    
+
+
+
+    --bg_visual_light:      #eaedc8;
+    --bg_red_light:         #fbe3da;
+    --bg_green_light:       #f0f1d2;
+    --bg_blue_light:        #e9f0e9;
+    --bg_yellow_light:      #faedcd;
+
+    --fg-light:       #5c6a72;
+
+    --light-red:     #f85552;
+    --light-orange:  #f57d26;
+    --light-yellow:  #bf983d;
+    --light-green:   #899c40;
+    --light-aqua:    #569d79;
+    --light-blue:    #5a93a2;
+    --light-purple:  #b87b9d;
+
+    --light-dim-red:    #f1706f;
+    --light-dim-orange: #f39459;
+    --light-dim-yellow: #e4b649;
+    --light-dim-green:  #a4bb4a;
+    --light-dim-aqua:   #6ec398;
+    --light-dim-blue:   #6cb3c6;
+    --light-dim-purple: #e092be;
+
+
+
+ --dark-red: #9d0006;    /* faded_red: #9d0006 [red] 88 [9] 157-0-6 137-0-9 #890009 */
+  --dark-green: #79740e;  /* faded_green: #79740e [green] 100 [10] 121-116-14 102-98-13 #66620d */
+  --dark-yellow: #b57614; /* faded_yellow: #b57614 [yellow] 136 [11] 181-118-20 165-99-17 #a56311 */
+  --dark-blue: #076678;   /* faded_blue: #076678 [blue] 24 [12] 7-102-120 14-83-101 #0e5365 */
+  --dark-purple: #8f3f71; /* faded_purple: #8f3f71 [purple] 96 [13] 143-63-113 123-43-94 #7b2b5e */
+  --dark-aqua: #427b58;   /* faded_aqua: #427b58 [aqua] 66 [14] 66-123-88 53-106-70 #356a46 */
+  --dark-orange: #af3a03;
+
+
+/* light colors */
+  --interface-light0-hard: #f9f5d7; /* light0_hard: #f9f5d7 [h0] 230 [ ] 249-245-215 248-244-205 #f8f4cd */
+  --interface-light0: #fbf1c7; /* light0: #fbf1c7 [fg0][bg0] 229 [0] 251-241-199 250-238-187 #faeebb */
+  --interface-light0-soft: #f2e5bc; /* light0_soft: #f2e5bc [s0] 228 [ ] 242-229-188 239-223-174 #efdfae */
+  --interface-light1: #ebdbb2; /* light1: #ebdbb2 [fg1][bg1] 223 [15] 235-219-178 230-212-163 #e6d4a3 */
+  --interface-light2: #d5c4a1; /* light2: #d5c4a1 [fg2][bg2] 250 [ ] 213-196-161 203-184-144 #cbb890 */
+  --interface-light3: #bdae93; /* light3: #bdae93 [fg3][bg3] 248 [ ] 189-174-147 175-159-129 #af9f81 */
+  --interface-light4: #a89988; /* light4: #a89988 */
+
+
+   
+	}
+	
+	
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}
