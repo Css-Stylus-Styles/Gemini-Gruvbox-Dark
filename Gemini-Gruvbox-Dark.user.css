@@ -206,15 +206,18 @@
 	
 /*location update box  	 */
 	div.mdc-snackbar__surface.ng-tns-c996321046-68{
-		background: #79740E !important ; 
+/*Darker color is used her 		 */
+		background: #2E5B40 !important ; 
 	}
 	
 /*Cant update your location text  	 */
 	div.mat-mdc-snack-bar-label.mdc-snackbar__label{
-		color : #9D0006 !important ; 
+		color : #1D1B1A !important ; 
 	}
-	
-	
+/*Learn more text in the locattion warning  	 */
+	span.mdc-button__label{
+		color : #FFD29C !important ; 
+	}
 	
 	
 	
