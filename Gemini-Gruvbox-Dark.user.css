@@ -188,7 +188,7 @@
 	
 	.sidenav-with-history-container.expanded {
 		
-		background : #17191B !important ; 
+		background : #1A1B1D !important ; 
     --position-duration: 400ms;
     --position-delay: 0ms;
     --opacity-duration: 200ms;
@@ -369,24 +369,31 @@
 	
 	
 	
-/*Drafts 	 */
+/*Drafts -> backgound pill  	 */
 	.draft-preview-label-chip {
     border-radius: 100px;
     color: #FFD29C !important;
     background-color: #2E5B40 !important ; 
-    font-size: .75rem;
-    font-weight: 500;
-    line-height: 1rem;
+    font-size: .8rem !important;
+    font-weight: 300 !important;
+    line-height: 0.5rem !important;
     
     padding: 2px 10px !important;
 }
 	
 	
 	
+	p {
+		color : #FFD29C !important ; 
+	}
 	
+	strong {
+		color : #98971A !important ; 
+	}
 	
-	
-	
+	li , ol ,  ul {
+		color : #FE8019 !important ; 
+	}
 	
 	
 	
@@ -565,14 +572,14 @@
 /*Prompt ouside slider icon  	 */
 	 --bard-color-surface: #FFD29C !important;
 	
-	
-	    --bard-color-surface-container: #2E5B40;
+/* Input pill area 	 */
+	    --bard-color-surface-container: #16181A;
 	
 	
 	 --bard-color-surface-container-low: #F2E5BC;
 	
 		
-		 --bard-color-main-container-background: #1D1B1A;
+		 --bard-color-main-container-background: #17191B;
 		
 		
 		 --bard-color-response-container-background: #1F1E1D;
