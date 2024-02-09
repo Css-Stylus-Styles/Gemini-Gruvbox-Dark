@@ -168,7 +168,7 @@
 	
        		/* ICONS 	 */
 	mat-icon{
-		color : #FB4934 !important ; 
+		color : #689D6A !important ; 
 	}
 	
 	
@@ -187,13 +187,28 @@
 /* 	Side bar background */
 	
 	.sidenav-with-history-container.expanded {
-		
-		background : #1A1B1D !important ; 
+	
+		background-color: #16181A !important ; 
     --position-duration: 400ms;
     --position-delay: 0ms;
     --opacity-duration: 200ms;
     --opacity-delay: 200ms;
 }
+	
+	
+	
+	.sidenav-with-history-container ,.overflow-container{
+/* Side baer when chatting  */
+		background:  #16181A !important ; 
+}
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	
@@ -270,20 +285,20 @@
 /* Top bars -> model selector containers	 */
 	bard-mode-switcher{
 		color: white !important ; 
-	background-color : #1F1E1D !important; 
+	background-color : #1A1B1D !important; 
 	
 	}
 	
 /*Top bar container  	 */
 	bard-sidenav-content{
 			
-	background-color : #1F1E1D !important; 
+	background-color : #1A1B1D !important; 
 	}
 	
 /*background color of the whole front portion  	 */
 	infinite-scroller{
 		color: white !important ; 
-	background-color : #1F1E1D !important; 
+	background-color : #17191B !important; 
 	}
 	
 /*Line at the botton of the page  	 */
@@ -325,7 +340,11 @@
 	
 	
 	
+/* edit response background color  */
 	
+	.user-query-container.edit-mode.ui-v2-enabled  mat-form-field   .mdc-text-field {
+    background: #282828 !important;
+}
 	
 	
 	
@@ -384,15 +403,16 @@
 	
 	
 	p {
-		color : #FFD29C !important ; 
+		color : #D6C29B !important ; 
 	}
 	
 	strong {
 		color : #98971A !important ; 
 	}
 	
-	li , ol ,  ul {
-		color : #FE8019 !important ; 
+	li ,
+	ol  , ul{
+		color : #FFD29C !important ; 
 	}
 	
 	
@@ -400,21 +420,45 @@
 	
 	
 	
+/*Link styles  	 */
+	
+	a {
+		color : #FB4934 !important ; 
+	}
+	
+	a:hover{
+		color : #8EC07C !important ; 
+	}
+	a:visited {
+		color : #7C6F64 !important ; 
+	}
 	
 	
 	
+	
+	
+/*Gemini may display innacurete info  	 */
+p.ql-editor {
+		color :#665C54 !important  ; 
+	background : red !important ; 
+	}
+	
+	
+
 	
 	
 	
 	.bottom-container{
   
 /*  gemini loweest text background*/
-    background: #1D1B1A !important ; 
+ 
+		background:none !important ; 
 }
 	
 /* 	lable background */
 .mat-mdc-menu-content {
   background: #17191B !important ; 
+	
 }
 	
 	
@@ -572,22 +616,49 @@
 /*Prompt ouside slider icon  	 */
 	 --bard-color-surface: #FFD29C !important;
 	
+				
+				
+
+				
+
+/* 		Ugly gradient removed 		 */
+				div.bottom-container.ng-tns-c3052759784-1.ui-v2-enabled.ng-star-inserted::before{
+					background: none  !important ; 
+				}
+				
+				
+				
+				
+				
+				
+/* Input bar color 				 */
+				div.text-input-field{
+					color : white !important ; 
+					background : #282828  !important 
+				}
+				
+	
+				
+				
+				
 /* Input pill area 	 */
-	    --bard-color-surface-container: #16181A;
+/* 	    --bard-color-surface-container: #1A1B1D; */
 	
 	
+				
 	 --bard-color-surface-container-low: #F2E5BC;
 	
 		
 		 --bard-color-main-container-background: #17191B;
 		
 		
-		 --bard-color-response-container-background: #1F1E1D;
+/*Maiin response container 				 */
+		 --bard-color-response-container-background: #17191B;
 		
 		
 		
 	
-			  --bard-color-new-conversation-button: #17191B !important; 
+			  --bard-color-new-conversation-button: #282828 !important; 
 }
 	
 
