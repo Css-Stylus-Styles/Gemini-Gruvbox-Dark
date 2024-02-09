@@ -148,8 +148,23 @@
 /*Gemini Model Picker 	 */
 	
 	span.bard-text{	
-		color : #98971A !important ; 
+		color : #B8BB26 !important ; 
 	}
+	
+	/*This is being Applied to everything 
+	I dont wnat to save this */
+/* 	span.mat-ripple.mat-mdc-button-ripple{
+		background-color : #9D0006 !important ; 
+	}
+	 */
+	
+/*Gemini top bar and the side bar style  	 */
+.mat-mdc-button .mat-mdc-focus-indicator, .mat-mdc-unelevated-button{
+   background-color : #282828  !important ;
+	border-radius:  12px !important ; 
+}
+	
+	
 	
 	
 	
@@ -157,6 +172,14 @@
 	mat-icon{
 		color : #FB4934 !important ; 
 	}
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	
@@ -216,28 +239,80 @@
 	}
 /*Learn more text in the locattion warning  	 */
 	span.mdc-button__label{
-		color : #FFD29C !important ; 
+		color : #98971A !important ; 
 	}
 	
-	
-	
-/*This is being Applied to everything 
-	I dont wnat to save this */
-/* 	span.mat-ripple.mat-mdc-button-ripple{
-		background-color : #9D0006 !important ; 
-	}
-	 */
 	
 	
 
 	
 	
+/* Only side bar backgound style 	 */
+	.mat-mdc-unelevated-button{
+		padding: 0.1rem 1.6rem !important ; 
+   background-color : #1F1E1D  !important ;
+	border-radius:  12px !important ; 
+}
 	
+
 /*Upgrade side bar hidden  	 */
 	span.mat-mdc-button-touch-target{
 		display: none !important ; 
 		
 	}
+	
+	
+	
+	
+/* FRONT PAGE 	 */
+/* FRONT PAGE MAIN STYLES	 */
+	
+/*Hello -> Your Name hiddden  	 */
+	span.bard-hello{
+		display: none !important ; 
+	}
+	
+/*How can i help you today -> TEXT  	 */
+/* 	Changed color of the text */
+	span.bard-question{
+		color : #79740E !important ; 
+	}
+	
+	
+	
+	
+/*Prompt containers 	 */
+	div.prompt-container{
+		color : #FFD29C !important ; 
+		background-color:  #2E5B40 !important ; 
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	
