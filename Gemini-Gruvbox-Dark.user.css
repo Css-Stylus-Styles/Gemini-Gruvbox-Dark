@@ -139,12 +139,80 @@
   --interface-light4: #a89988; /* light4: #a89988 */
 
 
-   
+ 
+	
+	
 	}
 	
 	
-
-
+/*Gemini Model Picker 	 */
+	
+	span.bard-text{	
+		color : #98971A !important ; 
+	}
+	
+	
+	
+       		/* ICONS 	 */
+	mat-icon{
+		color : #FB4934 !important ; 
+	}
+	
+	
+	
+	
+	
+			/*SIDEBAR 	 */	
+/* 	Side bar background */
+	
+	.sidenav-with-history-container.expanded {
+		
+		background : #17191B !important ; 
+    --position-duration: 400ms;
+    --position-delay: 0ms;
+    --opacity-duration: 200ms;
+    --opacity-delay: 200ms;
+}
+	
+	
+	
+	
+/*LOCATION -> hide  			 */
+	
+	.location-footer-name {
+    padding-top: 16px;
+		display:  none !important ; 
+}
+	
+	
+/* Locaiton Dot hide 	 */
+	mat-icon.notranslate.filled.location-icon.google-symbols.mat-icon-no-color{
+	display: none  ; 
+	}
+	
+/* Fron Your IP adress  hidden 	 */
+	span.location-footer-atl-text{
+		display: none !important ; 
+	}
+	
+/*Dot near the display 	 */
+	span.location-buttons-dot{
+		display:  none !important ; 
+	}
+	
+	
+	
+	
+	
+/*location update box  	 */
+	div.mdc-snackbar__surface.ng-tns-c996321046-68{
+		background: #79740E !important ; 
+	}
+	
+/*Cant update your location text  	 */
+	div.mat-mdc-snack-bar-label.mdc-snackbar__label{
+		color : #9D0006 !important ; 
+	}
 	
 	
 	
@@ -161,7 +229,11 @@
 	
 	
 	
-	
+/*Upgrade side bar hidden  	 */
+	span.mat-mdc-button-touch-target{
+		display: none !important ; 
+		
+	}
 	
 	
 	
