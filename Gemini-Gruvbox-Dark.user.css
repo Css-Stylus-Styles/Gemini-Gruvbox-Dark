@@ -310,8 +310,10 @@
 	
 /*How can i help you today -> TEXT  	 */
 /* 	Changed color of the text */
+/*Made the Text smaller so the UI is not shouting at you  	 */
 	span.bard-question{
-		color : #79740E !important ; 
+		font-size: 2.8rem !important ; 
+		color : #665C54 !important ; 
 	}
 	
 	
@@ -331,6 +333,7 @@
 	
 	
 	
+/* Input area styles here 	 */
 	
 	
 	
@@ -367,4 +370,5 @@
 	
 	
 	
-ain }
+	
+ain }in }
