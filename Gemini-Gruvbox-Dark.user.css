@@ -267,6 +267,42 @@
 /* FRONT PAGE 	 */
 /* FRONT PAGE MAIN STYLES	 */
 	
+/* Main background colors 	 */
+	
+/* Top bars -> model selector containers	 */
+	bard-mode-switcher{
+		color: white !important ; 
+	background-color : #1F1E1D !important; 
+	
+	}
+	
+/*Top bar container  	 */
+	bard-sidenav-content{
+			
+	background-color : #1F1E1D !important; 
+	}
+	
+/*background color of the whole front portion  	 */
+	infinite-scroller{
+		color: white !important ; 
+	background-color : #1F1E1D !important; 
+	}
+	
+/*Line at the botton of the page  	 */
+		infinite-scroller.chat-history:after {
+
+    background-color: #1F1E1D !important ; 
+ 
+}
+	
+	
+	
+	
+	
+	
+	
+	
+	
 /*Hello -> Your Name hiddden  	 */
 	span.bard-hello{
 		display: none !important ; 
@@ -331,4 +367,4 @@
 	
 	
 	
-}
+ain }
