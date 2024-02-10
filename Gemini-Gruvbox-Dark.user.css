@@ -641,27 +641,33 @@ p.ql-editor {
     --bard-color-custom-primary-container-rgb: 34,35,39; */
 		
 	
-		
 	
-	div.markdown.markdown-main-panel.ui-v2-enabled{
-			
-		    animation-duration: 600ms;
-/*     --fade-animation-function: cubic-bezier(0.05, 0.7, 0.91, 1);		 */
-				
-/*  width : 65rem   !important  ;  */
+	
+	
+	
+	
+	
+	
+	
+	
+/*Old chat  width container 	 */
+	div.response-container.ui-v2-enabled{
+		
+		 width : 55rem   !important  ; 
 /* 					 translatey :  40px !important ;  */
 /* 			padding-right: 3rem  !important;  */
-/* transform: translateX(-9.0rem); */
-}
-		
-		
-		
-		
-		
+transform: translateX(-9.0rem);
+
+	}
+	
+	
+
+	
 		
 /*Move respoonse container to the right*/
+	
 		.response-container.response-container-has-multiple-responses {
- width : 65rem   !important  ; 
+ width : 55rem   !important  ; 
 /* 					 translatey :  40px !important ;  */
 /* 			padding-right: 3rem  !important;  */
 transform: translateX(-9.0rem);
@@ -707,8 +713,8 @@ background-color: #1D2021 !important ;
 /*CODE styles  	 */
 	
 	code { 
-	color : #F2E5BC !important ; 
-		background-color : #AF3A03 !important; 
+	color : #FFD29C !important ; 
+		background-color : #CC241D !important; 
 /* 		font-style: italic !important;  */
 		font-size: 0.93rem !important ; 
 	font-family: "CommitMono" , monospace !important ; 
