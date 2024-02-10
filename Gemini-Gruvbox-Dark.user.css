@@ -164,11 +164,16 @@
 	border-radius:  12px !important ; 
 } */
 	
-	
-	
+		
        		/* ICONS 	 */
 	mat-icon{
-		color : #689D6A !important ; 
+		color : #8EC07C !important ; 
+	}
+	
+	
+/* Send Icon 	 */
+	mat-icon.notranslate.google-symbols.mat-icon-no-color.ng-star-inserted{
+	color : #FB4934 !important ; 
 	}
 	
 	
@@ -205,8 +210,7 @@
 	
 	
 	
-	
-	
+
 	
 	
 	
@@ -262,8 +266,8 @@
 	
 /* Only side bar backgound style 	 */
 	.mat-mdc-unelevated-button{
-		padding: 0.1rem 1.6rem !important ; 
-   background-color : #1F1E1D  !important ;
+		padding: 0.1rem 0.3rem !important ; 
+   background-color : #1D2021  !important ;
 	border-radius:  12px !important ; 
 }
 	
@@ -304,9 +308,14 @@
 /*Line at the botton of the page  	 */
 		infinite-scroller.chat-history:after {
 
-    background-color: #1F1E1D !important ; 
+    background-color: #17191B !important ; 
  
 }
+	
+	
+	
+	
+	
 	
 	
 	
@@ -334,8 +343,8 @@
 	
 /*Prompt containers 	 */
 	div.prompt-container{
-		color : #FFD29C !important ; 
-		background-color:  #2E5B40 !important ; 
+	
+		background-color:  #524E09 !important ; 
 	}
 	
 	
@@ -379,6 +388,32 @@
 	
 /* Input area styles here 	 */
 	
+	
+/*user query as shown in the chat window  	 */
+	h2.query-text{
+		color : #8EC07C !important ; 
+		font-style: italic !important ; 
+	}
+	
+	
+	
+/*Show Drafts -> blue  	 */
+	span.ng-tns-c4150723369-45.ng-star-inserted{
+		color : #83A598 !important ; 
+	}
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 /* 	Hide drafts */
 	span.ng-tns-c4150723369-11.ng-star-inserted{
 		color : #8EC07C !important ; 
@@ -402,17 +437,32 @@
 	
 	
 	
+	
+	
+/* Paragraph styles 	 */
 	p {
 		color : #D6C29B !important ; 
 	}
 	
 	strong {
-		color : #98971A !important ; 
+		font-family: "Chivo" !important ; 
+		
+		color : #B8BB26 !important ; 
+font-weight: 500 !important ; 
+		font-size: 1.07rem !important ; 
 	}
 	
+	
+	
+	
+/* Liat text colors  and other styles 	 */
 	li ,
 	ol  , ul{
 		color : #FFD29C !important ; 
+	}
+	
+	li::marker {
+	color : #FB4934 !important ; 
 	}
 	
 	
@@ -592,15 +642,179 @@ p.ql-editor {
 		
 	
 		
+	
+	div.markdown.markdown-main-panel.ui-v2-enabled{
+			
+		    animation-duration: 600ms;
+/*     --fade-animation-function: cubic-bezier(0.05, 0.7, 0.91, 1);		 */
+				
+/*  width : 65rem   !important  ;  */
+/* 					 translatey :  40px !important ;  */
+/* 			padding-right: 3rem  !important;  */
+/* transform: translateX(-9.0rem); */
+}
 		
+		
+		
+		
+		
+		
+/*Move respoonse container to the right*/
+		.response-container.response-container-has-multiple-responses {
+ width : 65rem   !important  ; 
+/* 					 translatey :  40px !important ;  */
+/* 			padding-right: 3rem  !important;  */
+transform: translateX(-9.0rem);
 
+
+	
+}
+
+	
+	
+	
+	
+/*Sources button  	 */
+	.recitations-list-container.ng-star-inserted {
+background-color: #1D2021 !important ; 
+
+	}
+
+	
+	
+/*Sources text  	 */
+	h4.gmat-overline.header{
+		color : #FFD29C !important ; 
+	}
 		
 		
+/*Heading in the chat 	 */
+	
+	h2{
+		color : #83A598 !important ; 
 		
+		font-size: 1.04rem !important ;
+	}
+	
+	
+	
+	
+	
+	
+	
+/* CODE 	 */
+	
+/*CODE styles  	 */
+	
+	code { 
+	color : #F2E5BC !important ; 
+		background-color : #AF3A03 !important; 
+/* 		font-style: italic !important;  */
+		font-size: 0.93rem !important ; 
+	font-family: "CommitMono" , monospace !important ; 
+	
+	}
+	
+	
+	
+/*Main code  background 	 */
+	code.code-container{
+		color  : #B8BB26 !important ; 
+		background-color : #1A1B1D !important ; 
 		
-		
+	}
+	
+/* Keywords in the large language models 	 */
+	span.hljs-keyword{
+		color : #FB4934 !important ; 
+	}
+	
+	
+	 span.hljs-comment{
+		color : #A89988 !important; 
+	}
+	
+	 span.hljs-number{
+		color : #8EC07C !important; 
+	}
+	
+	span.hljs-string{
+		color : #B8BB26 !important ;
+	}
+	
+	span.hljs-literal{
+		color : #E092BE !important  ; 
+	}
+	
+	span.hljs-built_in{
+		color : #6CB3C6 !important  ; 
+	}
+	
+	
+	span.hljs-title{
+		color : #D3869B !important ; 
+	}
+	
+	
+	span.hljs-params{
+		color : #8EC07C !important ; 
+	}
+	
+	span.hljs-meta-string{
+		color : #B8BB26 !important ; 
+	}
+	
+	span.hljs-meta-keyword{
+		color : #689D6A !important ; 
+	}	
+	
+	span.hljs-meta{
+		color : #E092BE !important ; 
+	}
+	
+	
+	
+	
+	
+	
+	
+	.code-container .hljs-keyword,
+.code-container .hljs-comment,
+.code-container .hljs-number,
+.code-container .hljs-string,
+.code-container .hljs-literal,
+.code-container .hljs-built_in,
+.code-container .hljs-title,
+.code-container .hljs-params,
+.code-container .hljs-meta-string,
+.code-container .hljs-meta-keyword,
+.code-container .hljs-meta {
+
+	
+	
+font-family: "CommitMono" , monospace !important ; 
+}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 			:root .dark-visd-patch {
-		
+	
 	
 		
 /* Delete past data 		 */
@@ -685,4 +899,4 @@ p.ql-editor {
 	
 	
 	
- in }in }
+ 
