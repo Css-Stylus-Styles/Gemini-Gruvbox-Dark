@@ -145,6 +145,40 @@
 	}
 	
 	
+	
+
+	
+/* 	@import url('https://fonts.googleapis.com/css2family=Spline+Sans&family=Spline+Mono&display=swap'); */
+	
+
+	
+/* 	@import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono); */
+	
+
+/* 	@import url('https://fonts.googleapis.com/css2?family=Fragment+Mono:ital@0;1&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap') */
+	
+
+	
+	
+	
+	@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap')
+
+		
+		
+		
+		
+		
+		
+
+	
+	
+	
+	
+		
+		
+	
+	
+	
 /*Gemini Model Picker 	 */
 	
 	span.bard-text{	
@@ -442,11 +476,12 @@
 /* Paragraph styles 	 */
 	p {
 		color : #D6C29B !important ; 
+		
 	}
 	
 	strong {
-		font-family: "Chivo" !important ; 
 		
+	font-family: "Chivo" , sans-serif !important ; 
 		color : #B8BB26 !important ; 
 font-weight: 500 !important ; 
 		font-size: 1.07rem !important ; 
@@ -717,7 +752,10 @@ background-color: #1D2021 !important ;
 		background-color : #CC241D !important; 
 /* 		font-style: italic !important;  */
 		font-size: 0.93rem !important ; 
-	font-family: "CommitMono" , monospace !important ; 
+		
+		font-weight: 600 !important ; 
+		
+/* 	font-family:  "Ubuntu Mono", monospace   !important ;  */
 	
 	}
 	
@@ -782,7 +820,7 @@ background-color: #1D2021 !important ;
 	
 	
 	
-	
+		code  , 
 	
 	.code-container .hljs-keyword,
 .code-container .hljs-comment,
@@ -796,9 +834,11 @@ background-color: #1D2021 !important ;
 .code-container .hljs-meta-keyword,
 .code-container .hljs-meta {
 
+
+
+		font-weight: 600 !important ; 
+	font-family:"IBM Plex Mono", monospace !important;
 	
-	
-font-family: "CommitMono" , monospace !important ; 
 }
 	
 	
