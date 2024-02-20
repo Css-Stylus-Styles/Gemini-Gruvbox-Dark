@@ -400,7 +400,9 @@
 /* 	Changed color of the text */
 /*Made the Text smaller so the UI is not shouting at you  	 */
 	span.bard-question{
-		font-size: 2.8rem !important ; 
+		/*removed this for a clean Ui */
+		display: none !important ; 
+		font-size: 2.2rem !important ; 
 		color : #665C54 !important ; 
 	}
 	
@@ -408,14 +410,28 @@
 	
 	
 /*Prompt containers 	 */
-	div.prompt-container{
 	
-		background-color:  #524E09 !important ; 
+	div.prompt-container{
+		background-color:  #2E5B40 !important ; 
 	}
 	
 	
 	
-/* edit response background color  */
+	/*Front page prompt suggestion text color */
+	p.prompt-text-content{
+		color: #FFD29C !important ; 
+		
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+/* edit resonses Bg color  */
 	
 	.user-query-container.edit-mode.ui-v2-enabled  mat-form-field   .mdc-text-field {
     background: #282828 !important;
@@ -1205,6 +1221,64 @@ button.retry-without-tool-button.mdc-button.mat-mdc-button.mat-unthemed.mat-mdc-
 	span.search-prompt{
 	color : #79740E !important ; 
 	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	/*Gmail specific extension colors */
+	
+	
+	/*Gmail text in the sources section */
+	span.source-table-title{
+		color : #FE8019 !important ; 
+		
+	}
+	
+	/*Items COnsidered for this reponse text */
+	span.source-table-subtitle{
+    font-weight: 400;
+		color: #83A598 !important ; 
+}
+	
+	
+	/*Subject/Titles of the emails considered for response */
+	span.mat-mdc-list-item-title.mdc-list-item__primary-text{
+		color :#B8BB26 !important ; 
+	}
+	
+	
+	/*Email sender */
+	span.source-row-owner{
+		color : #EAEDC8 !important ; 
+	}
+	
+	
+	/*Date when the email was sent */
+	span.source-row-date{
+		color : #83A598 !important ; 
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	
