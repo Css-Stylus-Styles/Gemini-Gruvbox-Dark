@@ -883,6 +883,21 @@ background-color: #1D2021 !important ;
 	}
 	
 	
+	/*Code language*/
+	div.code-block-decoration.header.gmat-subtitle-1{
+		color  : #D3869B !important ; 
+	}
+	
+	
+	/*Use code ->udner code bar */
+	div.code-block-decoration.footer.gmat-overline.hide-from-message-actions{
+		color : #98971A !important ; 
+	}
+	
+	
+	
+	
+	
 	
 /*Main code  background 	 */
 	code.code-container{
@@ -960,7 +975,7 @@ background-color: #1D2021 !important ;
 
 
 		font-weight: 600 !important ; 
-	font-family:"IBM Plex Mono", monospace !important;
+	font-family:"CommitMono", monospace !important;
 	
 }
 	
@@ -1017,9 +1032,23 @@ background-color: #1D2021 !important ;
 				
 /* Input bar color 				 */
 				div.text-input-field{
-					color : white !important ; 
-					background : #282828  !important 
+					color : #FFD29C !important ; 
+					background : #282828  !important  ; 
+						border: solid #665C54 !important  ; 
+					border-width: 0.1px !important ; 
 				}
+				
+				
+				/*Hover for the input button border style*/
+				div.text-input-field:hover{
+					color : #79740E !important ; 
+					background : #282828  !important  ; 
+						border: solid #FFD29C !important  ; 
+					border-width: 0.1px !important ; 
+				}
+				
+				
+				
 				
 	
 				
