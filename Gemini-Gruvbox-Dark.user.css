@@ -1049,6 +1049,16 @@ background-color: #1D2021 !important ;
 				
 				
 				
+				/*Input placehodler color chaged */
+					div.ql-editor.ui-v2-enabled.textarea.ql-blank:before{
+					color : #83A598 !important ; 
+				}
+				
+				
+				
+				
+				
+				
 				
 	
 				
