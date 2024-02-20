@@ -1055,6 +1055,11 @@ background-color: #1D2021 !important ;
 				}
 				
 				
+					
+				/*Hover for input holder */
+					div.ql-editor.ui-v2-enabled.textarea.ql-blank:hover:before{
+					color : #FB4934 !important ; 
+				}
 				
 				
 				
