@@ -620,6 +620,29 @@ font-weight: 500 !important ;
 	
 	
 	
+	
+	
+	
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 /*Gemini may display innacurete info  	 */
 	
 	
@@ -1027,12 +1050,117 @@ background-color: #1D2021 !important ;
 	
 	
 	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	/*Youtube styles*/
+	
+	
+	/*Background color to background*/
+	.processing-state_container{
+		
+		background-color : #CC241D !important ; 
+	} 
+	
+	
+	
+	/*Youtube button color */
+	div.processing-state_ext-name_label{
+		color : #FFD29C !important ; 
+	}
+	
+	
+	
+	
+	/*Try Without extensions button fixed */
+button.retry-without-tool-button.mdc-button.mat-mdc-button.mat-unthemed.mat-mdc-button-base.gmat-mdc-button {
+	
+	background-color : #2E5B40 !important ; 
+	border-radius: 2rem !important ; 
+	}
+	
+	/*Hover -> Try Without extesnsions */
+button.retry-without-tool-button.mdc-button.mat-mdc-button.mat-unthemed.mat-mdc-button-base.gmat-mdc-button:hover{
+	
+	background-color : #9D0006 !important ; 
+	border-radius: 2rem !important ; 
+	}
+	
+	
+	
+	/*Try Again Without Extension */
+	span.mdc-button__label{
+		color : #FFD29C !important ; 
+		
+	}
+	
+	
+	/*Button of the Youtube*/
+	button.expand-button.mdc-icon-button.mat-mdc-icon-button.gmat-mdc-button-with-prefix.mat-unthemed.mat-mdc-button-base.gmat-mdc-button:hover{
+		
+		background-color : #9D0006 !important ; 
+	}
+	
 
 	
+	/*Lower part of yYoutube styles*/
+	/*Search Term on Youtube links -> Names*/
+	div.tool-attribution-label.gmat-body-2{
+		color : #D3869B !important ; 
+	}
+	
+	/*Youtube video titles*/
+	span.title{
+		color : #B8BB26 !important ; 
+	}
+	
+		span.title:hover{
+		color : #D8DC17 !important ; 
+	}
 	
 	
 	
 	
+	
+	/*Youtube channel name*/
+	span.channel-name{
+		color : #FB4934 !important ; 
+	}
+	
+	span.channel-name:hover{
+		color : #FE8019 !important ; 
+	}
+	
+	
+	/*Youtube VIdeo description */
+	span.description{
+		color : #D5C4A1 !important ; 
+	}
+	
+	
+	/*Youtube Tos */
+	span.youtube-tos{
+		color : #7C6F64 !important ; 
+	}
+	
+	
+	/*View related videos on*/
+	span.search-prompt{
+	color : #79740E !important ; 
+	}
 	
 	
 	
