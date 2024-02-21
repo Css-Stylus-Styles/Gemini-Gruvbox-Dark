@@ -165,15 +165,20 @@
 
 
 		
+/*IBM Mono plex  		 */
 		
-		
-		@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+/* 		@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap'); */
 
-
-		
-		
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap') ; 
 
 	
+	
+		
+/*Use this  		 */
+
+/* 	body {
+  font-family: 'Cutive Mono', monospace !important;
+} */
 	
 	
 	
@@ -248,6 +253,20 @@
 	
 	
 	
+	/*Help  , Activity , Settings */
+	span.gmat-subtitle-2{
+		color : #D3869B !important ; 
+	}
+	
+	
+	/*Help   , activity  , button */
+	:root .dark-theme .gmat-mdc-list .mdc-list-item.mdc-list-item--with-leading-icon.mdc-list-item:hover{
+  
+		background-color : #800D08 !important ; 
+}
+	
+	
+	
 
 	
 	
@@ -298,6 +317,15 @@
 	}
 	
 	
+	/*Hide the location tab fully*/
+	div.footer-container {
+		display: none !important ; 
+	
+	}
+
+	
+	
+	
 	
 
 	
@@ -344,7 +372,7 @@
 	}
 	
 /*Line at the botton of the page  	 */
-		infinite-scroller.chat-history:after {
+		infinite-scroller.chat-history:after{
 
     background-color: #17191B !important ; 
  
@@ -413,6 +441,70 @@
 	
 	
 	
+	/*Active conversation buton  */
+	/*Side bar chat active button */
+	div.mat-mdc-tooltip-trigger.conversation.selected{
+		background-color : #524E09 !important  ; 
+		color : #FFD29C  !important ; 
+	}
+	
+	/*Actual conversation */
+	span.conversation-title.gmat-body-1{
+		background-color: transparent !important ; 
+		color : #FFD29C !important  ; 
+	}
+	
+	
+	/*Hover for side bar chat*/
+	div.conversations-container   .conversation:hover{
+    background-color: #CC241D !important;
+}
+	
+	
+	/*SIde bar # line bvuttons */
+	button.conversation-actions-menu-button{
+		background-color : #3A3706 !important ; 
+		
+		
+	}
+
+	
+	/*Recent wriiten in teh side tab where the chats are */
+	h1.title{
+		color : #FB4934 !important ; 
+		
+	}
+	
+	
+	
+	/*Side bar SHOW MORE TEXT*/
+	/* SHOW MORE MORE TEXT*/
+	span.gmat-subhead-2.show-more-button-text{
+		color: #FFD29C !important ; 
+
+	}
+	
+	
+	/*Show more Button */
+	button.show-more-button.mdc-button.mdc-button--unelevated.mat-mdc-unelevated-button.mat-unthemed.mat-mdc-button-base{
+		
+		background-color : #2E5B40 !important ;
+	}
+	
+	/*Hover effect for the show more button */
+		button.show-more-button.mdc-button.mdc-button--unelevated.mat-mdc-unelevated-button.mat-unthemed.mat-mdc-button-base:hover{
+		
+		background-color : #524E09 !important ;
+	}
+
+	
+	
+	
+	/*Gemini btutton is hidden for me*/
+	upsell-button{
+		opacity: 0.6 !important ; 
+	}
+	
 	
 	
 	
@@ -480,12 +572,13 @@
 /* Paragraph styles 	 */
 	p {
 		color : #D6C29B !important ; 
+		font-family: "Chivo" , sans-serif !important; 
 		
 	}
 	
 	strong {
 		
-	font-family: "Chivo" , sans-serif !important ; 
+	font-family: "Chivo" , monospace !important ; 
 		color : #B8BB26 !important ; 
 font-weight: 500 !important ; 
 		font-size: 1.07rem !important ; 
@@ -498,6 +591,7 @@ font-weight: 500 !important ;
 	li ,
 	ol  , ul{
 		color : #FFD29C !important ; 
+		
 	}
 	
 	li::marker {
@@ -527,9 +621,11 @@ font-weight: 500 !important ;
 	
 	
 /*Gemini may display innacurete info  	 */
-p.ql-editor {
-		color :#665C54 !important  ; 
-	background : red !important ; 
+	
+	
+	p.gmat-caption {
+		
+		color : #665C54 !important ; 
 	}
 	
 	
@@ -886,11 +982,12 @@ background-color: #1D2021 !important ;
 				
 
 /* 		Ugly gradient removed 		 */
-				div.bottom-container.ng-tns-c3052759784-1.ui-v2-enabled.ng-star-inserted::before{
-					background: none  !important ; 
-				}
-				
-				
+
+				.bottom-container.ui-v2-enabled:before {
+ 
+    background: none !important; 
+
+}
 				
 				
 				
