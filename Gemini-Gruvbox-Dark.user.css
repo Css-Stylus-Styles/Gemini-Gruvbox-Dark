@@ -412,7 +412,7 @@
 /*Prompt containers 	 */
 	
 	div.prompt-container{
-		background-color:  #2E5B40 !important ; 
+		background-color:  #CC241D !important ; 
 	}
 	
 	
@@ -1037,7 +1037,7 @@ background-color: #1D2021 !important ;
 
 /* 		Ugly gradient removed 		 */
 
-				.bottom-container.ui-v2-enabled:before {
+			.bottom-container:before {
  
     background: none !important; 
 
