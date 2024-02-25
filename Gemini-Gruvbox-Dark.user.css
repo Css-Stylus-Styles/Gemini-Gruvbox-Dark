@@ -415,6 +415,11 @@
 		background-color:  #CC241D !important ; 
 	}
 	
+	/*Hover for the prompt container on the home page */
+		div.prompt-container:hover{
+		background-color:  #800D08 !important ; 
+	}
+	
 	
 	
 	/*Front page prompt suggestion text color */
