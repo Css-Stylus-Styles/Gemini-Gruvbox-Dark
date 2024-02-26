@@ -1,10 +1,4 @@
-** Gemini Gruvbox Dark **
-
-
-- Replacement to Google bard repo 
-- They rebranded  **SIGH**
+# Gemini Gruvbox Dark 
 
 
 
-TODO: 
-- change the werid icon color in the prompt box 
