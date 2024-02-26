@@ -190,8 +190,8 @@
 /*Gemini Model Picker 	 */
 	
 	
-	span.bard-text.ng-star-inserted{	
-		color : #B8BB26 !important ; 
+	span.bard-text{	
+		color : #83A598 !important ; 
 	}
 	
 	/*This is being Applied to everything 
@@ -641,9 +641,19 @@ font-weight: 500 !important ;
 	
 	
 	
+	/*Link STyles */
+	a.traceable-link{
+		color : #FB4934 !important ; 
+	}
+	
+	/*Research paper link HOver */
+	a.traceable-link:hover{
+		color : #B8BB26 !important ; 
+		text-decoration: none !important  ; 
+	}
 	
 	
-	
+
 	
 
 	
