@@ -411,14 +411,17 @@
 	
 /*Prompt containers 	 */
 	
-	div.prompt-container{
-		background-color:  #CC241D !important ; 
-	}
-	
-	/*Hover for the prompt container on the home page */
-		div.prompt-container:hover{
-		background-color:  #800D08 !important ; 
-	}
+	/*Transitions are eased  in */
+div.prompt-container {
+  background-color: #CC241D !important;
+  transition: background-color 0.2s ease-in;
+}
+
+div.prompt-container:hover {
+  background-color: #800D08 !important;
+  transition-delay: 0.1s; /* adjust the delay as needed */
+}
+
 	
 	
 	
