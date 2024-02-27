@@ -1131,6 +1131,43 @@ background-color: #1D2021 !important ;
 	
 	
 	
+	/*Table styles*/
+	
+	th{
+		background-color : #2E5B40 !important ; 
+		color : #FFD29C !important ; 
+	}
+	
+	
+	td{
+		background: #1A1B1D !important ; 
+		color : #FBF1C7 !important ; 
+		font-size: 0.9rem !important ; 
+		font-family: "chivo" !important ; 
+	}
+	
+	
+	/*Lower par of the tabele*/
+	div.table-footer.hide-from-message-actions {
+		color : red !important ; 
+		background: #16181A !important ; 
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	
