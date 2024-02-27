@@ -41,7 +41,7 @@ This user style applies the Gruvbox color scheme to the [Gemini AI website](http
 
 ## Prerequisites <a name="Pre"></a>
 
-### IF Stylus extension is not installed you would need to install that first in order to apply the theme 
+### If Stylus extension is not installed you would need to install that first in order to apply the theme 
 
 
 You will need an extension that mangages and applies this theme 
@@ -67,7 +67,7 @@ You can install [Google Chivo Font Here](https://userstyles.world/style/12169/go
 
 
 
-To install the style, go to this [Perplexity Labs Gruvbox Dark Theme](https://userstyles.world/style/14924/perplexity-labs-gruvbox-dark-theme) and follow the `Install Style button` to install this style. 
+To install the style, go to this []() and follow the `Install Style button` to install this style. 
 
 
 
