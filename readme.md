@@ -12,7 +12,26 @@
 
 ## Description <a name="description"></a>
 
-This user style applies the  gruvbox theme to  []() 
+This user style applies the  gruvbox theme to  [Gemini AI](https://gemini.google.com/) 
+
+
+User Style that applies gruvbox colors to google Gemini website on dark mode 
+- hides location 
+- wide response container 
+- simplifies and cleans the UI 
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
