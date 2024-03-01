@@ -70,6 +70,10 @@ You can install [Google Chivo Font Here](https://userstyles.world/style/12169/go
 To install the style, go to this [Gemini Gruvbox Dark + UI improvements](https://userstyles.world/style/14994/gemini-gruvbox-dark-ui-improvements) and follow the `Install Style button` to install this style. 
 
 
+[![Install directly with Stylus](https://img.shields.io/badge/Install%20directly%20with-Stylus-00adad.svg)](https://raw.githubusercontent.com/{your-username}/{your-repo}/{branch}/{path-to-your-file})
+
+
+
 
 Click on the `install style` to confirm your installation.
 
