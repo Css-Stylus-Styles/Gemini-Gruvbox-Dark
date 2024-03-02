@@ -75,6 +75,7 @@ Click on this button to Insall the style
 
 
 
+
 Click on the `install style` to confirm your installation.
 
 Enjoy using the style!
