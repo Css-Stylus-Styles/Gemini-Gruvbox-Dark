@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           gemini.google.com - Feb 2024
 @namespace      github.com/openstyles/stylus
-@version        1.0.1
+@version        1.0.2
 @description    This user style will apply the google chivo font to everything page you visit 
                 I have made some changes in it 
                 this will not change the following 
@@ -20,12 +20,7 @@
 	
 	@import url('https://c.webfontfree.com/c.js?f=HardingTextWeb-Regular');
 @import url(https://db.onlinewebfonts.com/c/7732caef9ed946f7916b3f650e8837c2?family=Harding+Text+Web+Regular+Regular);
-p, h1, h2, h3, h4, h5, h6, a, span, li, div, code, pre {
-    
-    font-family: 'Harding Text Web Regular Regular', serif !important;
-	
-    /*font-size : 14px ;*/ 
-}
+
 	
 	@font-face {
     font-family: "Harding Text Web Regular Regular";
@@ -657,13 +652,14 @@ div.prompt-container:hover {
 /* Paragraph styles 	 */
 	p {
 		color : #D6C29B !important ; 
-		font-family: "Harding" , !important; 
+	
+		 font-family: "Harding Text Web Regular Regular" !important;
 		
 	}
 	
 	strong {
 		
-	font-family: "Chivo" , monospace !important ; 
+ font-family: "Harding Text Web Regular Regular";
 		color : #B8BB26 !important ; 
 font-weight: 500 !important ; 
 		font-size: 1.07rem !important ; 
@@ -676,11 +672,13 @@ font-weight: 500 !important ;
 	li ,
 	ol  , ul{
 		color : #FFD29C !important ; 
+		 font-family: "Harding Text Web Regular Regular" !important;
 		
 	}
 	
 	li::marker {
 	color : #FB4934 !important ; 
+		 font-family: "Harding Text Web Regular Regular"!important;
 	}
 	
 	
