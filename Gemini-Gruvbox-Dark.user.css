@@ -17,8 +17,7 @@
 
 
 
-	@-moz-document domain("gemini.google.com") {
-    /* Your code goes here. */
+	
 	@import url('https://c.webfontfree.com/c.js?f=HardingTextWeb-Regular');
 @import url(https://db.onlinewebfonts.com/c/7732caef9ed946f7916b3f650e8837c2?family=Harding+Text+Web+Regular+Regular);
 p, h1, h2, h3, h4, h5, h6, a, span, li, div, code, pre {
@@ -38,7 +37,6 @@ p, h1, h2, h3, h4, h5, h6, a, span, li, div, code, pre {
     url("https://db.onlinewebfonts.com/t/7732caef9ed946f7916b3f650e8837c2.svg#Harding Text Web Regular Regular")format("svg");
 }
 
-}
 
 	
 
