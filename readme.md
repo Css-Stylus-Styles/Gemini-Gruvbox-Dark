@@ -131,3 +131,10 @@ Markdown tables
 ![Google gemini youtube plugin screenshots](https://github.com/bilalazh/Gemini-Gruvbox-Dark/assets/139261053/a5a7e835-b98f-4b94-bb9e-718c96aac725)
 
 
+
+
+
+
+
+## Todo : 
+- fix the background 
