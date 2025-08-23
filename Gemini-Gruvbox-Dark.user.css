@@ -9,9 +9,10 @@
 
 
 
-@var checkbox  noLogo   "NO Hello text "             1
-@var checkbox   noUpgrade "No Upgrade Button"  1
-@var checkbox   noGoogle "No Google Account Button"          1
+@var checkbox  noLogo   "NO Hello text "                 1
+@var checkbox   noUpgrade "No Upgrade Button"            1
+@var checkbox   noGoogle "No Google Account Button"      1
+@var checkbox   noAddress "Hide your location from menu" 1 
 @var checkbox   LocalFont  "Local Placeholder Font"      0
 @var checkbox   LoadWebFont  "Load Font From Web"        0
 
@@ -515,12 +516,15 @@ if noGoogle {
 	.boqOnegoogleliteOgbOneGoogleBar{
 		opacity: 0  !important;
 	}
-
-
 }
 
 
-
+/* Hide your  Location */
+if noAddress {
+	.location-menu-item-container {
+			display:none  !important
+		  }
+}
 
 
 
