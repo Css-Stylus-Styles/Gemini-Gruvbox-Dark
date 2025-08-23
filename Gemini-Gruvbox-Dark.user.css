@@ -503,8 +503,7 @@ if noLogo {
 
 /*Hide Upgrade Button*/ 
 if noUpgrade {
-	.buttons-container.adv-upsell,
-.buttons-container.referra{
+	.buttons-container.adv-upsell{
       opacity: 0 !important;
     }
 }
