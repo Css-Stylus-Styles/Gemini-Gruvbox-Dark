@@ -1,1417 +1,512 @@
 /* ==UserStyle==
-@name           gemini.google.com - Feb 2024
-@namespace      github.com/openstyles/stylus
-@version        1.0.2
-@description    This user style will apply the google chivo font to everything page you visit 
-                I have made some changes in it 
-                this will not change the following 
-                    - monospace font
-                    - icons --> this theme is set up to ignore icons and dont mess up icons on most websites 
-@author         heybilalazhar@gmail.com
+@name           Gemini-Gruvbox-Dark
+@namespace      github.com/Css-Styles-Styles/Gemini-Gruvbox-Dark
+@version        1.0.0
+@description    Gemini-Gruvbox-Dark style 
+@author         Me
+@preprocessor   stylus
+
+
+
+
+@var checkbox  noLogo   "NO Hello text "             1
+@var checkbox   noSideHeader "NO Logo Header (Sidebar)"  1
+@var checkbox   noPrivateChat "No Private Chat"          1
+@var checkbox   LocalFont  "Local Placeholder Font"      0
+@var checkbox   LoadWebFont  "Load Font From Web"        0
+
+:root {
+  --fallback-text: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+
+
+@var select newfont 'Text Font' [
+    'Test Tiempos Text',
+    'Website Default',
+	'Geist Sans',
+]
+
+@var select headfont 'Heading Font' [
+  'Inherit',
+  'Bricolage Grotesque Variable',
+
+]
+
+
 ==/UserStyle== */
 
 
-
-
-
-
-
-
+@-moz-document domain("gemini.google.com") {
+	/* Insert code here... */
+	  /*Font Import */
+	  /*Importing Margon */
+	  /*Margon Medium Import */
+	  @font-face {
+			  font-family: "Margon 360 W08 Medium";
+			  src: url("https://db.onlinewebfonts.com/t/90100147a9b552a477200bfb737766e5.eot");
+			  src: url("https://db.onlinewebfonts.com/t/90100147a9b552a477200bfb737766e5.eot?#iefix")format("embedded-opentype"),
+			  url("https://db.onlinewebfonts.com/t/90100147a9b552a477200bfb737766e5.woff2")format("woff2"),
+			  url("https://db.onlinewebfonts.com/t/90100147a9b552a477200bfb737766e5.woff")format("woff"),
+			  url("https://db.onlinewebfonts.com/t/90100147a9b552a477200bfb737766e5.ttf")format("truetype"),
+			  url("https://db.onlinewebfonts.com/t/90100147a9b552a477200bfb737766e5.svg#Margon 360 W08 Medium")format("svg");
+	  }
+	  @import url(https://db.onlinewebfonts.com/c/90100147a9b552a477200bfb737766e5?family=Margon+360+W08+Medium);
+	  /* bricolage-grotesque-latin-wght-normal */
+	@font-face {
+	font-family: 'Bricolage Grotesque Variable';
+	font-style: normal;
+	font-display: swap;
+	font-weight: 200 800;
+	font-stretch: 75% 100%;
+	src: url(https://cdn.jsdelivr.net/fontsource/fonts/bricolage-grotesque:vf@latest/latin-standard-normal.woff2) format('woff2-variations');
+	unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+	}
+	  /*Lora Font Import*/
+	  @font-face {
+			  font-family: "Lora";
+			  src: url("https://db.onlinewebfonts.com/t/5c803199923a6ed48112bebbb486b3e0.eot");
+			  src: url("https://db.onlinewebfonts.com/t/5c803199923a6ed48112bebbb486b3e0.eot?#iefix")format("embedded-opentype"),
+			  url("https://db.onlinewebfonts.com/t/5c803199923a6ed48112bebbb486b3e0.woff2")format("woff2"),
+			  url("https://db.onlinewebfonts.com/t/5c803199923a6ed48112bebbb486b3e0.woff")format("woff"),
+			  url("https://db.onlinewebfonts.com/t/5c803199923a6ed48112bebbb486b3e0.ttf")format("truetype"),
+			  url("https://db.onlinewebfonts.com/t/5c803199923a6ed48112bebbb486b3e0.svg#Lora")format("svg");
+	  }
+	  @import url(https://db.onlinewebfonts.com/c/5c803199923a6ed48112bebbb486b3e0?family=Lora);
+	  /*Lingistics Pro Font  */
+	  @font-face {
+			  font-family: "Linguistics Pro";
+			  src: url("https://db.onlinewebfonts.com/t/3612352f3b0606a3a5d675e7279f7c17.eot");
+			  src: url("https://db.onlinewebfonts.com/t/3612352f3b0606a3a5d675e7279f7c17.eot?#iefix")format("embedded-opentype"),
+			  url("https://db.onlinewebfonts.com/t/3612352f3b0606a3a5d675e7279f7c17.woff2")format("woff2"),
+			  url("https://db.onlinewebfonts.com/t/3612352f3b0606a3a5d675e7279f7c17.woff")format("woff"),
+			  url("https://db.onlinewebfonts.com/t/3612352f3b0606a3a5d675e7279f7c17.ttf")format("truetype"),
+			  url("https://db.onlinewebfonts.com/t/3612352f3b0606a3a5d675e7279f7c17.svg#Linguistics Pro")format("svg");
+	  }
+	  @import url(https://db.onlinewebfonts.com/c/3612352f3b0606a3a5d675e7279f7c17?family=Linguistics+Pro);
+	  /*Commit Mono*/
+	  @font-face {
+			  font-family: "CommitMono";
+			  src: url("https://db.onlinewebfonts.com/t/3d911dba955015058da8755197d0a58c.eot");
+			  src: url("https://db.onlinewebfonts.com/t/3d911dba955015058da8755197d0a58c.eot?#iefix")format("embedded-opentype"),
+			  url("https://db.onlinewebfonts.com/t/3d911dba955015058da8755197d0a58c.woff2")format("woff2"),
+			  url("https://db.onlinewebfonts.com/t/3d911dba955015058da8755197d0a58c.woff")format("woff"),
+			  url("https://db.onlinewebfonts.com/t/3d911dba955015058da8755197d0a58c.ttf")format("truetype"),
+			  url("https://db.onlinewebfonts.com/t/3d911dba955015058da8755197d0a58c.svg#CommitMono")format("svg");
+	  }
+	  @import url(https://db.onlinewebfonts.com/c/3d911dba955015058da8755197d0a58c?family=CommitMono);
+	  /*Fira Mono */
+	  /*
+	  Fira Mono font weights:
+	- Fira Mono 400 (Regular)
+	- Fira Mono 500 (Medium)
+	- Fira Mono 700 (Bold)
+	*/
+	  /* fira-mono-regular - latin */
+	  /* fira-mono-latin-400-normal */
+	  /* fira-mono-latin-400-normal */
+	  @font-face {
+			  font-family: 'Fira Mono';
+			  font-style: normal;
+			  font-display: auto;
+			  font-weight: 400;
+			  src: url(https://cdn.jsdelivr.net/fontsource/fonts/fira-mono@latest/latin-400-normal.woff2) format('woff2'), url(https://cdn.jsdelivr.net/fontsource/fonts/fira-mono@latest/latin-400-normal.woff) format('woff'), url(https://cdn.jsdelivr.net/fontsource/fonts/fira-mono@latest/latin-400-normal.ttf) format('truetype');
+			  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+	  }
+	  /* Spline Sans */
+	  /* spline-sans-latin-wght-normal */
+	  @font-face {
+			  font-family: 'Spline Sans Variable';
+			  font-style: normal;
+			  font-display: auto;
+			  font-weight: 300 700;
+			  src: url(https://cdn.jsdelivr.net/fontsource/fonts/spline-sans:vf@latest/latin-wght-normal.woff2) format('woff2-variations');
+			  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+	  }
 	
-	@import url('https://c.webfontfree.com/c.js?f=HardingTextWeb-Regular');
-@import url(https://db.onlinewebfonts.com/c/7732caef9ed946f7916b3f650e8837c2?family=Harding+Text+Web+Regular+Regular);
-
+	  /*Hack Font */
+	  @font-face {
+			  font-family: "Hack";
+			  src: url("https://db.onlinewebfonts.com/t/4fea277591543c1fd64a9cf06ec5803a.eot");
+			  src: url("https://db.onlinewebfonts.com/t/4fea277591543c1fd64a9cf06ec5803a.eot?#iefix")format("embedded-opentype"),
+			  url("https://db.onlinewebfonts.com/t/4fea277591543c1fd64a9cf06ec5803a.woff2")format("woff2"),
+			  url("https://db.onlinewebfonts.com/t/4fea277591543c1fd64a9cf06ec5803a.woff")format("woff"),
+			  url("https://db.onlinewebfonts.com/t/4fea277591543c1fd64a9cf06ec5803a.ttf")format("truetype"),
+			  url("https://db.onlinewebfonts.com/t/4fea277591543c1fd64a9cf06ec5803a.svg#Hack")format("svg");
+	  }
+	  /*Karla Font Testing */
+	  @font-face {
+			  font-family: "Karla";
+			  src: url("https://db.onlinewebfonts.com/t/750e3658d4460a397a551dfac26bb272.eot");
+			  src: url("https://db.onlinewebfonts.com/t/750e3658d4460a397a551dfac26bb272.eot?#iefix")format("embedded-opentype"),
+			  url("https://db.onlinewebfonts.com/t/750e3658d4460a397a551dfac26bb272.woff2")format("woff2"),
+			  url("https://db.onlinewebfonts.com/t/750e3658d4460a397a551dfac26bb272.woff")format("woff"),
+			  url("https://db.onlinewebfonts.com/t/750e3658d4460a397a551dfac26bb272.ttf")format("truetype"),
+			  url("https://db.onlinewebfonts.com/t/750e3658d4460a397a551dfac26bb272.svg#Karla")format("svg");
+	  }
+	  @font-face {
+			  font-family: "Karla Medium";
+			  src: url("https://db.onlinewebfonts.com/t/b2df7a6681d7895a21fc77cda56d14dd.eot");
+			  src: url("https://db.onlinewebfonts.com/t/b2df7a6681d7895a21fc77cda56d14dd.eot?#iefix")format("embedded-opentype"),
+			  url("https://db.onlinewebfonts.com/t/b2df7a6681d7895a21fc77cda56d14dd.woff2")format("woff2"),
+			  url("https://db.onlinewebfonts.com/t/b2df7a6681d7895a21fc77cda56d14dd.woff")format("woff"),
+			  url("https://db.onlinewebfonts.com/t/b2df7a6681d7895a21fc77cda56d14dd.ttf")format("truetype"),
+			  url("https://db.onlinewebfonts.com/t/b2df7a6681d7895a21fc77cda56d14dd.svg#Karla Medium")format("svg");
+	  }
+	  @font-face {
+			  font-family: "Karla Bold";
+			  src: url("https://db.onlinewebfonts.com/t/b45be274b8b65fc9c72b038d72486edd.eot");
+			  src: url("https://db.onlinewebfonts.com/t/b45be274b8b65fc9c72b038d72486edd.eot?#iefix")format("embedded-opentype"),
+			  url("https://db.onlinewebfonts.com/t/b45be274b8b65fc9c72b038d72486edd.woff2")format("woff2"),
+			  url("https://db.onlinewebfonts.com/t/b45be274b8b65fc9c72b038d72486edd.woff")format("woff"),
+			  url("https://db.onlinewebfonts.com/t/b45be274b8b65fc9c72b038d72486edd.ttf")format("truetype"),
+			  url("https://db.onlinewebfonts.com/t/b45be274b8b65fc9c72b038d72486edd.svg#Karla Bold")format("svg");
+	  }
+	  /*Archivo Font */
+	  @font-face {
+			  font-family: "Archivo";
+			  src: url("https://db.onlinewebfonts.com/t/9868bcbea8d6cd3f78182d7829e5dd3e.eot");
+			  src: url("https://db.onlinewebfonts.com/t/9868bcbea8d6cd3f78182d7829e5dd3e.eot?#iefix")format("embedded-opentype"),
+			  url("https://db.onlinewebfonts.com/t/9868bcbea8d6cd3f78182d7829e5dd3e.woff2")format("woff2"),
+			  url("https://db.onlinewebfonts.com/t/9868bcbea8d6cd3f78182d7829e5dd3e.woff")format("woff"),
+			  url("https://db.onlinewebfonts.com/t/9868bcbea8d6cd3f78182d7829e5dd3e.ttf")format("truetype"),
+			  url("https://db.onlinewebfonts.com/t/9868bcbea8d6cd3f78182d7829e5dd3e.svg#Archivo")format("svg");
+	  }
+	/* literata-latin-wght-normal */
+	@font-face {
+	font-family: 'Literata Variable';
+	font-style: normal;
+	font-display: swap;
+	font-weight: 200 900;
+	src: url(https://cdn.jsdelivr.net/fontsource/fonts/literata:vf@latest/latin-wght-normal.woff2) format('woff2-variations');
+	unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+	}
+	@font-face {
+	font-family: "Fantasque Sans Mono";
+	src: url("https://db.onlinewebfonts.com/t/211343016ad291ba6eb1ac0ccc29761c.eot");
+	src: url("https://db.onlinewebfonts.com/t/211343016ad291ba6eb1ac0ccc29761c.eot?#iefix")format("embedded-opentype"),
+	url("https://db.onlinewebfonts.com/t/211343016ad291ba6eb1ac0ccc29761c.woff2")format("woff2"),
+	url("https://db.onlinewebfonts.com/t/211343016ad291ba6eb1ac0ccc29761c.woff")format("woff"),
+	url("https://db.onlinewebfonts.com/t/211343016ad291ba6eb1ac0ccc29761c.ttf")format("truetype"),
+	url("https://db.onlinewebfonts.com/t/211343016ad291ba6eb1ac0ccc29761c.svg#Fantasque Sans Mono")format("svg");
+	}
+	@font-face {
+	font-family: "Fantasque Sans Mono Bold";
+	src: url("https://db.onlinewebfonts.com/t/9806c95303ad6b6b2a8a45c07479e6a0.eot");
+	src: url("https://db.onlinewebfonts.com/t/9806c95303ad6b6b2a8a45c07479e6a0.eot?#iefix")format("embedded-opentype"),
+	url("https://db.onlinewebfonts.com/t/9806c95303ad6b6b2a8a45c07479e6a0.woff2")format("woff2"),
+	url("https://db.onlinewebfonts.com/t/9806c95303ad6b6b2a8a45c07479e6a0.woff")format("woff"),
+	url("https://db.onlinewebfonts.com/t/9806c95303ad6b6b2a8a45c07479e6a0.ttf")format("truetype"),
+	url("https://db.onlinewebfonts.com/t/9806c95303ad6b6b2a8a45c07479e6a0.svg#Fantasque Sans Mono Bold")format("svg");
+	}
+	
+	  /* jetbrains-mono-latin-wght-normal */
+	@font-face {
+	font-family: 'JetBrains Mono Variable';
+	font-style: normal;
+	font-display: swap;
+	font-weight: 100 800;
+	src: url(https://cdn.jsdelivr.net/fontsource/fonts/jetbrains-mono:vf@latest/latin-wght-normal.woff2) format('woff2-variations');
+	unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+	}
+	  /* inclusive-sans-latin-400-normal */
+	@font-face {
+	font-family: 'Inclusive Sans';
+	font-style: normal;
+	font-display: swap;
+	font-weight: 400;
+	src: url(https://cdn.jsdelivr.net/fontsource/fonts/inclusive-sans@latest/latin-400-normal.woff2) format('woff2'), url(https://cdn.jsdelivr.net/fontsource/fonts/inclusive-sans@latest/latin-400-normal.woff) format('woff');
+	unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+	}
+	  /* manrope-latin-wght-normal */
+	@font-face {
+	font-family: 'Manrope Variable';
+	font-style: normal;
+	font-display: swap;
+	font-weight: 200 800;
+	src: url(https://cdn.jsdelivr.net/fontsource/fonts/manrope:vf@latest/latin-wght-normal.woff2) format('woff2-variations');
+	unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+	}
+	
+	/*Geist Sans*/
+	/* geist-sans-latin-100-normal */
+	@font-face {
+	font-family: 'Geist Sans';
+	font-style: normal;
+	font-display: swap;
+	font-weight: 100;
+	src: url(https://cdn.jsdelivr.net/fontsource/fonts/geist-sans@latest/latin-100-normal.woff2) format('woff2'), url(https://cdn.jsdelivr.net/fontsource/fonts/geist-sans@latest/latin-100-normal.woff) format('woff'), url(https://cdn.jsdelivr.net/fontsource/fonts/geist-sans@latest/latin-100-normal.ttf) format('truetype');
+	}
+	/* geist-sans-latin-200-normal */
+	@font-face {
+	font-family: 'Geist Sans';
+	font-style: normal;
+	font-display: swap;
+	font-weight: 200;
+	src: url(https://cdn.jsdelivr.net/fontsource/fonts/geist-sans@latest/latin-200-normal.woff2) format('woff2'), url(https://cdn.jsdelivr.net/fontsource/fonts/geist-sans@latest/latin-200-normal.woff) format('woff'), url(https://cdn.jsdelivr.net/fontsource/fonts/geist-sans@latest/latin-200-normal.ttf) format('truetype');
+	}
+	
+	/* geist-sans-latin-300-normal */
+	@font-face {
+	font-family: 'Geist Sans';
+	font-style: normal;
+	font-display: swap;
+	font-weight: 300;
+	src: url(https://cdn.jsdelivr.net/fontsource/fonts/geist-sans@latest/latin-300-normal.woff2) format('woff2'), url(https://cdn.jsdelivr.net/fontsource/fonts/geist-sans@latest/latin-300-normal.woff) format('woff'), url(https://cdn.jsdelivr.net/fontsource/fonts/geist-sans@latest/latin-300-normal.ttf) format('truetype');
+	}
+	
+	/* geist-sans-latin-400-normal */
+	@font-face {
+	font-family: 'Geist Sans';
+	font-style: normal;
+	font-display: swap;
+	font-weight: 400;
+	src: url(https://cdn.jsdelivr.net/fontsource/fonts/geist-sans@latest/latin-400-normal.woff2) format('woff2'), url(https://cdn.jsdelivr.net/fontsource/fonts/geist-sans@latest/latin-400-normal.woff) format('woff'), url(https://cdn.jsdelivr.net/fontsource/fonts/geist-sans@latest/latin-400-normal.ttf) format('truetype');
+	}
+	
+	/* geist-sans-latin-500-normal */
+	@font-face {
+	font-family: 'Geist Sans';
+	font-style: normal;
+	font-display: swap;
+	font-weight: 500;
+	src: url(https://cdn.jsdelivr.net/fontsource/fonts/geist-sans@latest/latin-500-normal.woff2) format('woff2'), url(https://cdn.jsdelivr.net/fontsource/fonts/geist-sans@latest/latin-500-normal.woff) format('woff'), url(https://cdn.jsdelivr.net/fontsource/fonts/geist-sans@latest/latin-500-normal.ttf) format('truetype');
+	}
+	
+	/* geist-sans-latin-600-normal */
+	@font-face {
+	font-family: 'Geist Sans';
+	font-style: normal;
+	font-display: swap;
+	font-weight: 600;
+	src: url(https://cdn.jsdelivr.net/fontsource/fonts/geist-sans@latest/latin-600-normal.woff2) format('woff2'), url(https://cdn.jsdelivr.net/fontsource/fonts/geist-sans@latest/latin-600-normal.woff) format('woff'), url(https://cdn.jsdelivr.net/fontsource/fonts/geist-sans@latest/latin-600-normal.ttf) format('truetype');
+	}
+	
+	/* geist-sans-latin-700-normal */
+	@font-face {
+	font-family: 'Geist Sans';
+	font-style: normal;
+	font-display: swap;
+	font-weight: 700;
+	src: url(https://cdn.jsdelivr.net/fontsource/fonts/geist-sans@latest/latin-700-normal.woff2) format('woff2'), url(https://cdn.jsdelivr.net/fontsource/fonts/geist-sans@latest/latin-700-normal.woff) format('woff'), url(https://cdn.jsdelivr.net/fontsource/fonts/geist-sans@latest/latin-700-normal.ttf) format('truetype');
+	}
+	
+	/* geist-sans-latin-800-normal */
+	@font-face {
+	font-family: 'Geist Sans';
+	font-style: normal;
+	font-display: swap;
+	font-weight: 800;
+	src: url(https://cdn.jsdelivr.net/fontsource/fonts/geist-sans@latest/latin-800-normal.woff2) format('woff2'), url(https://cdn.jsdelivr.net/fontsource/fonts/geist-sans@latest/latin-800-normal.woff) format('woff'), url(https://cdn.jsdelivr.net/fontsource/fonts/geist-sans@latest/latin-800-normal.ttf) format('truetype');
+	}
+	
+	/* geist-sans-latin-900-normal */
+	@font-face {
+	font-family: 'Geist Sans';
+	font-style: normal;
+	font-display: swap;
+	font-weight: 900;
+	src: url(https://cdn.jsdelivr.net/fontsource/fonts/geist-sans@latest/latin-900-normal.woff2) format('woff2'), url(https://cdn.jsdelivr.net/fontsource/fonts/geist-sans@latest/latin-900-normal.woff) format('woff'), url(https://cdn.jsdelivr.net/fontsource/fonts/geist-sans@latest/latin-900-normal.ttf) format('truetype');
+	}
+	
+	/*Geist Mono Variable*/
+	/* geist-mono-latin-wght-normal */
+	@font-face {
+	font-family: 'Geist Mono Variable';
+	font-style: normal;
+	font-display: swap;
+	font-weight: 100 900;
+	src: url(https://cdn.jsdelivr.net/fontsource/fonts/geist-mono:vf@latest/latin-wght-normal.woff2) format('woff2-variations');
+	unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+	}
+	/* baskervville-latin-400-normal */
+	@font-face {
+	font-family: 'Baskervville';
+	font-style: normal;
+	font-display: swap;
+	font-weight: 400;
+	src: url(https://cdn.jsdelivr.net/fontsource/fonts/baskervville@latest/latin-400-normal.woff2) format('woff2'), url(https://cdn.jsdelivr.net/fontsource/fonts/baskervville@latest/latin-400-normal.woff) format('woff');
+	unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+	}
 	
 	@font-face {
-    font-family: "Harding Text Web Regular Regular";
-    src: url("https://db.onlinewebfonts.com/t/7732caef9ed946f7916b3f650e8837c2.eot");
-    src: url("https://db.onlinewebfonts.com/t/7732caef9ed946f7916b3f650e8837c2.eot?#iefix")format("embedded-opentype"),
-    url("https://db.onlinewebfonts.com/t/7732caef9ed946f7916b3f650e8837c2.woff2")format("woff2"),
-    url("https://db.onlinewebfonts.com/t/7732caef9ed946f7916b3f650e8837c2.woff")format("woff"),
-    url("https://db.onlinewebfonts.com/t/7732caef9ed946f7916b3f650e8837c2.ttf")format("truetype"),
-    url("https://db.onlinewebfonts.com/t/7732caef9ed946f7916b3f650e8837c2.svg#Harding Text Web Regular Regular")format("svg");
+	font-family: "Tiempos Text Regular";
+	src: url("https://db.onlinewebfonts.com/t/1b3f9cb78376a36884f3908f37a42c91.eot");
+	src: url("https://db.onlinewebfonts.com/t/1b3f9cb78376a36884f3908f37a42c91.eot?#iefix")format("embedded-opentype"),
+	url("https://db.onlinewebfonts.com/t/1b3f9cb78376a36884f3908f37a42c91.woff2")format("woff2"),
+	url("https://db.onlinewebfonts.com/t/1b3f9cb78376a36884f3908f37a42c91.woff")format("woff"),
+	url("https://db.onlinewebfonts.com/t/1b3f9cb78376a36884f3908f37a42c91.ttf")format("truetype"),
+	url("https://db.onlinewebfonts.com/t/1b3f9cb78376a36884f3908f37a42c91.svg#Tiempos Text Regular")format("svg");
+	}
+	/*Inter Font import*/
+	/* inter-latin-wght-normal */
+	@font-face {
+	font-family: 'Inter Variable';
+	font-style: normal;
+	font-display: swap;
+	font-weight: 100 900;
+	src: url(https://cdn.jsdelivr.net/fontsource/fonts/inter:vf@latest/latin-wght-normal.woff2) format('woff2-variations');
+	unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+	}
+	
+	:root
+	{
+	/* 0 is for darkest
+	1 is for hard
+	higher values for hard  */
+	
+	
+	/* 2.1 Dark theme color variables */
+	--bg0-dh:       #1d2021;
+	--bg-dark-new  :  #1F1E1D ;
+	/*For basic text new color added         */
+	--text-normal :#ffd29c ;
+	
+	--shadow-bg:         #1d1b1a;
+	/* Was picked from the side bar on grok interface  */
+	--bg-def-dark:#171718; 
+	
+	--bg1-dark:       #3c3836;
+	--bg-dark:        #282828;
+	--bg2-dark:       #504945;
+	--bg3-dark:       #665c54;
+	--bg4-dark:       #7c6f64;
+	--bg5-dark:       #928374;
+	--bg_visual:      #503946;
+	--bg_red:         #cc241d;
+	--bg_green:       #98971a;
+	--bg_blue:        #458588;
+	--bg_yellow:      #d79921;
+	--shadow:         #16181a;
+	--shadow-var1:         #17191b;
+	--shadow-cur:         #1a1b1d;
+	
+	--fg-dark:        #ebdbb2;
+	--grey0-dark:     #7f897d;
+	--grey1-dark:     #859289;
+	--grey2-dark:     #9aa79d;
+	
+	--faded-red:     #fb4934;
+	--faded-orange:  #fe8019;
+	--faded-yellow:  #fabd2f;
+	--faded-green:   #b8bb26;
+	--faded-aqua:    #8ec07c;
+	--faded-blue:    #83a598;
+	--faded-purple:  #d3869b;
+	
+	--dim-red:       #cc241d;
+	--dim-orange:    #d65d0e;
+	--dim-yellow:    #d79921;
+	--dim-green:     #98971a;
+	--dim-aqua:      #689d6a;
+	--dim-blue:      #458588;
+	--dim-purple:    #b16286;
+	
+	
+	/* 2.2 Light theme color variables */
+	--bg0-light:     #f0edd8;
+	--bg1-light:     #f6f1dd;
+	--bg-light:      #fdf6e3;
+	--bg2-light:     #f3efda;
+	--bg3-light:     #edead5;
+	--bg4-light:     #e4e1cd;
+	--bg5-light:     #dfdbc8;
+	--grey0-light:   #a4ad9e;
+	--grey1-light:   #939f91;
+	--grey2-light:   #879686;
+	--shadow-light:  #3c474d20;
+	
+	
+	--text-offwhite: #fbf1c7;
+	--text-offyellowish: #f2e5bc;
+	--text-white: #f9f5d7;
+	--text-offwhite-faded: #ebdbb2;
+	--text--faded: #d5c4a1;
+	--text--veryfade: #928374;
+	
+	
+	
+	--bg_visual_light:      #eaedc8;
+	--bg_red_light:         #fbe3da;
+	--bg_green_light:       #f0f1d2;
+	--bg_blue_light:        #e9f0e9;
+	--bg_yellow_light:      #faedcd;
+	
+	--fg-light:       #5c6a72;
+	
+	--light-red:     #f85552;
+	--light-orange:  #f57d26;
+	--light-yellow:  #bf983d;
+	--light-green:   #899c40;
+	--light-aqua:    #569d79;
+	--light-blue:    #5a93a2;
+	--light-purple:  #b87b9d;
+	
+	--light-dim-red:    #f1706f;
+	--light-dim-orange: #f39459;
+	--light-dim-yellow: #e4b649;
+	--light-dim-green:  #a4bb4a;
+	--light-dim-aqua:   #6ec398;
+	--light-dim-blue:   #6cb3c6;
+	--light-dim-purple: #e092be;
+	
+	
+	
+	--dark-red: #9d0006;
+	--dark-green: #79740e;
+	--dark-yellow: #b57614;
+	--dark-blue: #076678;
+	--dark-purple: #8f3f71;
+	--dark-aqua: #427b58;
+	--dark-orange: #af3a03;
+	
+	
+	/* light colors */
+	--interface-light0-hard: #f9f5d7;
+	--interface-light0: #fbf1c7;
+	--interface-light0-soft: #f2e5bc;
+	--interface-light1: #ebdbb2;
+	--interface-light2: #d5c4a1;
+	--interface-light3: #bdae93;
+	--interface-light4: #a89988;
+	
+	  }
+	
+
+
+
+	   
+/*
+Loading Fonts from the web for  this
+*/
+if  LoadWebFont {
+	p , div , span , button , body , html , p , li , ul , ol  {
+	font-family : "Tiempos Text Regular" !important
+	}
+	}
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	  
+	  
 }
-
-
-	
-
-
-
-
-
-
-
-
-
-
-
-
-
-@-moz-document domain("gemini.google.com") {
-    :root
-
-{
-    /* 0 is for darkest 
-    1 is for hard 
-    higher values for hard  */
-
-
-    /* 2.1 Dark theme color variables */
-    --bg0-dh:       #1d2021;
-    --bg-dark-new  :  #1F1E1D ; 
-/*For basic text new color added  	 */
---text-normal :#ffd29c ;
-
-    --shadow-bg:         #1d1b1a;
-    
-    --bg1-dark:       #3c3836;
-    --bg-dark:        #282828;
-    --bg2-dark:       #504945;
-    --bg3-dark:       #665c54;
-    --bg4-dark:       #7c6f64;
-    --bg5-dark:       #928374;
-    --bg_visual:      #503946;
-    --bg_red:         #cc241d;
-    --bg_green:       #98971a;
-    --bg_blue:        #458588;
-    --bg_yellow:      #d79921;
-    --shadow:         #16181a;
-    --shadow-var1:         #17191b;
-    --shadow-cur:         #1a1b1d;
-
-    --fg-dark:        #ebdbb2;
-    --grey0-dark:     #7f897d;
-    --grey1-dark:     #859289;
-    --grey2-dark:     #9aa79d;
-
-    --faded-red:     #fb4934;
-    --faded-orange:  #fe8019;
-    --faded-yellow:  #fabd2f;
-    --faded-green:   #b8bb26;
-    --faded-aqua:    #8ec07c;
-    --faded-blue:    #83a598;
-    --faded-purple:  #d3869b;
-
-    --dim-red:       #cc241d;
-    --dim-orange:    #d65d0e;
-    --dim-yellow:    #d79921;
-    --dim-green:     #98971a;
-    --dim-aqua:      #689d6a;
-    --dim-blue:      #458588;
-    --dim-purple:    #b16286;
-
-
-    /* 2.2 Light theme color variables */
-    --bg0-light:     #f0edd8;
-    --bg1-light:     #f6f1dd;
-    --bg-light:      #fdf6e3;
-    --bg2-light:     #f3efda;
-    --bg3-light:     #edead5;
-    --bg4-light:     #e4e1cd;
-    --bg5-light:     #dfdbc8;
-    --grey0-light:   #a4ad9e;
-    --grey1-light:   #939f91;
-    --grey2-light:   #879686;
-    --shadow-light:  #3c474d20;
-
-
-    --text-offwhite: #fbf1c7;
-    --text-offyellowish: #f2e5bc;
-    --text-white: #f9f5d7;
-    --text-offwhite-faded: #ebdbb2;
-    --text--faded: #d5c4a1;
-    --text--veryfade: #928374;
-
-    
-
-    
-
-
-
-    --bg_visual_light:      #eaedc8;
-    --bg_red_light:         #fbe3da;
-    --bg_green_light:       #f0f1d2;
-    --bg_blue_light:        #e9f0e9;
-    --bg_yellow_light:      #faedcd;
-
-    --fg-light:       #5c6a72;
-
-    --light-red:     #f85552;
-    --light-orange:  #f57d26;
-    --light-yellow:  #bf983d;
-    --light-green:   #899c40;
-    --light-aqua:    #569d79;
-    --light-blue:    #5a93a2;
-    --light-purple:  #b87b9d;
-
-    --light-dim-red:    #f1706f;
-    --light-dim-orange: #f39459;
-    --light-dim-yellow: #e4b649;
-    --light-dim-green:  #a4bb4a;
-    --light-dim-aqua:   #6ec398;
-    --light-dim-blue:   #6cb3c6;
-    --light-dim-purple: #e092be;
-
-
-
- --dark-red: #9d0006;    /* faded_red: #9d0006 [red] 88 [9] 157-0-6 137-0-9 #890009 */
-  --dark-green: #79740e;  /* faded_green: #79740e [green] 100 [10] 121-116-14 102-98-13 #66620d */
-  --dark-yellow: #b57614; /* faded_yellow: #b57614 [yellow] 136 [11] 181-118-20 165-99-17 #a56311 */
-  --dark-blue: #076678;   /* faded_blue: #076678 [blue] 24 [12] 7-102-120 14-83-101 #0e5365 */
-  --dark-purple: #8f3f71; /* faded_purple: #8f3f71 [purple] 96 [13] 143-63-113 123-43-94 #7b2b5e */
-  --dark-aqua: #427b58;   /* faded_aqua: #427b58 [aqua] 66 [14] 66-123-88 53-106-70 #356a46 */
-  --dark-orange: #af3a03;
-
-
-/* light colors */
-  --interface-light0-hard: #f9f5d7; /* light0_hard: #f9f5d7 [h0] 230 [ ] 249-245-215 248-244-205 #f8f4cd */
-  --interface-light0: #fbf1c7; /* light0: #fbf1c7 [fg0][bg0] 229 [0] 251-241-199 250-238-187 #faeebb */
-  --interface-light0-soft: #f2e5bc; /* light0_soft: #f2e5bc [s0] 228 [ ] 242-229-188 239-223-174 #efdfae */
-  --interface-light1: #ebdbb2; /* light1: #ebdbb2 [fg1][bg1] 223 [15] 235-219-178 230-212-163 #e6d4a3 */
-  --interface-light2: #d5c4a1; /* light2: #d5c4a1 [fg2][bg2] 250 [ ] 213-196-161 203-184-144 #cbb890 */
-  --interface-light3: #bdae93; /* light3: #bdae93 [fg3][bg3] 248 [ ] 189-174-147 175-159-129 #af9f81 */
-  --interface-light4: #a89988; /* light4: #a89988 */
-
-
- 
-	
-	
-	}
-	
-	
-	
-
-	
-/* 	@import url('https://fonts.googleapis.com/css2family=Spline+Sans&family=Spline+Mono&display=swap'); */
-	
-
-	
-/* 	@import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono); */
-	
-
-/* 	@import url('https://fonts.googleapis.com/css2?family=Fragment+Mono:ital@0;1&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap') */
-	
-
-	
-	
-	
-/* 	@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap') */
-
-
-		
-/*IBM Mono plex  		 */
-		
-/* 		@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap'); */
-
-@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap') ; 
-
-	
-	
-		
-
-/* 	body {
-  font-family: 'Cutive Mono', monospace !important;
-} */
-	
-	
-	
-		@import url(https://db.onlinewebfonts.com/c/7732caef9ed946f7916b3f650e8837c2?family=Harding+Text+Web+Regular+Regular);
-		
-	
-	
-	
-	
-	
-	
-	
-	
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-/*Gemini Model Picker 	 */
-	
-	
-	span.bard-text{	
-		color : #83A598 !important ; 
-	}
-	
-	/*This is being Applied to everything 
-	I dont wnat to save this */
-/* 	span.mat-ripple.mat-mdc-button-ripple{
-		background-color : #9D0006 !important ; 
-	}
-	 */
-	
-/*Gemini top bar and the side bar style  	 */
-/* .mat-mdc-button .mat-mdc-focus-indicator, .mat-mdc-unelevated-button{
-   background-color : #282828  !important ;
-	border-radius:  12px !important ; 
-} */
-	
-		
-       		/* ICONS 	 */
-	mat-icon{
-		color : #8EC07C !important ; 
-	}
-	
-	
-/* Send Icon 	 */
-	mat-icon.notranslate.google-symbols.mat-icon-no-color.ng-star-inserted{
-	color : #FB4934 !important ; 
-	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-			/*SIDEBAR 	 */	
-/* 	Side bar background */
-	
-	.sidenav-with-history-container.expanded {
-	
-		background-color: #16181A !important ; 
-    --position-duration: 400ms;
-    --position-delay: 0ms;
-    --opacity-duration: 200ms;
-    --opacity-delay: 200ms;
-}
-	
-	
-	
-	.sidenav-with-history-container ,.overflow-container{
-/* Side baer when chatting  */
-		background:  #16181A !important ; 
-}
-	
-	
-	
-	
-	/*Help  , Activity , Settings */
-	span.gmat-subtitle-2{
-		color : #D3869B !important ; 
-	}
-	
-	
-	/*Help   , activity  , button */
-	:root .dark-theme .gmat-mdc-list .mdc-list-item.mdc-list-item--with-leading-icon.mdc-list-item:hover{
-  
-		background-color : #800D08 !important ; 
-}
-	
-	
-	
-
-	
-	
-	
-	
-	
-	
-/*LOCATION -> hide  			 */
-	
-	.location-footer-name {
-    padding-top: 16px;
-		display:  none !important ; 
-}
-	
-	
-/* Locaiton Dot hide 	 */
-	mat-icon.notranslate.filled.location-icon.google-symbols.mat-icon-no-color{
-	display: none  ; 
-	}
-	
-/* Fron Your IP adress  hidden 	 */
-	span.location-footer-atl-text{
-		display: none !important ; 
-	}
-	
-/*Dot near the display 	 */
-	span.location-buttons-dot{
-		display:  none !important ; 
-	}
-	
-	
-	
-	
-	
-/*location update box  	 */
-	div.mdc-snackbar__surface.ng-tns-c996321046-68{
-/*Darker color is used her 		 */
-		background: #2E5B40 !important ; 
-	}
-	
-/*Cant update your location text  	 */
-	div.mat-mdc-snack-bar-label.mdc-snackbar__label{
-		color : #1D1B1A !important ; 
-	}
-/*Learn more text in the locattion warning  	 */
-	span.mdc-button__label{
-		color : #98971A !important ; 
-	}
-	
-	
-	/*Hide the location tab fully*/
-	div.footer-container {
-		display: none !important ; 
-	
-	}
-
-	
-	
-	
-	
-
-	
-	
-/* Only side bar backgound style 	 */
-	.mat-mdc-unelevated-button{
-		padding: 0.1rem 0.3rem !important ; 
-   background-color : #1D2021  !important ;
-	border-radius:  12px !important ; 
-}
-	
-
-/*Upgrade side bar hidden  	 */
-	span.mat-mdc-button-touch-target{
-		display: none !important ; 
-		
-	}
-	
-	
-	
-	
-/* FRONT PAGE 	 */
-/* FRONT PAGE MAIN STYLES	 */
-	
-/* Main background colors 	 */
-	
-/* Top bars -> model selector containers	 */
-	bard-mode-switcher{
-		color: white !important ; 
-	background-color : #1A1B1D !important; 
-	
-	}
-	
-/*Top bar container  	 */
-	bard-sidenav-content{
-			
-	background-color : #1A1B1D !important; 
-	}
-	
-/*background color of the whole front portion  	 */
-	infinite-scroller{
-		color: white !important ; 
-	background-color : #17191B !important; 
-	}
-	
-/*Line at the botton of the page  	 */
-		infinite-scroller.chat-history:after{
-
-    background-color: #17191B !important ; 
- 
-}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-/*Hello -> Your Name hiddden  	 */
-	span.bard-hello{
-		display: none !important ; 
-	}
-	
-/*How can i help you today -> TEXT  	 */
-/* 	Changed color of the text */
-/*Made the Text smaller so the UI is not shouting at you  	 */
-	span.bard-question{
-		/*removed this for a clean Ui */
-		display: none !important ; 
-		font-size: 2.2rem !important ; 
-		color : #665C54 !important ; 
-	}
-	
-	
-	
-	
-/*Prompt containers 	 */
-	
-	/*Transitions are eased  in */
-div.prompt-container {
-  background-color: #CC241D !important;
-  transition: background-color 0.2s ease-in;
-}
-
-div.prompt-container:hover {
-  background-color: #800D08 !important;
-  transition-delay: 0.1s; /* adjust the delay as needed */
-}
-
-	
-	
-	
-	/*Front page prompt suggestion text color */
-	p.prompt-text-content{
-		color: #FFD29C !important ; 
-		
-	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-/* edit resonses Bg color  */
-	
-	.user-query-container.edit-mode.ui-v2-enabled  mat-form-field   .mdc-text-field {
-    background: #282828 !important;
-}
-	
-	
-	
-	
-	
-	
-	
-	
-/* BUTTONS	 */
-	
-	
-	
-	
-/*Dark theme buttons background 	 */
-	.mat-mdc-menu-item, .mat-mdc-menu-item:visited, .mat-mdc-menu-item:link {
-    color:#B8BB26 !important ;
-		background: #17191B !important ; 
-}
-	
-	
-	
-	/*Active conversation buton  */
-	/*Side bar chat active button */
-	div.mat-mdc-tooltip-trigger.conversation.selected{
-		background-color : #524E09 !important  ; 
-		color : #FFD29C  !important ; 
-	}
-	
-	/*Actual conversation */
-	span.conversation-title.gmat-body-1{
-		background-color: transparent !important ; 
-		color : #FFD29C !important  ; 
-	}
-	
-	
-	/*Hover for side bar chat*/
-	div.conversations-container   .conversation:hover{
-    background-color: #CC241D !important;
-}
-	
-	
-	/*SIde bar # line bvuttons */
-	button.conversation-actions-menu-button{
-		background-color : #3A3706 !important ; 
-		
-		
-	}
-
-	
-	/*Recent wriiten in teh side tab where the chats are */
-	h1.title{
-		color : #FB4934 !important ; 
-		
-	}
-	
-	
-	
-	/*Side bar SHOW MORE TEXT*/
-	/* SHOW MORE MORE TEXT*/
-	span.gmat-subhead-2.show-more-button-text{
-		color: #FFD29C !important ; 
-
-	}
-	
-	
-	/*Show more Button */
-	button.show-more-button.mdc-button.mdc-button--unelevated.mat-mdc-unelevated-button.mat-unthemed.mat-mdc-button-base{
-		
-		background-color : #2E5B40 !important ;
-	}
-	
-	/*Hover effect for the show more button */
-		button.show-more-button.mdc-button.mdc-button--unelevated.mat-mdc-unelevated-button.mat-unthemed.mat-mdc-button-base:hover{
-		
-		background-color : #524E09 !important ;
-	}
-
-	
-	
-	
-	/*Gemini btutton is hidden for me*/
-	upsell-button{
-		opacity: 0.6 !important ; 
-	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-/* Input area styles here 	 */
-	
-	
-/*user query as shown in the chat window  	 */
-	h2.query-text{
-		color : #8EC07C !important ; 
-		font-style: italic !important ; 
-	}
-	
-	
-	
-/*Show Drafts -> blue  	 */
-	span.mat-panel-title-wrapper{
-		color : #83A598 !important ; 
-	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-/* 	Hide drafts */
-	span.ng-tns-c4150723369-11.ng-star-inserted{
-		color : #8EC07C !important ; 
-	}
-	
-	
-	
-	
-	
-/*Drafts -> backgound pill  	 */
-	.draft-preview-label-chip {
-    border-radius: 100px;
-    color: #FFD29C !important;
-    background-color: #2E5B40 !important ; 
-    font-size: .8rem !important;
-    font-weight: 300 !important;
-    line-height: 0.5rem !important;
-    
-    padding: 2px 10px !important;
-}
-	
-	
-	
-	
-	
-/* Paragraph styles 	 */
-	p {
-		color : #D6C29B !important ; 
-	
-		 font-family: "Harding Text Web Regular Regular" !important;
-		
-	}
-	
-	strong {
-		
- font-family: "Harding Text Web Regular Regular";
-		color : #B8BB26 !important ; 
-font-weight: 500 !important ; 
-		font-size: 1.07rem !important ; 
-	}
-	
-	
-	
-	
-/* Liat text colors  and other styles 	 */
-	li ,
-	ol  , ul{
-		color : #FFD29C !important ; 
-		 font-family: "Harding Text Web Regular Regular" !important;
-		
-	}
-	
-	li::marker {
-	color : #FB4934 !important ; 
-		 font-family: "Harding Text Web Regular Regular"!important;
-	}
-	
-	
-	
-	
-	
-	
-/*Link styles  	 */
-	
-
-		
-		a{
-			color : #83a598 !important ; 
-  text-decoration: underline;
-}
-
-	
-	
-	a:hover{
-		color : #8EC07C !important ; 
-	}
-	a:visited {
-		color : #689d6a !important ; 
-	}
-	
-	
-	
-	
-	
-	/*Link STyles */
-	a.traceable-link{
-		color : #FB4934 !important ; 
-	}
-	
-	/*Research paper link HOver */
-	a.traceable-link:hover{
-		color : #B8BB26 !important ; 
-		text-decoration: none !important  ; 
-	}
-	
-	
-
-	
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-/*Gemini may display innacurete info  	 */
-	
-	
-	p.gmat-caption {
-		
-		color : #665C54 !important ; 
-	}
-	
-	
-
-	
-	
-	
-	.bottom-container{
-  
-/*  gemini loweest text background*/
- 
-		background:none !important ; 
-}
-	
-/* 	lable background */
-.mat-mdc-menu-content {
-  background: #17191B !important ; 
-	
-}
-	
-	
-	
-	
-
-	
-	
-	
-/* 	:root .dark-visd-patch {
-    --bard-color-icon-container-background: #B8BB26 !important;
-    --bard-color-icon-container-background-rgb:#FABD2F !important;
-
-    --bard-color-surface-container-rgb: 30,31,32;
-    --bard-color-ogb-background: #E7EEF6 !important;
-    --bard-color-ogb-background-rgb: 30,31,32;
-    --bard-color-primary-background: #B1C1D1 !important;
-    --bard-color-primary-background-rgb: 30,31,32;
-    --bard-color-window-container-background: #2E2EA3 !important;
-    --bard-color-window-container-background-rgb: 19,19,20;
-    --bard-color-processing-state-pill-background: #7B2B57 !important;
-    --bard-color-processing-state-pill-background-rgb: 30,31,32;
-    --bard-color-discovery-carousel-background: #C2430B;
-    --bard-color-discovery-carousel-background-rgb: 30,31,32;
-    --bard-color-extension-card-container-background: #8D7C07;
-    --bard-color-extension-card-container-background-rgb: 30,31,32;
-    --bard-color-zero-state-card-background: #B7C9DB;
-    --bard-color-zero-state-card-background-rgb: 30,31,32;
-   
-    --bard-color-surface-rgb: 19,19,20;
-    --bard-color-colored-nav-icon-wrapper-background: #B7B7DB;
-    --bard-color-colored-nav-icon-wrapper-background-rgb: #967474 !important ;
-    --bard-color-zero-state-pill-background: #1D1D92;
-    --bard-color-zero-state-pill-background-rgb:#694949 !important ;
-   
-    --bard-color-main-container-background-rgb: 19,19,20;
-   
-    --bard-color-response-container-background-rgb: 19,19,20;
-    --bard-color-response-container-flipped-background: #0E205E;
-    --bard-color-response-container-flipped-background-rgb: 34,35,39;
-    --bard-color-extensions-window-container-background: #06064D;
-    --bard-color-extensions-window-container-background-rgb: 19,19,20;
-    --bard-color-example-prompt-background: #080845;
-    --bard-color-example-prompt-background-rgb: 19,19,20;
-    --bard-color-on-surface-variant: #c4c7c5;
-    --bard-color-on-surface-variant-rgb: 196,199,197;
-   
-    --bard-color-surface-container-low-rgb: 27,27,27;
-    --bard-color-factuality-form-background: #A95656;
-    --bard-color-factuality-form-background-rgb: 27,27,27;
-    --bard-color-feedback-form-container-background: #7DF1B5;
-    --bard-color-feedback-form-container-background-rgb: 27,27,27;
-  
-    --bard-color-surface-container-high-rgb: 40,42,44;
-    --bard-color-bot-info-card-container-background: #7B8896;
-    --bard-color-bot-info-card-container-background-rgb: 40,42,44;
-
-    --bard-color-new-conversation-button-rgb: 40,42,44;
-    --bard-color-surface-container-highest: #5565F7;
-    --bard-color-surface-container-highest-rgb: 51,53,55;
-    --bard-color-onhover-conversation-metadata: #E3F1FF;
-    --bard-color-onhover-conversation-metadata-rgb: 51,53,55;
-    --bard-color-onhover-conversation-metadata-v2: #C6CFD8;
-    --bard-color-onhover-conversation-metadata-v2-rgb: 40,42,44;
-    --bard-color-expanded-show-more-button: #CE2083;
-    --bard-color-expanded-show-more-button-rgb: 51,53,55;
-    --bard-color-surface-bright: #D6C0C0;
-    --bard-color-surface-bright-rgb: 0,0,0;
-    --bard-color-surface-tint: #AF1CDC;
-    --bard-color-surface-tint-rgb: 209,225,255;
-    --bard-color-surface-dim: #C4C4E5;
-    --bard-color-surface-dim-rgb: 19,19,20;
-    --bard-color-onhover-conversation-metadata-button: #789300;
-    --bard-color-onhover-conversation-metadata-button-rgb: 19,19,20;
-    --bard-color-new-conversation-button-disabled: rgba(196, 196, 224, .38);
-    --bard-color-new-conversation-button-disabled-rgb: 19,19,20;
-   
-    --bard-color-on-surface-rgb: 227,227,227;
-    --bard-color-icon-container-text: #870101;
-    --bard-color-icon-container-text-rgb: 227,227,227;
-    --bard-color-on-new-conversation-button: #B00808;
-    --bard-color-on-new-conversation-button-rgb: 227,227,227;
-    --bard-color-on-new-conversation-button-disabled: rgba(141, 107, 107, .38);
-    --bard-color-on-new-conversation-button-disabled-rgb: 227,227,227;
-    --bard-color-outline: #C43E3E;
-    --bard-color-outline-rgb: 142,145,143;
-    --bard-color-primary-container: #59729A;
-    --bard-color-primary-container-rgb: 8,66,160;
-
-    --bard-color-primary-rgb: 168,199,250;
-    --bard-color-on-nav-icon-wrapper-background: #9C1471;
-    --bard-color-on-nav-icon-wrapper-background-rgb: 168,199,250;
-    --bard-color-on-primary-container: #d3e3fd;
-    --bard-color-on-primary-container-rgb: 211,227,253;
-    --bard-color-secondary-container: #325870;
-    --bard-color-secondary-container-rgb: 0,74,119;
-    --bard-color-selected-conversation-metadata: #3C6985;
-    --bard-color-selected-conversation-metadata-rgb: 0,74,119;
-    --bard-color-selected-conversation-metadata-v2: #8599A4;
-    --bard-color-selected-conversation-metadata-v2-rgb: 0,74,119;
-    --bard-color-on-secondary-container: #c2e7ff;
-    --bard-color-on-secondary-container-rgb: 194,231,255;
-    --bard-color-on-selected-conversation-metadata: #c2e7ff;
-    --bard-color-on-selected-conversation-metadata-rgb: 194,231,255;
-    --bard-color-on-selected-conversation-metadata-v2: #c2e7ff;
-    --bard-color-on-selected-conversation-metadata-v2-rgb: 194,231,255;
-    --bard-color-on-secondary: #035;
-    --bard-color-on-secondary-rgb: 0,51,85;
-    --bard-color-secondary-fixed-dim: #668DA4;
-    --bard-color-secondary-fixed-dim-rgb: 127,207,255;
-    --bard-color-selected-conversation-metadata-button: #659BBC;
-    --bard-color-selected-conversation-metadata-button-rgb: 127,207,255;
-    --bard-color-selected-conversation-metadata-button-v2: #035;
-    --bard-color-selected-conversation-metadata-button-v2-rgb: 0,51,85;
-    --bard-color-on-secondary-fixed: #7F9AB0;
-    --bard-color-on-secondary-fixed-rgb: 0,29,53;
-    --bard-color-selected-conversation-metadata-button-content: #C9E6FF;
-    --bard-color-selected-conversation-metadata-button-content-rgb: 0,29,53;
-    --bard-color-selected-conversation-metadata-button-content-v2: #688AA7;
-    --bard-color-selected-conversation-metadata-button-content-v2-rgb: 0,29,53;
-    --bard-color-tertiary-container: #0f5223;
-    --bard-color-tertiary-container-rgb: 15,82,35;
-    --bard-color-discovery-banner-button-background: #0f5223;
-    --bard-color-discovery-banner-button-background-rgb: 15,82,35;
-    --bard-color-on-tertiary-container: #c4eed0;
-    --bard-color-on-tertiary-container-rgb: 196,238,208;
-    --bard-color-on-discovery-banner-button-background: #c4eed0;
-    --bard-color-on-discovery-banner-button-background-rgb: 196,238,208;
-    --bard-color-custom-primary-container: #E91212;
-    --bard-color-custom-primary-container-rgb: 34,35,39; */
-		
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-/*Old chat  width container 	 */
-	div.response-container.ui-v2-enabled{
-		
-		 width : 55rem   !important  ; 
-/* 					 translatey :  40px !important ;  */
-/* 			padding-right: 3rem  !important;  */
-transform: translateX(-9.0rem);
-
-	}
-	
-	
-
-	
-		
-/*Move respoonse container to the right*/
-	
-		.response-container.response-container-has-multiple-responses {
- width : 55rem   !important  ; 
-/* 					 translatey :  40px !important ;  */
-/* 			padding-right: 3rem  !important;  */
-transform: translateX(-9.0rem);
-
-
-	
-}
-
-	
-	
-	
-	
-/*Sources button  	 */
-	.recitations-list-container.ng-star-inserted {
-background-color: #1D2021 !important ; 
-
-	}
-
-	
-	
-/*Sources text  	 */
-	h4.gmat-overline.header{
-		color : #FFD29C !important ; 
-	}
-		
-	/* H3 heading */
-	h3{
-		color: #fe8019 !important ; 
-	}
-		
-/*Heading in the chat 	 */
-	
-	h2{
-		color : #83A598 !important ; 
-		
-		font-size: 1.04rem !important ;
-	}
-	
-	
-	
-	
-	
-	
-	
-/* CODE 	 */
-	
-/*CODE styles  	 */
-	
-	code { 
-	color : #FFD29C !important ; 
-		background-color : #CC241D !important; 
-/* 		font-style: italic !important;  */
-		font-size: 0.93rem !important ; 
-		
-		font-weight: 600 !important ; 
-		
-/* 	font-family:  "Ubuntu Mono", monospace   !important ;  */
-	
-	}
-	
-	
-	/*Code language*/
-	div.code-block-decoration.header.gmat-subtitle-1{
-		color  : #D3869B !important ; 
-	}
-	
-	
-	/*Use code ->udner code bar */
-	div.code-block-decoration.footer.gmat-overline.hide-from-message-actions{
-		color : #98971A !important ; 
-	}
-	
-	
-	
-	
-	
-	
-/*Main code  background 	 */
-	code.code-container{
-		color  : #B8BB26 !important ; 
-		background-color : #1A1B1D !important ; 
-		
-	}
-	
-/* Keywords in the large language models 	 */
-	span.hljs-keyword{
-		color : #FB4934 !important ; 
-	}
-	
-	
-	 span.hljs-comment{
-		color : #A89988 !important; 
-	}
-	
-	 span.hljs-number{
-		color : #8EC07C !important; 
-	}
-	
-	span.hljs-string{
-		color : #B8BB26 !important ;
-	}
-	
-	span.hljs-literal{
-		color : #E092BE !important  ; 
-	}
-	
-	span.hljs-built_in{
-		color : #6CB3C6 !important  ; 
-	}
-	
-	
-	span.hljs-title{
-		color : #D3869B !important ; 
-	}
-	
-	
-	span.hljs-params{
-		color : #8EC07C !important ; 
-	}
-	
-	span.hljs-meta-string{
-		color : #B8BB26 !important ; 
-	}
-	
-	span.hljs-meta-keyword{
-		color : #689D6A !important ; 
-	}	
-	
-	span.hljs-meta{
-		color : #E092BE !important ; 
-	}
-	
-	
-	
-	
-	
-		code  , 
-	
-	.code-container .hljs-keyword,
-.code-container .hljs-comment,
-.code-container .hljs-number,
-.code-container .hljs-string,
-.code-container .hljs-literal,
-.code-container .hljs-built_in,
-.code-container .hljs-title,
-.code-container .hljs-params,
-.code-container .hljs-meta-string,
-.code-container .hljs-meta-keyword,
-.code-container .hljs-meta {
-
-
-
-		font-weight: 600 !important ; 
-	font-family:"CommitMono", monospace !important;
-	
-}
-	
-	
-	
-	
-	
-	
-	
-	/* 		Ugly gradient removed 		 */
-	/* INput area border removed*/
-	
-	div.bottom-container::before{
-  background-color: transparent !important;
-  display: none !important;
-}
-	
-	
-	
-	
-	
-	
-	
-	
-	.chat-container{
-    background: #16181A  !important ; 
-
-}
-	
-	
-	
-	
-	
-	
-	
-			:root .dark-visd-patch {
-	
-	
-		
-/* Delete past data 		 */
-		    --bard-color-primary: #79740E;
-		
-		
-/*Gemini model downward slide backfound  		 */
-		  --bard-color-surface-container-high: #9D0006;
-		
-		
-		
-		
-/*Prompt ouside slider icon  	 */
-	 --bard-color-surface: #FFD29C !important;
-	
-				
-				
-
-				
-
-
-
-	
-				
-/* Input bar color 				 */
-				div.text-input-field{
-					color : #FFD29C !important ; 
-					background : #282828  !important  ; 
-						border: solid #665C54 !important  ; 
-					border-width: 0.1px !important ; 
-				}
-				
-				
-				/*Hover for the input button border style*/
-				div.text-input-field:hover{
-					color : #79740E !important ; 
-					background : #282828  !important  ; 
-						border: solid #FFD29C !important  ; 
-					border-width: 0.1px !important ; 
-				}
-				
-				
-				
-				/*Input placehodler color chaged */
-					div.ql-editor.ui-v2-enabled.textarea.ql-blank:before{
-					color : #83A598 !important ; 
-				}
-				
-				
-					
-				/*Hover for input holder */
-					div.ql-editor.ui-v2-enabled.textarea.ql-blank:hover:before{
-					color : #FB4934 !important ; 
-				}
-				
-				
-				
-				
-				
-	
-				
-				
-				
-/* Input pill area 	 */
-/* 	    --bard-color-surface-container: #1A1B1D; */
-	
-	
-				
-	 --bard-color-surface-container-low: #F2E5BC;
-	
-		
-		 --bard-color-main-container-background: #17191B;
-		
-		
-/*Maiin response container 				 */
-		 --bard-color-response-container-background: #17191B;
-		
-		
-		
-	
-			  --bard-color-new-conversation-button: #282828 !important; 
-}
-	
-
-	
-	
-	
-	
-
-	
-	
-	/*Table styles*/
-	
-	th{
-		background-color : #2E5B40 !important ; 
-		color : #FFD29C !important ; 
-	}
-	
-	
-	td{
-		background: #1A1B1D !important ; 
-		color : #FBF1C7 !important ; 
-		font-size: 0.9rem !important ; 
-		font-family: "chivo" !important ; 
-	}
-	
-	
-	/*Lower par of the tabele*/
-	div.table-footer.hide-from-message-actions {
-		color : red !important ; 
-		background: #16181A !important ; 
-	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	/*Youtube styles*/
-	
-	
-	/*Background color to background*/
-	.processing-state_container{
-		
-		background-color : #CC241D !important ; 
-	} 
-	
-	
-	
-	/*Youtube button color */
-	div.processing-state_ext-name_label{
-		color : #FFD29C !important ; 
-	}
-	
-	
-	
-	
-	/*Try Without extensions button fixed */
-button.retry-without-tool-button.mdc-button.mat-mdc-button.mat-unthemed.mat-mdc-button-base.gmat-mdc-button {
-	
-	background-color : #2E5B40 !important ; 
-	border-radius: 2rem !important ; 
-	}
-	
-	/*Hover -> Try Without extesnsions */
-button.retry-without-tool-button.mdc-button.mat-mdc-button.mat-unthemed.mat-mdc-button-base.gmat-mdc-button:hover{
-	
-	background-color : #9D0006 !important ; 
-	border-radius: 2rem !important ; 
-	}
-	
-	
-	
-	/*Try Again Without Extension */
-	span.mdc-button__label{
-		color : #FFD29C !important ; 
-		
-	}
-	
-	
-	/*Button of the Youtube*/
-	button.expand-button.mdc-icon-button.mat-mdc-icon-button.gmat-mdc-button-with-prefix.mat-unthemed.mat-mdc-button-base.gmat-mdc-button:hover{
-		
-		background-color : #9D0006 !important ; 
-	}
-	
-
-	
-	/*Lower part of yYoutube styles*/
-	/*Search Term on Youtube  -> Names*/
-	div.tool-attribution-label.gmat-body-2{
-		color : #D3869B !important ; 
-	}
-	
-	/*Youtube video titles*/
-	span.title{
-		color : #B8BB26 !important ; 
-	}
-	
-		span.title:hover{
-		color : #D8DC17 !important ; 
-	}
-	
-	
-	
-	
-	
-	/*Youtube channel name*/
-	span.channel-name{
-		color : #FB4934 !important ; 
-	}
-	
-	span.channel-name:hover{
-		color : #FE8019 !important ; 
-	}
-	
-	
-	/*Youtube VIdeo description */
-	span.description{
-		color : #D5C4A1 !important ; 
-	}
-	
-	
-	/*Youtube Tos */
-	span.youtube-tos{
-		color : #7C6F64 !important ; 
-	}
-	
-	
-	/*View related videos on*/
-	span.search-prompt{
-	color : #79740E !important ; 
-	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	/*Gmail specific extension colors */
-	
-	
-	/*Gmail text in the sources section */
-	span.source-table-title{
-		color : #FE8019 !important ; 
-		
-	}
-	
-	/*Items COnsidered for this reponse text */
-	span.source-table-subtitle{
-    font-weight: 400;
-		color: #83A598 !important ; 
-}
-	
-	
-	/*Subject/Titles of the emails considered for response */
-	span.mat-mdc-list-item-title.mdc-list-item__primary-text{
-		color :#B8BB26 !important ; 
-	}
-	
-	
-	/*Email sender */
-	span.source-row-owner{
-		color : #D5C4A1 !important ; 
-	}
-	
-	
-	/*Date when the email was sent */
-	span.source-row-date{
-		color : #83A598 !important ; 
-	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-}
-	
