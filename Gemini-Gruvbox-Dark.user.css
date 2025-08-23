@@ -10,8 +10,8 @@
 
 
 @var checkbox  noLogo   "NO Hello text "             1
-@var checkbox   noSideHeader "NO Logo Header (Sidebar)"  1
-@var checkbox   noPrivateChat "No Private Chat"          1
+@var checkbox   noUpgrade "No Upgrade Button"  1
+@var checkbox   noGoogle "No Google Account Button"          1
 @var checkbox   LocalFont  "Local Placeholder Font"      0
 @var checkbox   LoadWebFont  "Load Font From Web"        0
 
@@ -487,10 +487,37 @@ if  LoadWebFont {
 	
 
 
+/*Hide Grok Logo*/ 
+/*Front page Logo*/
+if noLogo {
+    .text-wrapper {
+      opacity: 0 !important;
+    }
+}
+
+.logo{
+	display : none !important ; 
+}
 
 
+/*Hide Upgrade Button*/ 
+if noUpgrade {
+	.buttons-container.adv-upsell,
+.buttons-container.referra{
+      opacity: 0 !important;
+    }
+}
 
 
+/* NO Google Account button to make it look minimal  */
+
+if noGoogle {
+	.boqOnegoogleliteOgbOneGoogleBar{
+		opacity: 0  !important;
+	}
+
+
+}
 
 
 
