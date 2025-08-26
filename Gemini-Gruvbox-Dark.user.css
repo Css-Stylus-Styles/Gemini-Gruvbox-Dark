@@ -564,8 +564,8 @@ if newfont != 'Website Default'{
 		font-family : system-ui !important ; 
 	}
 }else {
-	p, li , ul , ol , button , input , textarea , strong {
-		font-family: var(--fallback-text) !important;
+	p, li , ul , ol , button , input , textarea , strong, span , *  {
+		font-family: $newfont !important;
 	}
 }
 
