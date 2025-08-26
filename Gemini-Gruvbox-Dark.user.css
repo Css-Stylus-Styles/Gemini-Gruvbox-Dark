@@ -549,4 +549,28 @@ if noAddress {
 
 
 
+ /*This was defined in the start of the style , basically this variable will be
+ used when ever this script is ran*/
+ :root {
+	--dropdown-text-font:newfont ;
+	--fallback-text: sans-serif !important ;
+  }
+  
+
+/* Text Font Selector */
+if newfont != 'Website Default'{
+	p , li ,  ul , ol , button , input , textarea, strong {
+
+		font-family : system-ui !important ; 
+	}
+}else {
+	p, li , ul , ol , button , input , textarea , strong {
+		font-family: var(--fallback-text) !important;
+	}
+}
+
+
+
+	
+
 }
