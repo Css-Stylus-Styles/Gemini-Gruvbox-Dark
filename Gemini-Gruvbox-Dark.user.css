@@ -21,7 +21,6 @@
 }
 
 
-
 @var select newfont 'Text Font' [
     'Test Tiempos Text',
     'Website Default',
@@ -598,6 +597,7 @@ bard-sidenav-container > * {
   font-style: normal !important;
 }
 
+/* SideBar Chat history hover */
 .mat-mdc-tooltip-trigger.conversation  {
 background: inherit !important;
 
@@ -607,6 +607,17 @@ border: solid 0.2em var(--bg2-dark) !important;
 }
 }
 
+
+/* Side bar input box */
+input-area-v2 > div.input-area{
+  background-color: var(--bg-def-dark) !important;
+  border: solid 3px var(--dark-green) !important;
+  border-radius:8px !important;
+  box-shadow: none !important;
+}
+
+
+
 /* Gems and Recents (Sidebar)*/
 h1.title.gds-label-l {
   color: var(--dim-green) !important;
@@ -614,6 +625,11 @@ h1.title.gds-label-l {
   font-family: inherit !important;
   font-style: normal !important;
 }
+
+
+
+
+
 
 
 
