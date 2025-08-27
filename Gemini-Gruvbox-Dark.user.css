@@ -757,8 +757,13 @@ xap-code-editor .xap-monaco-container .monaco-editor  {
   /* Set canvas font for line numbers */
   xap-code-editor .xap-monaco-container .monaco-editor .line-numbers , xap-code-editor .xap-monaco-container *  {
 	background-color: var(--bg-def-dark) !important;
-	color: var(--text--veryfade) !important;
+	color: var(--bg3-dark) !important;
 	font-family: "Geist Mono" !important;
+	&:hover {
+		background-color: var(--bg-dark-new) !important;
+		color : var(--text--faded) !important;
+		transition: all 0.1s ease-in-out !important;
+	}
   }
   /* Set canvas font for active line number */
   xap-code-editor .xap-monaco-container .monaco-editor .active-line-number {
