@@ -604,7 +604,6 @@ background: inherit !important;
 &:hover {
 background: var(--bg-def-dark) !important;
 border: solid 0.2em var(--bg2-dark) !important;
-transition: all 0.3s ease-in !important;
 }
 }
 
