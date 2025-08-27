@@ -875,12 +875,13 @@ if newfont != 'Website Default'{
 /* inline code blocks  */
 p >code {
     font-family: "Geist Mono" !important ;
-    font-size: -1.9em !important ; 
-	 font-weight: 699 !important ; 
+    font-size: 0.8em !important ; 
+	 font-weight: 700 !important ; 
+	 color: var(--dim-green) !important;
 	 background-color: var(--bg-dark-new) !important;
-	border : solid -1.1em var(--bg1-dark) !important;
+	border : solid 0.2em var(--bg1-dark) !important;
 	border-radius: 4em !important;
-    padding: -1.1em 1em  !important;
+    padding: 0.2em 1em  !important;
 }
 
 
@@ -890,20 +891,77 @@ p >code {
 
 code ,  code-block , .code-block-decoration {
 	background-color: var(--bg-dark-new) !important;
+	color: var(--faded-green) !important;
 
 	font-family: "Geist Mono" !important;
+	font-size:0.9rem !important;
+	font-weight: 600 !important;
   }
 
 /* Changing the font of CODE  */
   code > *  ,  code > span > * , code > span > span > * {
 	font-family: "Geist Mono" !important;
-	font-size: -1.9em !important ; 
-	 font-weight: 700 !important ; 
+	font-size: 0.9rem !important ; 
+	 font-weight: 600 !important ; 
   }
 
 
+  code[data-test-id="code-content"]#text {
+	color : var(--dim-green) !important;	
+}
 
+  /*COLORS OF TOKENS OF CODE   */
+  code[data-test-id="code-content"] .hljs-meta-keyword {
+	color: var(--faded-aqua) !important;
+  }
 
+  
+  code[data-test-id="code-content"] .hljs-meta{
+	color: var(--faded-red) !important;
+  }
+  
+  
+  code[data-test-id="code-content"] .hljs-meta-string {
+	color: var(--faded-green) !important;
+
+  }
+  
+  code[data-test-id="code-content"] .hljs-keyword {
+	color: var(--faded-orange) !important;
+  }
+  
+  code[data-test-id="code-content"] .hljs-comment {
+	color: var(--text--veryfade) !important;
+  }
+  
+  code[data-test-id="code-content"] .hljs-string {
+	color: var(--faded-green) !important;
+  }
+  
+  code[data-test-id="code-content"] .hljs-number {
+	color: var(--faded-red) !important;
+  }
+  
+  code[data-test-id="code-content"] .hljs-function .hljs-title {
+	color: var(--faded-blue) !important;
+  }
+  
+  code[data-test-id="code-content"] .hljs-built_in {
+	color: var(--faded-purple) !important;
+  }
+  
+  code[data-test-id="code-content"] .hljs-variable {
+	color: var(--faded-aqua) !important;
+  }
+  
+  code[data-test-id="code-content"] .hljs-literal {
+	color: var(--faded-purple) !important;
+  }
+  
+  code[data-test-id="code-content"] .hljs-attribute {
+	color: var(--faded-aqua) !important;
+  }
+  
 
 
 
