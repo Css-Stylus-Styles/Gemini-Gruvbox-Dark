@@ -529,19 +529,42 @@ html , body {
 
 
 
+/* Custom Styles */
+/* Background color of the scroll container */
+.chat-history-scroll-container {
+	background: var(--bg-def-dark) !important;
+}
+
+/* Bard Sidebar nav  */
+.bard-sidenav {
+    color: var(--text-normal) !important;
+    background-color: var(--bg-def-dark) !important;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+}
 
 
 
 
 
+/* HIDDEN STUFF*/
+
+/*Hiding the hallucination disclaimer*/
+/* display none wont be useful here as it hides the 
+contaning elements too 
+opacity 0 leaves too much gap so use opacity 0 with custom height */
+.capabilities-disclaimer {
+	overflow: hidden !important;
+	opacity: 0 !important;
+	height:0.6rem !important;
+	width: 0 !important;
+}
+  
 
 
-
-
-
-
-
-	   
 /*
 Loading Fonts from the web for  this
 */
@@ -587,7 +610,7 @@ if noGoogle {
 if noAddress {
 	.location-menu-item-container {
 	 	opacity: 0 ;!important
-		  }
+}
 }
 
 
@@ -624,7 +647,7 @@ if noAddress {
 
 /* Text Font Selector */
 if newfont != 'Website Default'{
-	p , li ,  ul , ol , button , input , textarea, strong {
+	p , li ,  ul , ol , button , input , textarea, strong, span , div  {
 
 		font-family : var(--dropdown-text-font) !important ; 
 	}
