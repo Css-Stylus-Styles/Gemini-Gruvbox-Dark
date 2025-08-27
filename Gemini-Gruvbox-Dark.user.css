@@ -486,23 +486,7 @@ html , body {
 	background : #171718  !important ;
 	}
 	
-	/* FRONT PAGE  */
 	
-	div.query-bar {
-	  background-color: var(--bg-dark-new) !important;
-	  border: 3px solid var(--bg3-dark) !important;
-	  border-radius: 9px !important;
-	  box-shadow: 5px 5px 5px var(--bg-dark) !important;
-	}
-	
-	/* Text Area Span  */
-	.relative > span {
-	color: var(--bg3-dark) !important;
-	font-family: newfont !important;
-	font-stretch : 92% !important;
-	font-size: 16px !important;
-	font-weight: 500!important;
-	}
 	
 	/* General Styles */
 	/* Colors and other styling options for General Html tags  */
@@ -510,31 +494,31 @@ html , body {
 	p {
 	  color : var(--text-white) !important;
 	  font-size: 1rem !important;
-	}
+}
 	
 	li, ol, ul {
 	  color : var(--text-offwhite) !important;
 	  font-size: 1rem !important;
-	}
+}
 	/* Bold and strong formatting  */
 	strong {
 	  color : var(--faded-green) !important;
 	  font-size: 1rem !important;
 	  font-weight: bold !important;
-	}
+}
 	/* Heading 1  will get a diff color  */
 	h1 {
 	  color : var(--faded-red) !important;
-	}
+}
 	
 	/* heading 2 and 3  will get a diff color */
 	h2 , h3 {
 	  color : var(--faded-blue) !important;
-	}
+}
 	/* heading 4 to 6 will get a diff color */
 	h4 , h5 , h6 {
 	  color : var(--light-dim-yellow) !important;
-	}
+}
 	
 	/* SVG colors  */
 	svg  {
@@ -542,12 +526,6 @@ html , body {
 	  stroke-width: 3px !important; 
 	}
 	
-
-
-
-
-
-
 
 
 
