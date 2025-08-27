@@ -477,6 +477,35 @@
 
 
 
+/*Root Fonts */
+
+:root {
+	--font-Margon: "Margon 360 W08 Medium";
+	--font-BricolageGrotesque: "Bricolage Grotesque Variable";
+	--font-Lora: "Lora";
+	--font-LinguisticsPro: "Linguistics Pro";
+	--font-CommitMono: "CommitMono";
+	--font-FiraMono: 'Fira Mono';
+	--font-SplineSansVariable: 'Spline Sans Variable';
+	--font-Hack: "Hack";
+	--font-Karla: "Karla";
+	--font-KarlaMedium: "Karla Medium";
+	--font-KarlaBold: "Karla Bold";
+	--font-Archivo: "Archivo";
+	--font-LiterataVariable: 'Literata Variable';
+	--font-JetbrainsVar: 'JetBrains Mono Variable';
+	--font-Jetbrains: 'JetBrains Mono';
+	--font-GeistSans: 'Geist Sans';
+	--font-GeistMono: 'Geist Mono Variable';
+	--font-Basker: 'Baskervville';
+	--font-Tiempo: "Tiempo";
+	}
+	
+	/* Putting Variables for the most used fonts */
+	$heading-font = Bricoalge Grotesque Variable 
+	$sans-serif = Geist Sans
+	$code-font = Geist Mono
+	
 
 
 
@@ -520,10 +549,10 @@ html , body {
 	  color : var(--light-dim-yellow) !important;
 }
 	
-	/* SVG colors  */
-	svg  {
-	  color: var(--faded-green) !important; 
-	  stroke-width: 3px !important; 
+	/* SVG colors , mat-icon is for material icons */
+	svg , .mat-icon {
+	  color: var(--dim-green) !important; 
+	  stroke-width: 5px !important; 
 	}
 	
 
@@ -536,20 +565,29 @@ html , body {
 }
 
 /* Bard Sidebar nav  */
-.bard-sidenav {
-    color: var(--text-normal) !important;
-    background-color: var(--bg-def-dark) !important;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: flex;
-}
-
 bard-sidenav-container > * {
   background-color: var(--bg-def-dark) !important;
   border : solid 2px var(--bg1-dark) !important;
   border-radius: 0.4em !important;
+}
+
+
+/* New Chat , Explore Gems , Settings and Help text*/
+.side-nav-action-button span.gds-body-m {
+	color: var(--faded-green) !important;
+	font-family: inherit !important;
+	font-style: normal !important;
+	font-size:0.85em !important;
+	font-weight: 500 !important; 
+}
+
+/* SideBar Gems */
+.bot-name.gds-body-m {
+	color: var(--faded-green) !important;
+	font-family: inherit !important;
+	font-style: normal !important;
+	font-size:1em !important;
+	font-weight: 500 !important; 
 }
 
 
