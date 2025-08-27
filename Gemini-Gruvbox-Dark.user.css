@@ -740,31 +740,45 @@ height: 12px  !important;
 
 
 
-
-xap-code-editor .xap-monaco-container .monaco-editor {
+/* 
+xap-code-editor .xap-monaco-container .monaco-editor  {
 	background-color: var(--bg-def-dark) !important;
+	font-family: "Geist Mono" !important;
   }
   
   xap-code-editor .xap-monaco-container .monaco-editor .monaco-scrollable-element {
-	background-color: #282828 !important;
+	background-color: var(--bg-def-dark) !important;
+	font-family: "Geist Mono" !important;
   }
   
   xap-code-editor .xap-monaco-container .monaco-editor .view-lines {
-	background-color: #282828 !important;
+	background-color: var(--bg-def-dark) !important;
+	font-family: "Geist Mono" !important;
   }
   
   xap-code-editor .xap-monaco-container .monaco-editor .line-numbers {
-	background-color: #282828 !important;
-	color: #a89984 !important;
+	background-color: var(--bg-def-dark) !important;
+	color: var(--text--veryfade) !important;
+	font-family: "Geist Mono" !important;
   }
   
   xap-code-editor .xap-monaco-container .monaco-editor .active-line-number {
-	color: #ebdbb2 !important;
-  }
+	color: var(--dim-green) !important;
+	font-family: "Geist Mono" !important;
+  } */
 
 
+  xap-code-editor > * {
+	font-family: "Geist Mono" !important;
+	background-color: var(--bg-def-dark) !important;
+	}
 
 
+	xap-code-editor .mtk1 {
+	  color: var(--text-offwhite-faded) !important;
+	  font-family: 'Geist Mono' !important;
+	  font-weight: 600 !important;
+	}
 
 /* ADD THIS AS HOVER PLESE  */
 /* .mat-mdc-button-touch-target {
