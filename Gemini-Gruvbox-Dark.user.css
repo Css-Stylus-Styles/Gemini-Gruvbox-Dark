@@ -546,7 +546,11 @@ html , body {
     display: flex;
 }
 
-
+bard-sidenav-container > * {
+  background-color: var(--bg-def-dark) !important;
+  border : solid 2px var(--bg1-dark) !important;
+  border-radius: 0.4em !important;
+}
 
 
 
