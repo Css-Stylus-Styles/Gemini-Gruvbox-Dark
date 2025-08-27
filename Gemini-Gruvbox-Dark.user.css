@@ -679,6 +679,79 @@ font-family: inherit !important;
 
 
 
+/* OPTIONS SELECTOR IN INPUT   */
+span.mdc-button__label{
+	color: var(--dim-aqua) !important;
+	font-weight: 500 !important;
+}
+
+
+/* CHAT PAGE DIVS  */
+
+.response-container-with-gpi {
+background-color: var(--bg-def-dark) !important;
+}
+
+/* INTERACTIVE CANVAS BLOCK  */
+.immersive-entry-chip .container.clickable {
+background-color: var(--bg-dark-new) !important;
+color: var(--dim-green) !important;
+
+&:hover {
+background-color: var(--bg-def-dark) !important;
+border: solid 0.1em var(--dim-green) !important;
+transition: all 0.5s ease-in-out !important;
+}
+}
+
+/* Name of the canvas  */
+.immersive-entry-chip .container.clickable .text {
+color: var(--faded-blue) !important;
+}
+/* Date at which the software was craeted  */
+.immersive-entry-chip .container.clickable .creation-timestamp {
+color: var(--faded-yellow) !important;
+
+}
+
+
+
+/* OPEN BUTTON CLEAR */
+.button-section button.mdc-button {
+background-color: var(--bg-dark-new) !important;
+border: solid 0.1em var(--bg3-dark) !important;
+&:hover {
+background-color: var(--bg-def-dark) !important;
+}
+}
+ 
+/* OPEN text on the Canvas  */
+.button-section .mdc-button__label span {
+color: var(--dim-green) !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ADD THIS AS HOVER PLESE  */
+/* .mat-mdc-button-touch-target {
+background-color: var(--bg-dark-new) !important;
+border: solid 0.2em var(--dim-green) !important;
+border-radius: 3em !important;
+} */
+
+
+
+
+
 
 
 
@@ -793,5 +866,48 @@ if newfont != 'Website Default'{
 
 
 	
+
+
+
+
+/* CODE */
+
+/* inline code blocks  */
+p >code {
+    font-family: "Geist Mono" !important ;
+    font-size: -1.9em !important ; 
+	 font-weight: 699 !important ; 
+	 background-color: var(--bg-dark-new) !important;
+	border : solid -1.1em var(--bg1-dark) !important;
+	border-radius: 4em !important;
+    padding: -1.1em 1em  !important;
+}
+
+
+
+
+/* Background color of code blocks */
+
+code ,  code-block , .code-block-decoration {
+	background-color: var(--bg-dark-new) !important;
+
+	font-family: "Geist Mono" !important;
+  }
+
+/* Changing the font of CODE  */
+  code > *  ,  code > span > * , code > span > span > * {
+	font-family: "Geist Mono" !important;
+	font-size: -1.9em !important ; 
+	 font-weight: 700 !important ; 
+  }
+
+
+
+
+
+
+
+
+
 
 }
