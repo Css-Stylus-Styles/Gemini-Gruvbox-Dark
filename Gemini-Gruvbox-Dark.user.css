@@ -598,13 +598,25 @@ bard-sidenav-container > * {
   font-style: normal !important;
 }
 
+.mat-mdc-tooltip-trigger.conversation  {
+background: inherit !important;
+
+&:hover {
+background: var(--bg-def-dark) !important;
+border: solid 0.2em var(--bg2-dark) !important;
+transition: all 0.3s ease-in !important;
+}
+}
+
 /* Gems and Recents (Sidebar)*/
 h1.title.gds-label-l {
-  color: var(--faded-orange) !important;
+  color: var(--dim-green) !important;
   font-weight: 600 !important;
   font-family: inherit !important;
   font-style: normal !important;
 }
+
+
 
 
 
