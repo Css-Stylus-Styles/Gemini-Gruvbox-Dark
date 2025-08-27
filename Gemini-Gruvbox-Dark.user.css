@@ -731,6 +731,32 @@ color: var(--dim-green) !important;
 }
 
 
+/* Gemini CANVAS */
+
+.toolbar.has-title {
+height: 12px  !important;
+}
+
+
+.toolbar .left-panel {
+padding-left: 10px !important;
+padding-right: 10px !important;
+}
+
+.toolbar .icon-button {
+margin: 0 5px !important;
+color : red !important ; 
+stroke : red !important;
+}
+
+.toolbar .title-text {
+  padding-left: 5px !important;
+  font-size : 0.8em !important ; 
+}
+
+.toolbar .versioning-buttons {
+  margin-left: 10px !important;
+}
 
 
 
@@ -747,12 +773,6 @@ background-color: var(--bg-dark-new) !important;
 border: solid 0.2em var(--dim-green) !important;
 border-radius: 3em !important;
 } */
-
-
-
-
-
-
 
 
 
