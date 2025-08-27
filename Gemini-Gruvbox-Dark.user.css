@@ -574,7 +574,7 @@ bard-sidenav-container > * {
 
 /* New Chat , Explore Gems , Settings and Help text*/
 .side-nav-action-button span.gds-body-m {
-	color: var(--faded-green) !important;
+	color: var(--faded-aqua) !important;
 	font-family: inherit !important;
 	font-style: normal !important;
 	font-size:0.85em !important;
@@ -583,10 +583,10 @@ bard-sidenav-container > * {
 
 /* SideBar Gems */
 .bot-name.gds-body-m {
-	color: var(--faded-green) !important;
+	color: var(--faded-blue) !important;
 	font-family: inherit !important;
 	font-style: normal !important;
-	font-size:1em !important;
+	font-size:1.05em !important;
 	font-weight: 500 !important; 
 }
 
