@@ -497,13 +497,14 @@
 	--font-GeistSans: 'Geist Sans';
 	--font-GeistMono: 'Geist Mono Variable';
 	--font-Basker: 'Baskervville';
-	--font-Tiempo: "Tiempo";
+	--font-Tiempo: " Test Tiempos Text";
 	}
 	
 	/* Putting Variables for the most used fonts */
 	$heading-font = Bricoalge Grotesque Variable 
 	$sans-serif = Geist Sans
 	$code-font = Geist Mono
+	$text-font =  Test Tiempos Text
 	
 
 
@@ -626,6 +627,53 @@ h1.title.gds-label-l {
   font-style: normal !important;
 }
 
+
+
+/* Chat Interface  */
+
+/* MODEL SELECTOR  */
+/* Model Selector -> CHOOSE MODEL  */
+button.mdc-button.mat-mdc-button-base.gds-mode-switch-button.logo-pill-btn {
+  background-color: var(--bg-dark-new) !important;
+  padding: 0em 1em !important;
+  color: var(--dim-green) !important;
+
+&:hover {
+background-color: var(--bg-def-dark) !important;
+border: solid 0.2em var(--dim-green) !important;
+transition: border 0.5s ease-in-out !important;
+}
+}
+
+/* Choose your Model container color   */
+.mat-mdc-menu-content { 
+font-family: inherit !important;
+font-weight: 500 !important;
+font-style: normal !important;
+font-size: 1em !important;
+background: var(--bg-dark-new) !important;
+border : solid 0.2em var(--bg2-dark) !important;
+}
+
+/* Name of the models */
+.gds-label-m {
+	color: var(--text-offwhite-faded) !important;
+	font-weight: 500 !important;
+	font-size: 0.8em !important;
+}
+
+/* Model info and details */
+.mode-desc.gds-label-m-alt {
+color: var(--faded-blue) !important;
+font-weight: 500 !important;
+font-size: 0.8em !important;
+}
+
+/* Choose your Model text  */
+span.gds-label-l.title {
+color: var(--dim-green) !important;
+font-family: inherit !important;
+}
 
 
 
