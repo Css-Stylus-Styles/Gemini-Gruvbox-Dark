@@ -739,46 +739,49 @@ height: 12px  !important;
 }
 
 
-
-/* 
+/* Set canvas font  */
 xap-code-editor .xap-monaco-container .monaco-editor  {
 	background-color: var(--bg-def-dark) !important;
 	font-family: "Geist Mono" !important;
   }
-  
+  /*Set canvas font for scrollable element */
   xap-code-editor .xap-monaco-container .monaco-editor .monaco-scrollable-element {
 	background-color: var(--bg-def-dark) !important;
 	font-family: "Geist Mono" !important;
   }
-  
+  /* Set canvas font for view lines */
   xap-code-editor .xap-monaco-container .monaco-editor .view-lines {
 	background-color: var(--bg-def-dark) !important;
 	font-family: "Geist Mono" !important;
   }
-  
-  xap-code-editor .xap-monaco-container .monaco-editor .line-numbers {
+  /* Set canvas font for line numbers */
+  xap-code-editor .xap-monaco-container .monaco-editor .line-numbers , xap-code-editor .xap-monaco-container *  {
 	background-color: var(--bg-def-dark) !important;
 	color: var(--text--veryfade) !important;
 	font-family: "Geist Mono" !important;
   }
-  
+  /* Set canvas font for active line number */
   xap-code-editor .xap-monaco-container .monaco-editor .active-line-number {
 	color: var(--dim-green) !important;
 	font-family: "Geist Mono" !important;
-  } */
+  } 
 
-
+  /* Set canvas font  */
   xap-code-editor > * {
 	font-family: "Geist Mono" !important;
 	background-color: var(--bg-def-dark) !important;
 	}
 
-
+	/* set canvas font global;lly for all the text in the canvas */
 	xap-code-editor .mtk1 {
 	  color: var(--text-offwhite-faded) !important;
 	  font-family: 'Geist Mono' !important;
 	  font-weight: 600 !important;
 	}
+
+
+
+
 
 /* ADD THIS AS HOVER PLESE  */
 /* .mat-mdc-button-touch-target {
