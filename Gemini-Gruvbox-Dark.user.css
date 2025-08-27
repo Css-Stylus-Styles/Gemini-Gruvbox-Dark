@@ -590,6 +590,22 @@ bard-sidenav-container > * {
 	font-weight: 500 !important; 
 }
 
+/* Old Converstion history with Gemini (Sidebar) */
+.conversations-container .conversation .conversation-title {
+  color: var(--faded-blue) !important;
+  font-weight: 500 !important;
+  font-family: inherit !important;
+  font-style: normal !important;
+}
+
+/* Gems and Recents (Sidebar)*/
+h1.title.gds-label-l {
+  color: var(--faded-orange) !important;
+  font-weight: 600 !important;
+  font-family: inherit !important;
+  font-style: normal !important;
+}
+
 
 
 /* HIDDEN STUFF*/
