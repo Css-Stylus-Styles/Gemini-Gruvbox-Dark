@@ -588,7 +588,7 @@ span.mode-title.gds-label-l {
 
 /* Styling for the Model Selector Subtitle (e.g., "Choose your model") */
 span.title.gds-label-s {
-	color: var(--faded-purple) !important;
+	color: var(--faded-aqua) !important;
 }
 
 /* Styling for all action buttons (Write, Build, Deep Research, Learn, etc.) */
