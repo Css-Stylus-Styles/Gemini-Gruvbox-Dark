@@ -586,6 +586,11 @@ span.mode-title.gds-label-l {
 	color: var(--faded-green) !important;
 }
 
+/* Styling for the Model Selector Subtitle (e.g., "Choose your model") */
+span.title.gds-label-s {
+	color: var(--faded-purple) !important;
+}
+
 /* Styling for all action buttons (Write, Build, Deep Research, Learn, etc.) */
 button.card.card-legacy {
 	background-color: var(--bg-def-dark) !important;
@@ -623,7 +628,13 @@ button.card.card-legacy[_ngcontent-ng-c161681469] .card-label.gds-label-l {
 	padding: 0.2em 0.5em !important; /* Adjust padding if necessary */
 }
 
-/* Styling for the Quill Rich Text Editor Placeholder */
+/* Styling for Model Description (e.g., "2.5 Flash") */
+span.mode-desc.gds-label-m-alt {
+	font-size: 0.9rem !important;
+	font-family: var(--font-GeistMono) !important;
+	color: var(--faded-orange) !important;
+	font-weight: 700 !important;
+}
 .ql-editor.new-input-ui.ql-blank::after {
 	color: var(--text-offwhite) !important;
 	visibility: visible !important;
@@ -865,14 +876,19 @@ border-radius: 3em !important;
 /* HIDDEN STUFF*/
 
 /*Hiding the hallucination disclaimer*/
-/* display none wont be useful here as it hides the
-contaning elements too
+/* display none wont be useful here as it hides the 
+contaning elements too 
 opacity 0 leaves too much gap so use opacity 0 with custom height */
 .capabilities-disclaimer {
 	overflow: hidden !important;
 	opacity: 0 !important;
 	height:0.6rem !important;
 	width: 0 !important;
+}
+
+/* Hiding the Upgrade to Google AI Plus container */
+div.upgrade-container.helium-upsell-container.under-input.ng-star-inserted {
+	display: none !important;
 }
 
 
