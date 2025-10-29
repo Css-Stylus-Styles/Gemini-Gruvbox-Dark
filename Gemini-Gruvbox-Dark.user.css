@@ -549,10 +549,10 @@ html , body {
 	  color : var(--light-dim-yellow) !important;
 }
 
-	/* SVG colors , mat-icon is for material icons */
+/* SVG colors , mat-icon is for material icons */
 	svg , .mat-icon {
-	  color: var(--dim-green) !important;
-	  stroke-width: 5px !important;
+	  color: var(--faded-green) !important; 
+	  stroke-width: 5px !important; 
 	}
 
 
@@ -604,7 +604,7 @@ button.card.card-legacy[_ngcontent-ng-c161681469] .card-label.gds-label-l {
 
 /* Styling for the Quill Rich Text Editor Placeholder */
 .ql-editor.new-input-ui.ql-blank::after {
-	color: var(--faded-green) !important;
+	color: var(--text-offwhite) !important;
 	visibility: visible !important;
 }
 
@@ -723,9 +723,9 @@ font-family: inherit !important;
 
 
 
-/* OPTIONS SELECTOR IN INPUT   */
+/* MODEL SELECTOR IN INPUT   */
 span.mdc-button__label{
-	color: var(--dim-aqua) !important;
+	color: var(--faded-blue) !important;
 	font-weight: 500 !important;
 }
 
