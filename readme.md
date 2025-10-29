@@ -16,3 +16,4 @@ A custom UserStyle for `gemini.google.com` that applies a Gruvbox-inspired dark 
 - Check if this is properly updated at the interface or not 
 - gemini for org  should be fixed 
 - Style table `td` and `tr` text color.
+- TODO: On line ~603, the `0.1em` border on action buttons may be too thick. Investigate using `px` units instead.
