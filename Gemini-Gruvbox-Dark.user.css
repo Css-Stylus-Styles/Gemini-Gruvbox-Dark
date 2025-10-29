@@ -581,11 +581,26 @@ html , body {
 
 }
 
+/* Styling for the Model Selector Titles (e.g., "Fast all-around help") */
+span.mode-title.gds-label-l {
+	color: var(--faded-green) !important;
+}
+
 /* Styling for all action buttons (Write, Build, Deep Research, Learn, etc.) */
 button.card.card-legacy {
 	background-color: var(--bg-def-dark) !important;
 	border: solid 0.1em var(--bg1-dark) !important;
 	border-radius: 3em !important;
+
+	&:hover {
+		background-color: var(--bg0-dh) !important;
+		border-color: var(--bg3-dark) !important;
+		border-width: 0.1em !important;
+	}
+}
+
+button.card.card-legacy .card-label.gds-label-l {
+	color: var(--faded-aqua) !important;
 }
 
 /* Styling for the 'Create Image' button container and label */
@@ -593,10 +608,16 @@ button.card.card-legacy[_ngcontent-ng-c161681469] {
 	background-color: var(--bg-dark-new) !important; /* Set container background */
 	border: solid 0.1em var(--bg1-dark) !important; /* Add a subtle border for definition */
 	border-radius: 3em !important; /* Make it more pill-shaped if needed, though classes might handle this */
+
+	&:hover {
+		background-color: var(--bg2-dark) !important;
+		border-color: var(--bg3-dark) !important;
+		border-width: 0.1em !important;
+	}
 }
 
 button.card.card-legacy[_ngcontent-ng-c161681469] .card-label.gds-label-l {
-	color: var(--faded-blue) !important;
+	color: var(--faded-aqua) !important;
 	font-weight: 500 !important;
 	background-color: transparent !important; /* Ensure label background is transparent */
 	padding: 0.2em 0.5em !important; /* Adjust padding if necessary */
