@@ -2,7 +2,7 @@
 @name           Gemini-Gruvbox-Dark
 @namespace      github.com/Css-Styles-Styles/Gemini-Gruvbox-Dark
 @version        1.0.0
-@description    Gemini-Gruvbox-Dark style 
+@description    Gemini-Gruvbox-Dark style
 @author         Me
 @preprocessor   stylus
 
@@ -12,7 +12,7 @@
 @var checkbox  noLogo   "NO Hello text "                 1
 @var checkbox   noUpgrade "No Upgrade Button"            1
 @var checkbox   noGoogle "No Google Account Button"      1
-@var checkbox   noAddress "Hide your location from menu" 1 
+@var checkbox   noAddress "Hide your location from menu" 1
 @var checkbox   LocalFont  "Local Placeholder Font"      0
 @var checkbox   LoadWebFont  "Load Font From Web"        0
 
@@ -123,7 +123,7 @@
 			  src: url(https://cdn.jsdelivr.net/fontsource/fonts/spline-sans:vf@latest/latin-wght-normal.woff2) format('woff2-variations');
 			  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 	  }
-	
+
 	  /*Hack Font */
 	  @font-face {
 			  font-family: "Hack";
@@ -199,7 +199,7 @@
 	url("https://db.onlinewebfonts.com/t/9806c95303ad6b6b2a8a45c07479e6a0.ttf")format("truetype"),
 	url("https://db.onlinewebfonts.com/t/9806c95303ad6b6b2a8a45c07479e6a0.svg#Fantasque Sans Mono Bold")format("svg");
 	}
-	
+
 	  /* jetbrains-mono-latin-wght-normal */
 	@font-face {
 	font-family: 'JetBrains Mono Variable';
@@ -227,7 +227,7 @@
 	src: url(https://cdn.jsdelivr.net/fontsource/fonts/manrope:vf@latest/latin-wght-normal.woff2) format('woff2-variations');
 	unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
 	}
-	
+
 	/*Geist Sans*/
 	/* geist-sans-latin-100-normal */
 	@font-face {
@@ -245,7 +245,7 @@
 	font-weight: 200;
 	src: url(https://cdn.jsdelivr.net/fontsource/fonts/geist-sans@latest/latin-200-normal.woff2) format('woff2'), url(https://cdn.jsdelivr.net/fontsource/fonts/geist-sans@latest/latin-200-normal.woff) format('woff'), url(https://cdn.jsdelivr.net/fontsource/fonts/geist-sans@latest/latin-200-normal.ttf) format('truetype');
 	}
-	
+
 	/* geist-sans-latin-300-normal */
 	@font-face {
 	font-family: 'Geist Sans';
@@ -254,7 +254,7 @@
 	font-weight: 300;
 	src: url(https://cdn.jsdelivr.net/fontsource/fonts/geist-sans@latest/latin-300-normal.woff2) format('woff2'), url(https://cdn.jsdelivr.net/fontsource/fonts/geist-sans@latest/latin-300-normal.woff) format('woff'), url(https://cdn.jsdelivr.net/fontsource/fonts/geist-sans@latest/latin-300-normal.ttf) format('truetype');
 	}
-	
+
 	/* geist-sans-latin-400-normal */
 	@font-face {
 	font-family: 'Geist Sans';
@@ -263,7 +263,7 @@
 	font-weight: 400;
 	src: url(https://cdn.jsdelivr.net/fontsource/fonts/geist-sans@latest/latin-400-normal.woff2) format('woff2'), url(https://cdn.jsdelivr.net/fontsource/fonts/geist-sans@latest/latin-400-normal.woff) format('woff'), url(https://cdn.jsdelivr.net/fontsource/fonts/geist-sans@latest/latin-400-normal.ttf) format('truetype');
 	}
-	
+
 	/* geist-sans-latin-500-normal */
 	@font-face {
 	font-family: 'Geist Sans';
@@ -272,7 +272,7 @@
 	font-weight: 500;
 	src: url(https://cdn.jsdelivr.net/fontsource/fonts/geist-sans@latest/latin-500-normal.woff2) format('woff2'), url(https://cdn.jsdelivr.net/fontsource/fonts/geist-sans@latest/latin-500-normal.woff) format('woff'), url(https://cdn.jsdelivr.net/fontsource/fonts/geist-sans@latest/latin-500-normal.ttf) format('truetype');
 	}
-	
+
 	/* geist-sans-latin-600-normal */
 	@font-face {
 	font-family: 'Geist Sans';
@@ -281,7 +281,7 @@
 	font-weight: 600;
 	src: url(https://cdn.jsdelivr.net/fontsource/fonts/geist-sans@latest/latin-600-normal.woff2) format('woff2'), url(https://cdn.jsdelivr.net/fontsource/fonts/geist-sans@latest/latin-600-normal.woff) format('woff'), url(https://cdn.jsdelivr.net/fontsource/fonts/geist-sans@latest/latin-600-normal.ttf) format('truetype');
 	}
-	
+
 	/* geist-sans-latin-700-normal */
 	@font-face {
 	font-family: 'Geist Sans';
@@ -290,7 +290,7 @@
 	font-weight: 700;
 	src: url(https://cdn.jsdelivr.net/fontsource/fonts/geist-sans@latest/latin-700-normal.woff2) format('woff2'), url(https://cdn.jsdelivr.net/fontsource/fonts/geist-sans@latest/latin-700-normal.woff) format('woff'), url(https://cdn.jsdelivr.net/fontsource/fonts/geist-sans@latest/latin-700-normal.ttf) format('truetype');
 	}
-	
+
 	/* geist-sans-latin-800-normal */
 	@font-face {
 	font-family: 'Geist Sans';
@@ -299,7 +299,7 @@
 	font-weight: 800;
 	src: url(https://cdn.jsdelivr.net/fontsource/fonts/geist-sans@latest/latin-800-normal.woff2) format('woff2'), url(https://cdn.jsdelivr.net/fontsource/fonts/geist-sans@latest/latin-800-normal.woff) format('woff'), url(https://cdn.jsdelivr.net/fontsource/fonts/geist-sans@latest/latin-800-normal.ttf) format('truetype');
 	}
-	
+
 	/* geist-sans-latin-900-normal */
 	@font-face {
 	font-family: 'Geist Sans';
@@ -308,7 +308,7 @@
 	font-weight: 900;
 	src: url(https://cdn.jsdelivr.net/fontsource/fonts/geist-sans@latest/latin-900-normal.woff2) format('woff2'), url(https://cdn.jsdelivr.net/fontsource/fonts/geist-sans@latest/latin-900-normal.woff) format('woff'), url(https://cdn.jsdelivr.net/fontsource/fonts/geist-sans@latest/latin-900-normal.ttf) format('truetype');
 	}
-	
+
 	/*Geist Mono Variable*/
 	/* geist-mono-latin-wght-normal */
 	@font-face {
@@ -328,7 +328,7 @@
 	src: url(https://cdn.jsdelivr.net/fontsource/fonts/baskervville@latest/latin-400-normal.woff2) format('woff2'), url(https://cdn.jsdelivr.net/fontsource/fonts/baskervville@latest/latin-400-normal.woff) format('woff');
 	unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
 	}
-	
+
 	@font-face {
 	font-family: "Tiempos Text Regular";
 	src: url("https://db.onlinewebfonts.com/t/1b3f9cb78376a36884f3908f37a42c91.eot");
@@ -348,24 +348,24 @@
 	src: url(https://cdn.jsdelivr.net/fontsource/fonts/inter:vf@latest/latin-wght-normal.woff2) format('woff2-variations');
 	unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
 	}
-	
+
 	:root
 	{
 	/* 0 is for darkest
 	1 is for hard
 	higher values for hard  */
-	
-	
+
+
 	/* 2.1 Dark theme color variables */
 	--bg0-dh:       #1d2021;
 	--bg-dark-new  :  #1F1E1D ;
 	/*For basic text new color added         */
 	--text-normal :#ffd29c ;
-	
+
 	--shadow-bg:         #1d1b1a;
 	/* Was picked from the side bar on grok interface  */
-	--bg-def-dark:#171718; 
-	
+	--bg-def-dark:#171718;
+
 	--bg1-dark:       #3c3836;
 	--bg-dark:        #282828;
 	--bg2-dark:       #504945;
@@ -380,12 +380,12 @@
 	--shadow:         #16181a;
 	--shadow-var1:         #17191b;
 	--shadow-cur:         #1a1b1d;
-	
+
 	--fg-dark:        #ebdbb2;
 	--grey0-dark:     #7f897d;
 	--grey1-dark:     #859289;
 	--grey2-dark:     #9aa79d;
-	
+
 	--faded-red:     #fb4934;
 	--faded-orange:  #fe8019;
 	--faded-yellow:  #fabd2f;
@@ -393,7 +393,7 @@
 	--faded-aqua:    #8ec07c;
 	--faded-blue:    #83a598;
 	--faded-purple:  #d3869b;
-	
+
 	--dim-red:       #cc241d;
 	--dim-orange:    #d65d0e;
 	--dim-yellow:    #d79921;
@@ -401,8 +401,8 @@
 	--dim-aqua:      #689d6a;
 	--dim-blue:      #458588;
 	--dim-purple:    #b16286;
-	
-	
+
+
 	/* 2.2 Light theme color variables */
 	--bg0-light:     #f0edd8;
 	--bg1-light:     #f6f1dd;
@@ -415,25 +415,25 @@
 	--grey1-light:   #939f91;
 	--grey2-light:   #879686;
 	--shadow-light:  #3c474d20;
-	
-	
+
+
 	--text-offwhite: #fbf1c7;
 	--text-offyellowish: #f2e5bc;
 	--text-white: #f9f5d7;
 	--text-offwhite-faded: #ebdbb2;
 	--text--faded: #d5c4a1;
 	--text--veryfade: #928374;
-	
-	
-	
+
+
+
 	--bg_visual_light:      #eaedc8;
 	--bg_red_light:         #fbe3da;
 	--bg_green_light:       #f0f1d2;
 	--bg_blue_light:        #e9f0e9;
 	--bg_yellow_light:      #faedcd;
-	
+
 	--fg-light:       #5c6a72;
-	
+
 	--light-red:     #f85552;
 	--light-orange:  #f57d26;
 	--light-yellow:  #bf983d;
@@ -441,7 +441,7 @@
 	--light-aqua:    #569d79;
 	--light-blue:    #5a93a2;
 	--light-purple:  #b87b9d;
-	
+
 	--light-dim-red:    #f1706f;
 	--light-dim-orange: #f39459;
 	--light-dim-yellow: #e4b649;
@@ -449,9 +449,9 @@
 	--light-dim-aqua:   #6ec398;
 	--light-dim-blue:   #6cb3c6;
 	--light-dim-purple: #e092be;
-	
-	
-	
+
+
+
 	--dark-red: #9d0006;
 	--dark-green: #79740e;
 	--dark-yellow: #b57614;
@@ -459,8 +459,8 @@
 	--dark-purple: #8f3f71;
 	--dark-aqua: #427b58;
 	--dark-orange: #af3a03;
-	
-	
+
+
 	/* light colors */
 	--interface-light0-hard: #f9f5d7;
 	--interface-light0: #fbf1c7;
@@ -469,9 +469,9 @@
 	--interface-light2: #d5c4a1;
 	--interface-light3: #bdae93;
 	--interface-light4: #a89988;
-	
+
 	  }
-	
+
 
 
 
@@ -499,13 +499,13 @@
 	--font-Basker: 'Baskervville';
 	--font-Tiempo: " Test Tiempos Text";
 	}
-	
+
 	/* Putting Variables for the most used fonts */
-	$heading-font = Bricoalge Grotesque Variable 
+	$heading-font = Bricoalge Grotesque Variable
 	$sans-serif = Geist Sans
 	$code-font = Geist Mono
 	$text-font =  Test Tiempos Text
-	
+
 
 
 
@@ -514,17 +514,17 @@
 html , body {
 	background : #171718  !important ;
 	}
-	
-	
-	
+
+
+
 	/* General Styles */
 	/* Colors and other styling options for General Html tags  */
-	
+
 	p {
 	  color : var(--text-white) !important;
 	  font-size: 1rem !important;
 }
-	
+
 	li, ol, ul {
 	  color : var(--text-offwhite) !important;
 	  font-size: 1rem !important;
@@ -539,7 +539,7 @@ html , body {
 	h1 {
 	  color : var(--faded-red) !important;
 }
-	
+
 	/* heading 2 and 3  will get a diff color */
 	h2 , h3 {
 	  color : var(--faded-blue) !important;
@@ -548,13 +548,13 @@ html , body {
 	h4 , h5 , h6 {
 	  color : var(--light-dim-yellow) !important;
 }
-	
+
 	/* SVG colors , mat-icon is for material icons */
 	svg , .mat-icon {
-	  color: var(--dim-green) !important; 
-	  stroke-width: 5px !important; 
+	  color: var(--dim-green) !important;
+	  stroke-width: 5px !important;
 	}
-	
+
 
 
 
@@ -562,6 +562,50 @@ html , body {
 /* Background color of the scroll container */
 .chat-history-scroll-container {
 	background: var(--bg-def-dark) !important;
+}
+
+/* Background color for the main chat area container */
+.ia-redesign infinite-scroller {
+	background-color: var(--bg-def-dark) !important;
+}
+
+/* Background color for the main chat area container */
+.ia-redesign[_nghost-ng-c4142062348], .ia-redesign[_ngcontent-ng-c4142062348] infinite-scroller {
+	background-color: var(--bg-def-dark) !important;
+}
+
+/* Styling for the 'Create Image'. 'Deep Research' . 'Guided Learning' button label */
+.card-label.gds-label-l[_ngcontent-ng-c161681469] {
+	color: var(--dim-green) !important;
+	font-weight: 500 !important;
+
+}
+
+/* Styling for all action buttons (Write, Build, Deep Research, Learn, etc.) */
+button.card.card-legacy {
+	background-color: var(--bg-def-dark) !important;
+	border: solid 0.1em var(--bg1-dark) !important;
+	border-radius: 3em !important;
+}
+
+/* Styling for the 'Create Image' button container and label */
+button.card.card-legacy[_ngcontent-ng-c161681469] {
+	background-color: var(--bg-dark-new) !important; /* Set container background */
+	border: solid 0.1em var(--bg1-dark) !important; /* Add a subtle border for definition */
+	border-radius: 3em !important; /* Make it more pill-shaped if needed, though classes might handle this */
+}
+
+button.card.card-legacy[_ngcontent-ng-c161681469] .card-label.gds-label-l {
+	color: var(--faded-blue) !important;
+	font-weight: 500 !important;
+	background-color: transparent !important; /* Ensure label background is transparent */
+	padding: 0.2em 0.5em !important; /* Adjust padding if necessary */
+}
+
+/* Styling for the Quill Rich Text Editor Placeholder */
+.ql-editor.new-input-ui.ql-blank::after {
+	color: var(--faded-green) !important;
+	visibility: visible !important;
 }
 
 /* Bard Sidebar nav  */
@@ -578,7 +622,7 @@ bard-sidenav-container > * {
 	font-family: inherit !important;
 	font-style: normal !important;
 	font-size:0.85em !important;
-	font-weight: 500 !important; 
+	font-weight: 500 !important;
 }
 
 /* SideBar Gems */
@@ -587,7 +631,7 @@ bard-sidenav-container > * {
 	font-family: inherit !important;
 	font-style: normal !important;
 	font-size:1.05em !important;
-	font-weight: 500 !important; 
+	font-weight: 500 !important;
 }
 
 /* Old Converstion history with Gemini (Sidebar) */
@@ -611,9 +655,9 @@ border: solid 0.2em var(--bg2-dark) !important;
 
 /* Side bar input box */
 input-area-v2 > div.input-area{
-  background-color: var(--bg-def-dark) !important;
-  border: solid 3px var(--dark-green) !important;
-  border-radius:8px !important;
+  background-color: var(--bg-dark-new) !important;
+  border: solid 3px var(--bg1-dark) !important;
+  border-radius:12px !important;
   box-shadow: none !important;
 }
 
@@ -646,7 +690,7 @@ transition: border 0.5s ease-in-out !important;
 }
 
 /* Choose your Model container color   */
-.mat-mdc-menu-content { 
+.mat-mdc-menu-content {
 font-family: inherit !important;
 font-weight: 500 !important;
 font-style: normal !important;
@@ -724,7 +768,7 @@ border: solid 0.1em var(--bg3-dark) !important;
 background-color: var(--bg-def-dark) !important;
 }
 }
- 
+
 /* OPEN text on the Canvas  */
 .button-section .mdc-button__label span {
 color: var(--dim-green) !important;
@@ -769,7 +813,7 @@ xap-code-editor .xap-monaco-container .monaco-editor  {
   xap-code-editor .xap-monaco-container .monaco-editor .active-line-number {
 	color: var(--dim-green) !important;
 	font-family: "Geist Mono" !important;
-  } 
+  }
 
   /* Set canvas font  */
   xap-code-editor > * {
@@ -800,8 +844,8 @@ border-radius: 3em !important;
 /* HIDDEN STUFF*/
 
 /*Hiding the hallucination disclaimer*/
-/* display none wont be useful here as it hides the 
-contaning elements too 
+/* display none wont be useful here as it hides the
+contaning elements too
 opacity 0 leaves too much gap so use opacity 0 with custom height */
 .capabilities-disclaimer {
 	overflow: hidden !important;
@@ -809,7 +853,7 @@ opacity 0 leaves too much gap so use opacity 0 with custom height */
 	height:0.6rem !important;
 	width: 0 !important;
 }
-  
+
 
 
 /*
@@ -820,10 +864,10 @@ if  LoadWebFont {
 	font-family : "Tiempos Text Regular" !important
 	}
 	}
-	
 
 
-/*Hide Grok Logo*/ 
+
+/*Hide Grok Logo*/
 /*Front page Logo*/
 if noLogo {
     .text-wrapper {
@@ -832,11 +876,11 @@ if noLogo {
 }
 
 .logo{
-	display : none !important ; 
+	display : none !important ;
 }
 
 
-/*Hide Upgrade Button*/ 
+/*Hide Upgrade Button*/
 if noUpgrade {
 	.buttons-container.adv-upsell{
       opacity: 0 !important;
@@ -867,9 +911,9 @@ if noAddress {
 /* if you select inherit then it will use the default font and just make it bold and appear as heading  */
 /* new font in else was defined in the function down below based on the text font drop down  */
 :root{
-	--default-heading-font: headfont ; 
+	--default-heading-font: headfont ;
   }
-  
+
   if headfont != 'Inherit' {
 	h1 , h2 , h3 , h4 , h5 , h6 {
 	  font-family: var(--default-heading-font), system-ui, -apple-system, sans-serif !important;
@@ -890,13 +934,13 @@ if noAddress {
 	--dropdown-text-font:newfont ;
 	--fallback-text: sans-serif !important ;
   }
-  
+
 
 /* Text Font Selector */
 if newfont != 'Website Default'{
 	p , li ,  ul , ol , button , input , textarea, strong, span , div  {
 
-		font-family : var(--dropdown-text-font) !important ; 
+		font-family : var(--dropdown-text-font) !important ;
 	}
 }else {
 	p, li , ul , ol , button , input , textarea , strong, span , *  {
@@ -906,7 +950,7 @@ if newfont != 'Website Default'{
 
 
 
-	
+
 
 
 
@@ -916,8 +960,8 @@ if newfont != 'Website Default'{
 /* inline code blocks  */
 p >code {
     font-family: "Geist Mono" !important ;
-    font-size: 0.8em !important ; 
-	 font-weight: 700 !important ; 
+    font-size: 0.8em !important ;
+	 font-weight: 700 !important ;
 	 color: var(--dim-green) !important;
 	 background-color: var(--bg-dark-new) !important;
 	border : solid 0.2em var(--bg1-dark) !important;
@@ -942,13 +986,13 @@ code ,  code-block , .code-block-decoration {
 /* Changing the font of CODE  */
   code > *  ,  code > span > * , code > span > span > * {
 	font-family: "Geist Mono" !important;
-	font-size: 0.9rem !important ; 
-	 font-weight: 600 !important ; 
+	font-size: 0.9rem !important ;
+	 font-weight: 600 !important ;
   }
 
 
   code[data-test-id="code-content"]#text {
-	color : var(--dim-green) !important;	
+	color : var(--dim-green) !important;
 }
 
   /*COLORS OF TOKENS OF CODE   */
@@ -956,53 +1000,53 @@ code ,  code-block , .code-block-decoration {
 	color: var(--faded-aqua) !important;
   }
 
-  
+
   code[data-test-id="code-content"] .hljs-meta{
 	color: var(--faded-red) !important;
   }
-  
-  
+
+
   code[data-test-id="code-content"] .hljs-meta-string {
 	color: var(--faded-green) !important;
 
   }
-  
+
   code[data-test-id="code-content"] .hljs-keyword {
 	color: var(--faded-orange) !important;
   }
-  
+
   code[data-test-id="code-content"] .hljs-comment {
 	color: var(--text--veryfade) !important;
   }
-  
+
   code[data-test-id="code-content"] .hljs-string {
 	color: var(--faded-green) !important;
   }
-  
+
   code[data-test-id="code-content"] .hljs-number {
 	color: var(--faded-red) !important;
   }
-  
+
   code[data-test-id="code-content"] .hljs-function .hljs-title {
 	color: var(--faded-blue) !important;
   }
-  
+
   code[data-test-id="code-content"] .hljs-built_in {
 	color: var(--faded-purple) !important;
   }
-  
+
   code[data-test-id="code-content"] .hljs-variable {
 	color: var(--faded-aqua) !important;
   }
-  
+
   code[data-test-id="code-content"] .hljs-literal {
 	color: var(--faded-purple) !important;
   }
-  
+
   code[data-test-id="code-content"] .hljs-attribute {
 	color: var(--faded-aqua) !important;
   }
-  
+
 
 
 

@@ -15,3 +15,4 @@ A custom UserStyle for `gemini.google.com` that applies a Gruvbox-inspired dark 
 (take new screenshots for the links) 
 - Check if this is properly updated at the interface or not 
 - gemini for org  should be fixed 
+- Style table `td` and `tr` text color.
