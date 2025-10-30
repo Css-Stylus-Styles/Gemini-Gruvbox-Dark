@@ -596,7 +596,7 @@ span.title.gds-label-s {
 }
 
 /* Styling for all action buttons (Write, Build, Deep Research, Learn, etc.) */
-button.card.card-legacy {
+button.mat-ripple.card.card-legacy {
 	background-color: var(--bg-def-dark) !important;
 	border: solid 1px var(--bg1-dark) !important;
 	border-radius: 3em !important;
@@ -608,8 +608,12 @@ button.card.card-legacy {
 		padding: 0rem 2rem !important;
 
 		&::before {
-			background-color: transparent !important; /* Suppress overlay on hover */
+			content: "" !important;
+			position: absolute !important;
+			inset: 0 !important;
+			background-color: transparent !important;
 			opacity: 0 !important;
+			z-index: 1 !important;
 		}
 	}
 }
@@ -635,8 +639,12 @@ button.card.card-legacy[_ngcontent-ng-c161681469] {
 		padding: 0rem 2rem !important;
 
 		&::before {
-			background-color: transparent !important; /* Suppress overlay on hover */
+			content: "" !important;
+			position: absolute !important;
+			inset: 0 !important;
+			background-color: transparent !important;
 			opacity: 0 !important;
+			z-index: 1 !important;
 		}
 	}
 }
