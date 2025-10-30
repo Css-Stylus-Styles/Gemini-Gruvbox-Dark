@@ -605,6 +605,7 @@ button.card.card-legacy {
 		background-color: var(--bg0-dh) !important;
 		border-color: var(--bg3-dark) !important;
 		border-width: 1px !important;
+		padding: 0rem 2rem !important;
 
 		&::before {
 			background-color: transparent !important; /* Suppress overlay on hover */
@@ -631,6 +632,7 @@ button.card.card-legacy[_ngcontent-ng-c161681469] {
 		background-color: var(--bg2-dark) !important;
 		border-color: var(--bg3-dark) !important;
 		border-width: 1px !important;
+		padding: 0rem 2rem !important;
 
 		&::before {
 			background-color: transparent !important; /* Suppress overlay on hover */
