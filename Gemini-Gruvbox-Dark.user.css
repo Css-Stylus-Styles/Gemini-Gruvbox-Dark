@@ -554,8 +554,9 @@ html , body {
 	}
 
 	strong, bold, td > b, tr > b, p > b {
-		color: var(--dim-green) !important;
+		color: var(--faded-green) !important;
 	}
+
 	/* Heading 1  will get a diff color  */
 	h1 {
 	  color : var(--faded-red) !important;
@@ -563,7 +564,8 @@ html , body {
 
 	/* heading 2 and 3  will get a diff color */
 	h2 , h3 {
-	  color : var(--faded-blue) !important;
+	  color : var(--faded-orange) !important;
+	  font-weight: 500 !important;
 }
 	/* heading 4 to 6 will get a diff color */
 	h4 , h5 , h6 {
