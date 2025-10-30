@@ -33,13 +33,7 @@
 
 ]
 
-@var select boldColor 'Bold Text Color' [
-    'Default (Dim Green)',
-    'Inherit',
-    'Faded Green',
-    'Faded Aqua',
-    'Faded Blue'
-]
+
 
 
 ==/UserStyle== */
@@ -558,6 +552,10 @@ html , body {
 	font-weight: 500;
 	font-style: italic !important;
 	}
+
+	strong, bold, td > b, tr > b, p > b {
+		color: var(--dim-green) !important;
+	}
 	/* Heading 1  will get a diff color  */
 	h1 {
 	  color : var(--faded-red) !important;
@@ -1047,28 +1045,7 @@ if newfont != 'Website Default'{
 
 
 
-/* Bold Color Selector */
-if boldColor == 'Inherit' {
-	strong, bold, td > b, tr > b, p > b {
-		color: inherit !important;
-	}
-} else if boldColor == 'Faded Green' {
-	strong, bold, td > b, tr > b, p > b {
-		color: var(--faded-green) !important;
-	}
-} else if boldColor == 'Faded Aqua' {
-	strong, bold, td > b, tr > b, p > b {
-		color: var(--faded-aqua) !important;
-	}
-} else if boldColor == 'Faded Blue' {
-	strong, bold, td > b, tr > b, p > b {
-		color: var(--faded-blue) !important;
-	}
-} else { 
-	strong, bold, td > b, tr > b, p > b {
-		color: var(--dim-green) !important;
-	}
-}
+
 
 
 /* CODE */
