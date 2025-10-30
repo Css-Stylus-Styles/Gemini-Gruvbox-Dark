@@ -529,6 +529,10 @@ html , body {
 	  color : var(--text-offwhite) !important;
 	  font-size: 1rem !important;
 }
+	/* Table cell and row text color */
+	td, tr {
+	  color: var(--text-offwhite) !important;
+	}
 	/* Bold and strong formatting  */
 	strong {
 	  color : var(--faded-green) !important;
@@ -594,34 +598,18 @@ span.title.gds-label-s {
 /* Styling for all action buttons (Write, Build, Deep Research, Learn, etc.) */
 button.card.card-legacy {
 	background-color: var(--bg-def-dark) !important;
-	border: solid 0.1em var(--bg1-dark) !important;
+	border: solid 1px var(--bg1-dark) !important;
 	border-radius: 3em !important;
 
 	&:hover {
 		background-color: var(--bg0-dh) !important;
 		border-color: var(--bg3-dark) !important;
-		border-width: 0.1em !important;
-	}
-}
+		border-width: 1px !important;
 
-button.card.card-legacy .card-label.gds-label-l {
-	color: var(--faded-aqua) !important;
-}
-
-	&:hover::before {
-		background-color: transparent !important; /* Make overlay transparent on hover */
-		opacity: 0 !important;
-	}
-}
-
-button.card.card-legacy .card-label.gds-label-l {
-	color: var(--faded-aqua) !important;
-}
-}
-
-	&:hover::before {
-		background-color: var(--shadow-bg) !important;
-		opacity: 1 !important;
+		&::before {
+			background-color: transparent !important; /* Suppress overlay on hover */
+			opacity: 0 !important;
+		}
 	}
 }
 
@@ -634,27 +622,20 @@ button.card.card-legacy:hover .card-label.gds-label-l {
 }
 
 /* Styling for the 'Create Image' button container and label */
-
-	&:hover::before {
-		background-color: var(--bg0-dh) !important; /* Darken the overlay on hover */
-		opacity: 1 !important;
-	}
-}
-
-button.card.card-legacy .card-label.gds-label-l {
-	color: var(--faded-aqua) !important;
-}
-
-/* Styling for the 'Create Image' button container and label */
 button.card.card-legacy[_ngcontent-ng-c161681469] {
 	background-color: var(--bg-dark-new) !important; /* Set container background */
-	border: solid 0.1em var(--bg1-dark) !important; /* Add a subtle border for definition */
+	border: solid 1px var(--bg1-dark) !important; /* Add a subtle border for definition */
 	border-radius: 3em !important; /* Make it more pill-shaped if needed, though classes might handle this */
 
 	&:hover {
 		background-color: var(--bg2-dark) !important;
 		border-color: var(--bg3-dark) !important;
-		border-width: 0.1em !important;
+		border-width: 1px !important;
+
+		&::before {
+			background-color: transparent !important; /* Suppress overlay on hover */
+			opacity: 0 !important;
+		}
 	}
 }
 
