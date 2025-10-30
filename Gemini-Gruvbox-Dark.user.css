@@ -557,6 +557,29 @@ html , body {
 		color: var(--faded-green) !important;
 	}
 
+	/* Table cell and row background color */
+	table , td  {
+		background: var(--bg-dark-new) !important;
+		border: 1px solid var(--bg1-dark) !important;
+	}
+	/* Table footer background color */
+	.table-block .table-footer {
+		background: var(--bg-dark-new) !important;
+		border: 1px solid var(--bg1-dark) !important;
+		color: var(--text-normal) !important;
+	}
+
+	/* Styling for citation spans */
+	span[class*="citation-"] {
+		background-color: transparent !important;
+		color: inherit !important;
+		font-weight: 500 !important;
+
+		&:hover {
+			background-color: var(--bg-dark-new) !important;
+		}
+	}
+
 	/* Heading 1  will get a diff color  */
 	h1 {
 	  color : var(--faded-red) !important;
