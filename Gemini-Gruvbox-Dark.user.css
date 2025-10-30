@@ -33,6 +33,14 @@
 
 ]
 
+@var select boldColor 'Bold Text Color' [
+    'Default (Dim Green)',
+    'Inherit',
+    'Faded Green',
+    'Faded Aqua',
+    'Faded Blue'
+]
+
 
 ==/UserStyle== */
 
@@ -536,13 +544,11 @@ html , body {
 	}
 	/* Bold and strong formatting  */
 	strong , bold  {
-	  color : var(--dim-green) !important;
 	  font-size: 1rem !important;
 	  font-weight: 600 !important;
 	}
 	/* bold the text wrapped around  the table cells only (makes sure this does not effect the code  cells) */
 	td > b , tr > b{
-	color : var(--faded-aqua) !important ;
 	font-family: inherit !important;
 	font-weight: 500 !important;
 	}
@@ -550,7 +556,6 @@ html , body {
 	p > b {
 	font-family: inherit !important ;
 	font-weight: 500;
-	color: var(--faded-green) !important ;
 	font-style: italic !important;
 	}
 	/* Heading 1  will get a diff color  */
@@ -1040,6 +1045,30 @@ if newfont != 'Website Default'{
 
 
 
+
+
+/* Bold Color Selector */
+if boldColor == 'Inherit' {
+	strong, bold, td > b, tr > b, p > b {
+		color: inherit !important;
+	}
+} else if boldColor == 'Faded Green' {
+	strong, bold, td > b, tr > b, p > b {
+		color: var(--faded-green) !important;
+	}
+} else if boldColor == 'Faded Aqua' {
+	strong, bold, td > b, tr > b, p > b {
+		color: var(--faded-aqua) !important;
+	}
+} else if boldColor == 'Faded Blue' {
+	strong, bold, td > b, tr > b, p > b {
+		color: var(--faded-blue) !important;
+	}
+} else { 
+	strong, bold, td > b, tr > b, p > b {
+		color: var(--dim-green) !important;
+	}
+}
 
 
 /* CODE */
