@@ -532,13 +532,27 @@ html , body {
 	/* Table cell and row text color */
 	td, tr {
 	  color: var(--text-offwhite) !important;
+	  font-family: inherit !important;
 	}
 	/* Bold and strong formatting  */
-	strong {
-	  color : var(--faded-green) !important;
+	strong , bold  {
+	  color : var(--dim-green) !important;
 	  font-size: 1rem !important;
-	  font-weight: bold !important;
-}
+	  font-weight: 600 !important;
+	}
+	/* bold the text wrapped around  the table cells only (makes sure this does not effect the code  cells) */
+	td > b , tr > b{
+	color : var(--faded-aqua) !important ;
+	font-family: inherit !important;
+	font-weight: 500 !important;
+	}
+	/* bold the text wrapped around  the paragaph only (makes sure this does not effect the code  cells) */
+	p > b {
+	font-family: inherit !important ;
+	font-weight: 500;
+	color: var(--faded-green) !important ;
+	font-style: italic !important;
+	}
 	/* Heading 1  will get a diff color  */
 	h1 {
 	  color : var(--faded-red) !important;
@@ -600,21 +614,25 @@ button.mat-ripple.card.card-legacy {
 	background-color: var(--bg-def-dark) !important;
 	border: solid 1px var(--bg1-dark) !important;
 	border-radius: 3em !important;
+	position: relative !important;
+	overflow: hidden !important;
+	transition: background 0.5s ease-in-out , border 0.5s ease-in-out , padding 0.4s ease-in-out !important;
 
 	&:hover {
 		background-color: var(--bg0-dh) !important;
-		border-color: var(--bg3-dark) !important;
-		border-width: 1px !important;
+		border-color: var(--text--faded) !important;
+		border-width: 2px !important;
 		padding: 0rem 2rem !important;
+	}
 
-		&::before {
-			content: "" !important;
-			position: absolute !important;
-			inset: 0 !important;
-			background-color: transparent !important;
-			opacity: 0 !important;
-			z-index: 1 !important;
-		}
+	&::before {
+		content: "" !important;
+		position: absolute !important;
+		inset: 0 !important;
+		background-color: transparent !important;
+		opacity: 0 !important;
+		z-index: 1 !important;
+		pointer-events: none !important;
 	}
 }
 
@@ -627,29 +645,33 @@ button.card.card-legacy:hover .card-label.gds-label-l {
 }
 
 /* Styling for the 'Create Image' button container and label */
-button.card.card-legacy[_ngcontent-ng-c161681469] {
+button.card.card-legacy {
 	background-color: var(--bg-dark-new) !important; /* Set container background */
 	border: solid 1px var(--bg1-dark) !important; /* Add a subtle border for definition */
 	border-radius: 3em !important; /* Make it more pill-shaped if needed, though classes might handle this */
+	position: relative !important;
+	overflow: hidden !important;
+	transition: background 0.5s ease-in-out , border 0.5s ease-in-out , padding 0.4s ease-in-out !important;
 
 	&:hover {
-		background-color: var(--bg2-dark) !important;
-		border-color: var(--bg3-dark) !important;
-		border-width: 1px !important;
+		background-color: var(--bg0-dh) !important;
+		border-color: var(--text--faded) !important;
+		border-width: 2px !important;
 		padding: 0rem 2rem !important;
+	}
 
-		&::before {
-			content: "" !important;
-			position: absolute !important;
-			inset: 0 !important;
-			background-color: transparent !important;
-			opacity: 0 !important;
-			z-index: 1 !important;
-		}
+	&::before {
+		content: "" !important;
+		position: absolute !important;
+		inset: 0 !important;
+		background-color: transparent !important;
+		opacity: 0 !important;
+		z-index: 1 !important;
+		pointer-events: none !important;
 	}
 }
 
-button.card.card-legacy[_ngcontent-ng-c161681469] .card-label.gds-label-l {
+button.card.card-legacy .card-label.gds-label-l {
 	color: var(--faded-aqua) !important;
 	font-weight: 500 !important;
 	background-color: transparent !important; /* Ensure label background is transparent */
