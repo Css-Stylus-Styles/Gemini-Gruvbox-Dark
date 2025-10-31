@@ -700,7 +700,7 @@ span.mode-title.gds-label-l {
 
 /* Styling for the Model Selector Subtitle (e.g., "Choose your model") */
 span.title.gds-label-s {
-	color: var(--faded-aqua) !important;
+	color: var(--faded-green) !important;
 }
 
 /* Styling for all action buttons (Write, Build, Deep Research, Learn, etc.) */
@@ -710,13 +710,14 @@ button.mat-ripple.card.card-legacy {
 	border-radius: 3em !important;
 	position: relative !important;
 	overflow: hidden !important;
-	transition: background 0.5s ease-in-out , border 0.5s ease-in-out , padding 0.4s ease-in-out !important;
+	transition: background 0.4s ease-in-out , border 0.5s ease-in-out , padding 0.3s ease-in-out !important;
 
 	&:hover {
-		background-color: var(--bg0-dh) !important;
-		border-color: var(--text--faded) !important;
+	
+		background-color: var(--bg-def-dark) !important;
+		border-color: var(--dim-green) !important;
 		border-width: 2px !important;
-		padding: 0rem 2rem !important;
+		padding: 0rem 2.2rem !important;
 	}
 
 	&::before {
@@ -731,11 +732,13 @@ button.mat-ripple.card.card-legacy {
 }
 
 button.card.card-legacy .card-label.gds-label-l {
-	color: var(--faded-aqua) !important;
+	color: var(--dim-green) !important;
 }
 
 button.card.card-legacy:hover .card-label.gds-label-l {
-	color: var(--text-white) !important;
+	color: var(--text--faded) !important;
+	transition: color 0.4s ease-in-out !important;
+	font-weight: 600 !important;
 }
 
 /* Styling for the 'Create Image' button container and label */
@@ -766,7 +769,7 @@ button.card.card-legacy {
 }
 
 button.card.card-legacy .card-label.gds-label-l {
-	color: var(--faded-aqua) !important;
+	color: var(--dim-green) !important;
 	font-weight: 500 !important;
 	background-color: transparent !important; /* Ensure label background is transparent */
 	padding: 0.2em 0.5em !important; /* Adjust padding if necessary */
@@ -794,7 +797,7 @@ bard-sidenav-container > * {
 
 /* New Chat , Explore Gems , Settings and Help text*/
 .side-nav-action-button span.gds-body-m {
-	color: var(--faded-aqua) !important;
+	color: var(--dim-green) !important;
 	font-family: inherit !important;
 	font-style: normal !important;
 	font-size:0.85em !important;
