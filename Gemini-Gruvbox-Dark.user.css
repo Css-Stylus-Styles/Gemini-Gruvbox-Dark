@@ -943,12 +943,47 @@ bard-sidenav-container > * {
 	font-weight: 500 !important;
 }
 
-/* Old Converstion history with Gemini (Sidebar) */
-.conversations-container .conversation .conversation-title {
-  color: var(--faded-blue) !important;
+
+/* Old Conversation history with Gemini (Sidebar) */
+.conversation {
+  color: var(--text--faded) !important;
   font-weight: 500 !important;
   font-family: inherit !important;
   font-style: normal !important;
+  transition: all 0.5s cubic-bezier(0.118, 1.140, 0.743, 0.913) !important;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  will-change: transform, box-shadow, border-color;
+  border: 0.2em solid transparent !important;
+  border-radius: 22px !important;
+  padding: 0px 12px !important;
+  margin: 2px 0 !important;
+
+  &:hover {
+    background-color: var(--bg-def-dark) !important;	
+    border-color: solid 0.2em var(--bg2-dark) !important;
+    color: var(--faded-green) !important;
+	font-weight: 600 !important;
+	-webkit-font-smoothing: antialiased !important;
+	-moz-osx-font-smoothing: grayscale !important;
+	text-rendering: optimizeLegibility !important;
+	
+
+    transform: translateY(-1px) scale(1.01);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  }
+  
+ 
+}
+
+/* Chat Message Bubbles */
+.user-query-bubble-with-background[_ngcontent-ng-c1464471135]:not(.edit-mode) {
+    background: var(--gem-sys-color--surface-container-high);
+    border-radius: 24px var(--gem-sys-shape--corner-extra-small) 24px 24px;
+    max-width: calc(476px - var(--gem-sys-spacing--m)*2);
+    padding: 12px 16px;
+    margin: 8px 0;
+    transition: all 0.2s ease-out;
 }
 
 /* SideBar Chat history hover */
