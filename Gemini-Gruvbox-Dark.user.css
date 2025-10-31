@@ -826,11 +826,17 @@ h4 , h5 , h6 {
 /* Styling for the Model Selector Titles (e.g., "Fast all-around help") */
 span.mode-title.gds-label-l {
 	color: var(--faded-green) !important;
+	-webkit-font-smoothing: antialiased !important;
+	-moz-osx-font-smoothing: grayscale !important;
+	text-rendering: optimizeLegibility !important;
 }
 
 /* Styling for the Model Selector Subtitle (e.g., "Choose your model") */
 span.title.gds-label-s {
 	color: var(--faded-green) !important;
+	-webkit-font-smoothing: antialiased !important;
+	-moz-osx-font-smoothing: grayscale !important;
+	text-rendering: optimizeLegibility !important;
 }
 
 /* Styling for all action buttons (Write, Build, Deep Research, Learn, etc.) */
@@ -932,6 +938,9 @@ bard-sidenav-container > * {
 	font-style: normal !important;
 	font-size:0.85em !important;
 	font-weight: 500 !important;
+	-webkit-font-smoothing: antialiased !important;
+	-moz-osx-font-smoothing: grayscale !important;
+	text-rendering: optimizeLegibility !important;
 }
 
 /* SideBar Gems */
@@ -941,6 +950,9 @@ bard-sidenav-container > * {
 	font-style: normal !important;
 	font-size:1.05em !important;
 	font-weight: 500 !important;
+	-webkit-font-smoothing: antialiased !important;
+	-moz-osx-font-smoothing: grayscale !important;
+	text-rendering: optimizeLegibility !important;
 }
 
 
@@ -1048,6 +1060,9 @@ border : solid 0.2em var(--bg2-dark) !important;
 	color: var(--text-offwhite-faded) !important;
 	font-weight: 500 !important;
 	font-size: 0.8em !important;
+	-webkit-font-smoothing: antialiased !important;
+	-moz-osx-font-smoothing: grayscale !important;
+	text-rendering: optimizeLegibility !important;
 }
 
 /* Model info and details */
@@ -1055,12 +1070,18 @@ border : solid 0.2em var(--bg2-dark) !important;
 color: var(--faded-blue) !important;
 font-weight: 500 !important;
 font-size: 0.8em !important;
+-webkit-font-smoothing: antialiased !important;
+-moz-osx-font-smoothing: grayscale !important;
+text-rendering: optimizeLegibility !important;
 }
 
 /* Choose your Model text  */
 span.gds-label-l.title {
 color: var(--dim-green) !important;
 font-family: inherit !important;
+-webkit-font-smoothing: antialiased !important;
+-moz-osx-font-smoothing: grayscale !important;
+text-rendering: optimizeLegibility !important;
 }
 
 
@@ -1170,6 +1191,9 @@ xap-code-editor .xap-monaco-container .monaco-editor  {
 	  color: var(--text-offwhite-faded) !important;
 	  font-family: 'Geist Mono' !important;
 	  font-weight: 600 !important;
+	  -webkit-font-smoothing: antialiased !important;
+	  -moz-osx-font-smoothing: grayscale !important;
+	  text-rendering: optimizeLegibility !important;
 	}
 
 
