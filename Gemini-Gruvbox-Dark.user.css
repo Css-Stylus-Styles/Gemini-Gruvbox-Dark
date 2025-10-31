@@ -543,6 +543,8 @@ html , body {
 	/* Table cell and row text color */
 	td, tr {
 	  color: var(--text-offwhite) !important;
+	  background-color: var(--bg-dark-new) !important;
+	  border: 1px solid var(--bg1-dark) !important;
 	  font-family: inherit !important;
 	  -webkit-font-smoothing: antialiased !important;
 	  -moz-osx-font-smoothing: grayscale !important;
@@ -586,11 +588,11 @@ html , body {
 
 	/* General link styling */
 	a {
-		color: var(--faded-red) !important;
+		color: var(--faded-blue) !important;
 		text-decoration: underline !important;
 		font-family: var(--font-JetbrainsVar) !important;
 		font-weight : 600 !important;
-		text-decoration-color: var(--faded-red) !important;
+		text-decoration-color: var(--faded-blue) !important;
 		-webkit-font-smoothing: antialiased !important;
 		-moz-osx-font-smoothing: grayscale !important;
 		text-rendering: optimizeLegibility !important;
@@ -600,14 +602,14 @@ html , body {
 
 
 		&:hover {
-			color: var(--faded-orange) !important;
+			color: var(--faded-red) !important;
 			text-decoration: underline wavy !important;
 			text-decoration-style: wavy !important;
 			text-decoration-thickness: 1px !important;
 			text-underline-offset: 2px !important;
 			transition: all 0.3s ease-in-out !important;
 			transform: translateY(-1px) !important;
-			text-shadow: 0 0 8px var(--faded-orange) !important;
+			text-shadow: 0 0 6px var(--faded-red) !important;
 		}
 	}
 
@@ -626,17 +628,145 @@ html , body {
 		border-radius: 0 0 var(--gem-sys-shape--corner-large) var(--gem-sys-shape--corner-large);
 	}
 
-	/* Styling for citation spans */
-	span[class*="citation-"] {
-		background-color: transparent !important;
+/* CITATION BUTTON */
+.source-inline-chip-container {
+    position: relative;
+    display: inline-block;
+}
+
+.source-inline-chip-container > button {
+    background-color: var(--bg-dark-new) !important;
+    border: 1px solid var(--bg1-dark) !important;
+    border-radius: 14px !important;
+    padding: 0px 4px !important;
+    width: 28px !important;
+    height: 28px !important;
+    cursor: pointer !important;
+    transform: scale(1);
+    transition: all 0.2s cubic-bezier(0.68, -0.6, 0.32, 1.6) !important;
+    will-change: transform, box-shadow;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    
+    &:hover {
+        border-color: var(--dim-green) !important;
+        background-color: var(--bg1-dark) !important;
+        padding: 0px 8px !important;
+        width: 38px !important;
+        transform: scale(1.05) translateY(-2px) !important;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    }
+    
+    &:active {
+        transform: scale(0.98) translateY(0) !important;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+    
+    
+    &:hover::after {
+        opacity: 1;
+        transform: translateX(-50%) translateY(-15px);
+    }
+}
+
+/* Style the icon inside the button */
+.source-inline-chip-container > button .mat-icon {
+    color: var(--text-offwhite-faded) !important;
+    width: 16px !important;
+    height: 16px !important;
+    font-size: 16px !important;
+    line-height: 1 !important;
+    transition: transform 0.3s ease-in-out !important;
+}
+
+.source-inline-chip-container > button:hover .mat-icon {
+    transform: scale(1.1) rotate(-5deg) !important;
+}
+
+
+/* CITATIONS SIDE BAR SOURCES  */
+/* Sources text in the header  */
+.gds-title-l{
+	color: var(--text-normal) !important;
+	font-weight: 500 !important;
+}
+
+/* Title of the hover  */
+.gds-title-s :not(a) {
+    color: var(--text-normal) !important;
+    font-weight: 500 !important;
+    text-decoration: none !important;
+}
+
+/* Title of the Source */
+.title.gds-title-m {
+    color: var(--faded-green) !important;
+    font-style: italic !important;
+    margin-bottom: 4px !important;
+}
+
+/* Source path under the title */
+.gds-title-s {
+    color: var(--faded-yellow) !important;
+    font-weight: medium !important;
+	font-size: 16px !important;
+    display: block !important;
+    margin-top: 2px !important;
+}
+
+/* Info label styling */
+.info.gds-label-m-alt {
+    opacity: 0.7 !important;
+    font-size: 0.9em !important;
+    margin-top: 2px !important;
+    color: var(--text-offwhite-faded) !important;
+}
+
+/* Body text snippet */
+.snippet.gds-body-m {
+    color: var(--text-offwhite-faded) !important;
+    opacity: 0.9 !important;
+    font-size: 0.95em !important;
+    line-height: 1.5 !important;
+    margin-top: 4px !important;
+}
+
+
+
+	/* Styling for the inline source cards (the search results sidebar) */
+	inline-source-card a {
 		color: inherit !important;
-		font-weight: 500 !important;
+		text-decoration: none !important;
+		font-family: inherit !important;
+		font-weight: inherit !important;
+		text-decoration-color: transparent !important;
+		-webkit-font-smoothing: antialiased !important;
+		-moz-osx-font-smoothing: grayscale !important;
+		text-rendering: optimizeLegibility !important;
 
 		&:hover {
-			background-color: var(--bg-dark-new) !important;
+			color: inherit !important;
+			text-decoration: none !important;
+			text-decoration-style: initial !important;
+			text-decoration-thickness: initial !important;
+			text-underline-offset: initial !important;
+			transition: none !important;
+			transform: none !important;
+			text-shadow: none !important;
 		}
 	}
 
+		/* Container of a single source in the side bar  */
+	.inline-source-card-container{
+		background: var(--bg-dark-new) !important;
+		border: 1px solid var(--bg1-dark) !important;
+		border-radius: 14px !important;
+		padding: 16px !important;
+	}
+
+
+	
 	/* Heading 1  will get a diff color  */
 h1 {
 	  color : var(--faded-red) !important;
@@ -706,7 +836,7 @@ span.title.gds-label-s {
 /* Styling for all action buttons (Write, Build, Deep Research, Learn, etc.) */
 button.mat-ripple.card.card-legacy {
 	background-color: var(--bg-def-dark) !important;
-	border: solid 1px var(--bg1-dark) !important;
+	border: solid 2px var(--bg1-dark) !important;
 	border-radius: 3em !important;
 	position: relative !important;
 	overflow: hidden !important;
