@@ -812,12 +812,12 @@ h4 , h5 , h6 {
 }
 
 /* Background color for the main chat area container */
-.ia-redesign[_nghost-ng-c4142062348], .ia-redesign[_ngcontent-ng-c4142062348] infinite-scroller {
+.ia-redesign, .ia-redesign infinite-scroller {
 	background-color: var(--bg-def-dark) !important;
 }
 
 /* Styling for the 'Create Image'. 'Deep Research' . 'Guided Learning' button label */
-.card-label.gds-label-l[_ngcontent-ng-c161681469] {
+.card-label.gds-label-l {
 	color: var(--dim-green) !important;
 	font-weight: 500 !important;
 
@@ -861,16 +861,16 @@ button.mat-ripple.card.card-legacy {
 	}
 }
 
+
+
+
+
 button.card.card-legacy .card-label.gds-label-l {
 	color: var(--dim-green) !important;
+	font-weight: 500 !important;
+	background-color: transparent !important; /* Ensure label background is transparent */
+	padding: 0.2em 0.5em !important; /* Adjust padding if necessary */
 }
-
-button.card.card-legacy:hover .card-label.gds-label-l {
-	color: var(--text--faded) !important;
-	transition: color 0.4s ease-in-out !important;
-	font-weight: 600 !important;
-}
-
 /* Styling for the 'Create Image' button container and label */
 button.card.card-legacy {
 	background-color: var(--bg-dark-new) !important; /* Set container background */
@@ -977,7 +977,7 @@ bard-sidenav-container > * {
 }
 
 /* Chat Message Bubbles */
-.user-query-bubble-with-background[_ngcontent-ng-c1464471135]:not(.edit-mode) {
+.user-query-bubble-with-background:not(.edit-mode) {
     background: var(--gem-sys-color--surface-container-high);
     border-radius: 24px var(--gem-sys-shape--corner-extra-small) 24px 24px;
     max-width: calc(476px - var(--gem-sys-spacing--m)*2);
