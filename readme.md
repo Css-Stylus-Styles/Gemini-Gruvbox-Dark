@@ -15,3 +15,4 @@ A custom UserStyle for `gemini.google.com` that applies a Gruvbox-inspired dark 
 (take new screenshots for the links) 
 - Check if this is properly updated at the interface or not 
 - Look out for Gems page and tooltips inside the theme and tools (Needs work)
+- Temp chat icon needs to be colored as well
