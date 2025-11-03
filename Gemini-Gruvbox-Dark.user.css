@@ -572,8 +572,8 @@ html , body {
 	/* bold the text wrapped around  the paragaph only (makes sure this does not effect the code  cells) */
 	p > b {
 	font-family: inherit !important ;
-	font-weight: 500;
-	font-style: italic !important;
+	font-weight: 700 !important;
+	font-style: normal !important;
 	}
 
 	strong, bold, td > b, tr > b, p > b {
@@ -1025,21 +1025,20 @@ p.query-text-line.ng-star-inserted {
 	transition: all 0.3s ease-in-out !important;
 
 	&:hover {
-		border-color: var(--faded-blue) !important;
+		border-color: var(--faded-green) !important;
 		background-color: var(--bg-def-dark) !important;
 		transform: scale(1.1) !important;
-		box-shadow: 0 0 10px var(--faded-blue) !important;
+		box-shadow: 0 0 10px var(--faded-green) !important;
 	}
 }
 
 /* Icon inside the action button */
 .query-content .action-button mat-icon {
-	color: var(--text--faded) !important;
-	transition: color 0.3s ease-in-out, transform 0.3s ease-in-out !important;
+	color: var(--faded-green) !important;
+	transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
 	
 	&:hover {
-		color: var(--faded-blue) !important;
-		transform: scale(1.1) !important;
+		transform: scale(1.05) !important;
 	}
 }
 
