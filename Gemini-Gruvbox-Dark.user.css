@@ -546,6 +546,88 @@ html , body {
 	  -moz-osx-font-smoothing: grayscale !important;
 	  text-rendering: optimizeLegibility !important;
 	}
+
+	
+	/* Heading 1  will get a diff color  */
+h1 {
+	  color : var(--faded-red) !important;
+	  -webkit-font-smoothing: antialiased !important;
+	  -moz-osx-font-smoothing: grayscale !important;
+	  text-rendering: optimizeLegibility !important;
+}
+
+	/* Heading 2 styles */
+	h2 {
+	  color: var(--faded-blue) !important;
+	  font-weight: 500 !important;
+	  -webkit-font-smoothing: antialiased !important;
+	  -moz-osx-font-smoothing: grayscale !important;
+	  text-rendering: optimizeLegibility !important;
+	}
+
+	/* Heading 3 styles */
+	h3 {
+	  color: var(--faded-blue) !important;
+	  font-weight: 500 !important;
+	  -webkit-font-smoothing: antialiased !important;
+	  -moz-osx-font-smoothing: grayscale !important;
+	  text-rendering: optimizeLegibility !important;
+	}
+	/* heading 4 to 6 will get a diff color */
+h4 , h5 , h6 {
+	  color : var(--light-dim-yellow) !important;
+	  -webkit-font-smoothing: antialiased !important;
+	  -moz-osx-font-smoothing: grayscale !important;
+	  text-rendering: optimizeLegibility !important;
+}
+
+/* SVG colors , mat-icon is for material icons */
+	svg , .mat-icon {
+	  color: var(--faded-green) !important; 
+	  stroke-width: 5px !important; 
+	}
+
+	/* Chat History Container */
+	.infinite-scroller.chat-history {
+	  background-color: var(--bg-def-dark) !important;
+	  border: 1px solid var(--bg1-dark) !important;
+	  border-radius: 8px !important;
+	  padding: 12px !important;
+	  margin: 8px 0 !important;
+	  transition: all 0.3s ease-in-out !important;
+
+	  &:hover{
+	  border-color: var(--faded-blue) !important;
+	  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2) !important;
+	}
+	} 
+
+
+
+
+
+	/* Button with icon styles - Matching Create Image button */
+	.mat-mdc-button:has(.material-icons, mat-icon) {
+	  border: 1px solid var(--bg0-dh) !important;
+	  border-radius: 3em !important;
+	  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1) !important;
+	  
+
+	  &:hover {
+	    background-color: var(--bg-def-dark) !important;
+	    border-color: var(--bg3-dark) !important;
+	    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2) !important;
+		padding: 0rem 2rem  !important;
+	  }
+
+	  &:active {
+	    transform: translateY(1px) !important;
+	  }
+	}
+
+
+
+
 	/* Table cell and row text color */
 	td, tr {
 	  color: var(--text-offwhite) !important;
@@ -556,6 +638,9 @@ html , body {
 	  -moz-osx-font-smoothing: grayscale !important;
 	  text-rendering: optimizeLegibility !important;
 	}
+
+	
+
 	/* Bold and strong formatting  */
 	strong , bold  {
 	  font-size: 1rem !important;
@@ -772,38 +857,6 @@ html , body {
 	}
 
 
-	
-	/* Heading 1  will get a diff color  */
-h1 {
-	  color : var(--faded-red) !important;
-	  -webkit-font-smoothing: antialiased !important;
-	  -moz-osx-font-smoothing: grayscale !important;
-	  text-rendering: optimizeLegibility !important;
-}
-
-	/* heading 2 and 3  will get a diff color */
-h2 , h3 {
-	  color : var(--faded-orange) !important;
-	  font-weight: 500 !important;
-	  -webkit-font-smoothing: antialiased !important;
-	  -moz-osx-font-smoothing: grayscale !important;
-	  text-rendering: optimizeLegibility !important;
-}
-	/* heading 4 to 6 will get a diff color */
-h4 , h5 , h6 {
-	  color : var(--light-dim-yellow) !important;
-	  -webkit-font-smoothing: antialiased !important;
-	  -moz-osx-font-smoothing: grayscale !important;
-	  text-rendering: optimizeLegibility !important;
-}
-
-/* SVG colors , mat-icon is for material icons */
-	svg , .mat-icon {
-	  color: var(--faded-green) !important; 
-	  stroke-width: 5px !important; 
-	}
-
-
 
 
 /* Custom Styles */
@@ -880,8 +933,14 @@ button.mat-ripple.card.card-legacy {
 button.card.card-legacy .card-label.gds-label-l {
 	color: var(--dim-green) !important;
 	font-weight: 500 !important;
-	background-color: transparent !important; /* Ensure label background is transparent */
-	padding: 0.2em 0.5em !important; /* Adjust padding if necessary */
+	background-color: transparent !important;
+	padding: 0.2em 0.5em !important;
+	transition: color 0.3s ease-in-out !important;
+}
+
+button.card.card-legacy:hover .card-label.gds-label-l {
+	color: var(--text-offwhite) !important;
+	font-weight: 600 !important;
 }
 /* Styling for the 'Create Image' button container and label */
 button.card.card-legacy {
@@ -913,8 +972,14 @@ button.card.card-legacy {
 button.card.card-legacy .card-label.gds-label-l {
 	color: var(--dim-green) !important;
 	font-weight: 500 !important;
-	background-color: transparent !important; /* Ensure label background is transparent */
-	padding: 0.2em 0.5em !important; /* Adjust padding if necessary */
+	background-color: transparent !important;
+	padding: 0.2em 0.5em !important;
+	transition: color 0.3s ease-in-out !important;
+}
+
+button.card.card-legacy:hover .card-label.gds-label-l {
+	color: var(--text-offwhite) !important;
+	font-weight: 600 !important;
 }
 
 /* Styling for Model Description (e.g., "2.5 Flash") */
@@ -1237,9 +1302,9 @@ xap-code-editor .xap-monaco-container .monaco-editor  {
   xap-code-editor > * {
 	font-family: "Geist Mono" !important;
 	background-color: var(--bg-def-dark) !important;
-	}
+  }
 
-	/* set canvas font global;lly for all the text in the canvas */
+	/* set canvas font globally for all the text in the canvas */
 	xap-code-editor .mtk1 {
 	  color: var(--text-offwhite-faded) !important;
 	  font-family: 'Geist Mono' !important;
