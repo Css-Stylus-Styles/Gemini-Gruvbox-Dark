@@ -995,8 +995,56 @@ bard-sidenav-container > * {
 }
 
 /* Chat Message Bubbles */
+/* User Query Text Styling (The actual text inside the bubble) */
+p.query-text-line.ng-star-inserted {
+	background-color: var(--bg-dark-new) !important;
+	color: var(--text-normal) !important;
+	border: solid 1px var(--bg1-dark) !important;
+	border-radius: 18px !important;
+	padding: 8px 16px !important;
+	font-size: 1rem !important;
+	font-weight: 500 !important;
+	transition: all 0.3s ease-in-out !important;
+	-webkit-font-smoothing: antialiased !important;
+	-moz-osx-font-smoothing: grayscale !important;
+	text-rendering: optimizeLegibility !important;
+
+	&:hover {
+		background-color: var(--bg-def-dark) !important;
+		border-color: var(--faded-blue) !important;
+		transform: translateY(-1px) scale(1.005) !important;
+		box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2) !important;
+	}
+}
+
+/* Styling for action buttons (Copy, Edit) next to user query */
+.query-content .action-button {
+	background-color: var(--bg-dark-new) !important;
+	border: solid 2px var(--bg3-dark) !important;
+	border-radius: 50% !important;
+	transition: all 0.3s ease-in-out !important;
+
+	&:hover {
+		border-color: var(--faded-blue) !important;
+		background-color: var(--bg-def-dark) !important;
+		transform: scale(1.1) !important;
+		box-shadow: 0 0 10px var(--faded-blue) !important;
+	}
+}
+
+/* Icon inside the action button */
+.query-content .action-button mat-icon {
+	color: var(--text--faded) !important;
+	transition: color 0.3s ease-in-out, transform 0.3s ease-in-out !important;
+	
+	&:hover {
+		color: var(--faded-blue) !important;
+		transform: scale(1.1) !important;
+	}
+}
+
 .user-query-bubble-with-background:not(.edit-mode) {
-    background: var(--gem-sys-color--surface-container-high);
+    background: transparent !important;
     border-radius: 24px var(--gem-sys-shape--corner-extra-small) 24px 24px;
     max-width: calc(476px - var(--gem-sys-spacing--m)*2);
     padding: 12px 16px;
