@@ -565,6 +565,10 @@ h1 {
 	  text-rendering: optimizeLegibility !important;
 	}
 
+
+
+
+
 	/* Heading 3 styles */
 	h3 {
 	  color: var(--faded-blue) !important;
@@ -929,57 +933,20 @@ button.mat-ripple.card.card-legacy {
 
 
 
-
+/* Styling for the Model Selector Subtitle (e.g., "Choose your model") */
 button.card.card-legacy .card-label.gds-label-l {
 	color: var(--dim-green) !important;
 	font-weight: 500 !important;
 	background-color: transparent !important;
 	padding: 0.2em 0.5em !important;
-	transition: color 0.3s ease-in-out !important;
+	transition: background-color 0.3s cubic-bezier(0.68, -0.6, 0.32, 1.6) , padding 0.3s cubic-bezier(0.68, -0.6, 0.32, 1.6) , color 0.3s cubic-bezier(0.68, -0.6, 0.32, 1.6) !important;
 }
-
+/* Styling for the Model Selector Subtitle (e.g., "Choose your model") */
 button.card.card-legacy:hover .card-label.gds-label-l {
-	color: var(--text-offwhite) !important;
+	color: var(--text--faded) !important;
 	font-weight: 600 !important;
-}
-/* Styling for the 'Create Image' button container and label */
-button.card.card-legacy {
-	background-color: var(--bg-dark-new) !important; /* Set container background */
-	border: solid 1px var(--bg1-dark) !important; /* Add a subtle border for definition */
-	border-radius: 3em !important; /* Make it more pill-shaped if needed, though classes might handle this */
-	position: relative !important;
-	overflow: hidden !important;
-	transition: background 0.5s ease-in-out , border 0.5s ease-in-out , padding 0.4s ease-in-out !important;
-
-	&:hover {
-		background-color: var(--bg0-dh) !important;
-		border-color: var(--text--faded) !important;
-		border-width: 2px !important;
-		padding: 0rem 2rem !important;
-	}
-
-	&::before {
-		content: "" !important;
-		position: absolute !important;
-		inset: 0 !important;
-		background-color: transparent !important;
-		opacity: 0 !important;
-		z-index: 1 !important;
-		pointer-events: none !important;
-	}
-}
-
-button.card.card-legacy .card-label.gds-label-l {
-	color: var(--dim-green) !important;
-	font-weight: 500 !important;
-	background-color: transparent !important;
-	padding: 0.2em 0.5em !important;
-	transition: color 0.3s ease-in-out !important;
-}
-
-button.card.card-legacy:hover .card-label.gds-label-l {
-	color: var(--text-offwhite) !important;
-	font-weight: 600 !important;
+	border: weight 2px !important;
+	border-color: var(--text--faded) !important;
 }
 
 /* Styling for Model Description (e.g., "2.5 Flash") */
@@ -993,6 +960,45 @@ span.mode-desc.gds-label-m-alt {
 	color: var(--text-offwhite) !important;
 	visibility: visible !important;
 }
+
+
+
+
+/* Toolbox drawer item specific styles */
+
+ .mat-mdc-card.toolbox-drawer-card {
+	background: var(--bg-def-dark);
+	border-radius: 4px !important;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
+  }
+
+ .toolbox-drawer-menu-item {
+	background-color: var(--bg-def-dark) !important;
+	border: solid 1px var(--bg-dark) !important;
+	border-radius: 0.8em !important;
+	transition: background 0.4s ease-in-out , border 0.5s ease-in-out , padding 0.3s ease-in-out !important;
+
+	&:hover{
+		background-color : inherit !important;
+		border-color: var(--text--veryfade) !important;
+		border-width: 2px !important;
+	}
+}
+ 
+  .toolbox-drawer-menu-item .mat-mdc-list-item-icon {
+	color: var(--faded-green) !important;
+
+	
+  }
+  .toolbox-drawer-menu-item .gds-label-l {
+	font-weight: bold !important;
+	color: var(--text--faded) !important;
+	transition: background 0.4s ease-in-out , border 0.5s ease-in-out , padding 0.3s ease-in-out !important;
+  }
+
+
+
+
 
 /* Bard Sidebar nav  */
 bard-sidenav-container > * {
