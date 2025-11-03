@@ -526,7 +526,7 @@ html , body {
 	/* Colors and other styling options for General Html tags  */
 
 	p {
-	  color : var(--text-white) !important;
+	  color : var(--text-offwhite-faded) !important;
 	  font-size: 1rem !important;
 	  -webkit-font-smoothing: antialiased !important;
 	  -moz-osx-font-smoothing: grayscale !important;
