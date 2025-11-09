@@ -15,4 +15,5 @@ A custom UserStyle for `gemini.google.com` that applies a Gruvbox-inspired dark 
 (take new screenshots for the links) 
 - Check if this is properly updated at the interface or not 
 - Look out for Gems page and tooltips inside the theme and tools (Needs work)
-- Temp chat icon needs to be colored as well
+- Deep Research panel needs an update to match the theme
+- Style the 'New! Video generation just got better with Veo 3.1' notification banner and 'Try Now' button to match the Gruvbox theme.
