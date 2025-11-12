@@ -1041,7 +1041,7 @@ bard-sidenav-container > * {
 
 /* Old Conversation history with Gemini (Sidebar) */
 .conversation {
-  color: var(--text--faded) !important;
+	color: var(--faded-purple) !important;
   font-weight: 500 !important;
   font-family: inherit !important;
   font-style: normal !important;
@@ -1249,6 +1249,15 @@ text-rendering: optimizeLegibility !important;
 span.mdc-button__label{
 	color: var(--faded-blue) !important;
 	font-weight: 500 !important;
+}
+
+/* THINNING button labels */
+.mdc-button__label span {
+	font-weight: 400 !important;
+	color: var(--text--faded) !important;
+	-webkit-font-smoothing: antialiased !important;
+	-moz-osx-font-smoothing: grayscale !important;
+	text-rendering: optimizeLegibility !important;
 }
 
 
