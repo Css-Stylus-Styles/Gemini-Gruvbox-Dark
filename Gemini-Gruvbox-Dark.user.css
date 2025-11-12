@@ -25,6 +25,7 @@
     'Test Tiempos Text',
     'Website Default',
 	'Geist Sans',
+	'Test Tiempos Text Medium',
 ]
 
 @var select headfont 'Heading Font' [
@@ -693,7 +694,7 @@ h6 {
 	/* General link styling */
 	a {
 		color: var(--faded-blue) !important;
-		text-decoration: underline !important;
+		text-decoration: none !important;
 		font-family: var(--font-JetbrainsVar) !important;
 		font-weight : 600 !important;
 		text-decoration-color: var(--faded-blue) !important;
@@ -706,14 +707,10 @@ h6 {
 
 
 		&:hover {
-			color: var(--faded-red) !important;
-			text-decoration: underline wavy !important;
-			text-decoration-style: wavy !important;
-			text-decoration-thickness: 1px !important;
-			text-underline-offset: 2px !important;
+			color: var(--faded-blue) !important;
 			transition: all 0.3s ease-in-out !important;
 			transform: translateY(-1px) !important;
-			text-shadow: 0 0 6px var(--faded-red) !important;
+			text-shadow: 0 0 3px var(--faded-blue) !important;
 		}
 	}
 
@@ -1120,6 +1117,33 @@ p.query-text-line.ng-star-inserted {
 	&:hover {
 		transform: scale(1.05) !important;
 	}
+}
+
+/* Temporary Chat Button */
+button[data-test-id="temp-chat-button"] {
+    background-color: var(--bg-dark-new) !important;
+    border: solid 2px var(--bg3-dark) !important;
+    border-radius: 50% !important;
+    transition: all 0.3s ease-in-out !important;
+    -webkit-font-smoothing: antialiased !important;
+    -moz-osx-font-smoothing: grayscale !important;
+    text-rendering: optimizeLegibility !important;
+}
+
+button[data-test-id="temp-chat-button"]:hover {
+    border-color: var(--faded-aqua) !important;
+    background-color: var(--bg-def-dark) !important;
+    transform: scale(1.1) !important;
+    box-shadow: 0 0 10px var(--faded-aqua) !important;
+}
+
+button[data-test-id="temp-chat-button"] svg path {
+    fill: var(--faded-aqua) !important;
+    transition: all 0.3s ease-in-out !important;
+}
+
+button[data-test-id="temp-chat-button"]:hover svg path {
+    fill: var(--faded-green) !important;
 }
 
 .user-query-bubble-with-background:not(.edit-mode) {
