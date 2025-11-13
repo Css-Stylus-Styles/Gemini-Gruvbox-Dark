@@ -559,7 +559,7 @@ h1 {
 
 	/* Heading 2 styles */
 	h2 {
-	  color: var(--faded-blue) !important;
+	color: var(--faded-blue) !important;
 	  font-weight: 500 !important;
 	  -webkit-font-smoothing: antialiased !important;
 	  -moz-osx-font-smoothing: grayscale !important;
@@ -583,7 +583,7 @@ h4 {
 
 /* Heading 5 styles */
 h5 {
-	  color: var(--faded-orange) !important;
+	color: var(--faded-aqua) !important;
 	  -webkit-font-smoothing: antialiased !important;
 	  text-rendering: optimizeLegibility !important;
 }
@@ -693,11 +693,11 @@ h6 {
 
 	/* General link styling */
 	a {
-		color: var(--faded-blue) !important;
+		color: var(--faded-red) !important;
 		text-decoration: none !important;
 		font-family: var(--font-JetbrainsVar) !important;
 		font-weight : 600 !important;
-		text-decoration-color: var(--faded-blue) !important;
+		text-decoration-color: var(--faded-red) !important;
 		-webkit-font-smoothing: antialiased !important;
 		-moz-osx-font-smoothing: grayscale !important;
 		text-rendering: optimizeLegibility !important;
@@ -707,7 +707,7 @@ h6 {
 
 
 		&:hover {
-			color: var(--faded-blue) !important;
+	color: var(--faded-orange) !important;
 			transition: all 0.3s ease-in-out !important;
 			transform: translateY(-1px) !important;
 			text-shadow: 0 0 3px var(--faded-blue) !important;
@@ -1028,7 +1028,7 @@ bard-sidenav-container > * {
 
 /* SideBar Gems */
 .bot-name.gds-body-m {
-	color: var(--faded-blue) !important;
+	color: var(--faded-red) !important;
 	font-family: inherit !important;
 	font-style: normal !important;
 	font-size:1.05em !important;
@@ -1224,7 +1224,7 @@ border : solid 0.2em var(--bg2-dark) !important;
 
 /* Model info and details */
 .mode-desc.gds-label-m-alt {
-color: var(--faded-blue) !important;
+color: var(--faded-red) !important;
 font-weight: 500 !important;
 font-size: 0.8em !important;
 -webkit-font-smoothing: antialiased !important;
@@ -1247,7 +1247,7 @@ text-rendering: optimizeLegibility !important;
 
 /* MODEL SELECTOR IN INPUT   */
 span.mdc-button__label{
-	color: var(--faded-blue) !important;
+	color: var(--text--faded) !important;
 	font-weight: 500 !important;
 }
 
@@ -1281,7 +1281,7 @@ transition: all 0.5s ease-in-out !important;
 
 /* Name of the canvas  */
 .immersive-entry-chip .container.clickable .text {
-color: var(--faded-blue) !important;
+color: var(--faded-red) !important;
 }
 /* Date at which the software was craeted  */
 .immersive-entry-chip .container.clickable .creation-timestamp {
@@ -1307,6 +1307,25 @@ color: var(--dim-green) !important;
 
 
 /* Gemini CANVAS */
+
+/* Math blocks */
+.math-block,
+.math-block * {
+	color: var(--faded-red) !important;
+	-webkit-font-smoothing: antialiased !important;
+	-moz-osx-font-smoothing: grayscale !important;
+	text-rendering: optimizeLegibility !important;
+}
+
+.katex * {
+    -ms-high-contrast-adjust: none !important;
+    border-color: currentColor !important;
+    color: var(--faded-aqua) !important;
+    -webkit-font-smoothing: antialiased !important;
+    -moz-osx-font-smoothing: grayscale !important;
+    text-rendering: optimizeLegibility !important;
+}
+
 
 /* top tool bar  */
 .toolbar.has-title {
@@ -1576,7 +1595,7 @@ code ,  code-block , .code-block-decoration {
   }
 
   code[data-test-id="code-content"] .hljs-function .hljs-title {
-	color: var(--faded-blue) !important;
+	color: var(--faded-red) !important;
   }
 
   code[data-test-id="code-content"] .hljs-built_in {
