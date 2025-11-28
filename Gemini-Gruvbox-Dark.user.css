@@ -548,7 +548,7 @@ html , body {
 	  text-rendering: optimizeLegibility !important;
 	}
 
-	
+
 	/* Heading 1  will get a diff color  */
 h1 {
 	  color : var(--dark-orange) !important;
@@ -597,8 +597,8 @@ h6 {
 
 /* SVG colors , mat-icon is for material icons */
 	svg , .mat-icon {
-	  color: var(--faded-green) !important; 
-	  stroke-width: 5px !important; 
+	  color: var(--faded-green) !important;
+	  stroke-width: 5px !important;
 	}
 
 	/* Chat History Container */
@@ -614,7 +614,7 @@ h6 {
 	  border-color: var(--faded-blue) !important;
 	  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2) !important;
 	}
-	} 
+	}
 
 
 
@@ -625,7 +625,7 @@ h6 {
 	  border: 1px solid var(--bg0-dh) !important;
 	  border-radius: 3em !important;
 	  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1) !important;
-	  
+
 
 	  &:hover {
 	    background-color: var(--bg-def-dark) !important;
@@ -653,7 +653,7 @@ h6 {
 	  text-rendering: optimizeLegibility !important;
 	}
 
-	
+
 
 	/* Bold and strong formatting  */
 	strong , bold  {
@@ -685,9 +685,7 @@ h6 {
 		&:hover {
 			transform: scale(1.05) !important;
 			transition: all 0.3s ease-in-out !important;
-			-webkit-font-smoothing: antialiased !important;
-			-moz-osx-font-smoothing: grayscale !important;
-			text-rendering: optimizeLegibility !important;
+
 		}
 	}
 
@@ -708,9 +706,13 @@ h6 {
 
 		&:hover {
 	color: var(--faded-orange) !important;
+			text-decoration: underline wavy !important;
+			text-decoration-style: wavy !important;
+			text-decoration-thickness: 1px !important;
+			text-underline-offset: 2px !important;
 			transition: all 0.3s ease-in-out !important;
 			transform: translateY(-1px) !important;
-			text-shadow: 0 0 3px var(--faded-blue) !important;
+			text-shadow: 0 0 8px var(--faded-orange) !important;
 		}
 	}
 
@@ -748,7 +750,7 @@ h6 {
     will-change: transform, box-shadow;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     position: relative;
-    
+
     &:hover {
         border-color: var(--dim-green) !important;
         background-color: var(--bg1-dark) !important;
@@ -757,14 +759,14 @@ h6 {
         transform: scale(1.05) translateY(-2px) !important;
         box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
     }
-    
+
     &:active {
         transform: scale(0.98) translateY(0) !important;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
-    
-    
-    
+
+
+
     &:hover::after {
         opacity: 1;
         transform: translateX(-50%) translateY(-15px);
@@ -797,7 +799,7 @@ h6 {
 .gds-title-s :not(a) {
     color: var(--text-normal) !important;
     font-weight: 500 !important;
-    text-decoration: none !important;
+		text-decoration: underline !important;
 }
 
 /* Title of the Source */
@@ -885,6 +887,11 @@ h6 {
 	background-color: var(--bg-def-dark) !important;
 }
 
+/* Background color for the main chat area container (User requested for sidebar) */
+.ia-redesign infinite-scroller {
+	background-color: var(--bg-def-dark) !important;
+}
+
 /* Styling for the 'Create Image'. 'Deep Research' . 'Guided Learning' button label */
 .card-label.gds-label-l {
 	color: var(--dim-green) !important;
@@ -918,7 +925,7 @@ button.mat-ripple.card.card-legacy {
 	transition: background 0.4s ease-in-out , border 0.5s ease-in-out , padding 0.3s ease-in-out !important;
 
 	&:hover {
-	
+
 		background-color: var(--bg-def-dark) !important;
 		border-color: var(--dim-green) !important;
 		border-width: 2px !important;
@@ -990,11 +997,11 @@ span.mode-desc.gds-label-m-alt {
 		border-width: 2px !important;
 	}
 }
- 
+
   .toolbox-drawer-menu-item .mat-mdc-list-item-icon {
 	color: var(--faded-green) !important;
 
-	
+
   }
   .toolbox-drawer-menu-item .gds-label-l {
 	font-weight: bold !important;
@@ -1055,20 +1062,20 @@ bard-sidenav-container > * {
   margin: 2px 0 !important;
 
   &:hover {
-    background-color: var(--bg-def-dark) !important;	
+    background-color: var(--bg-def-dark) !important;
     border-color: solid 0.2em var(--bg2-dark) !important;
     color: var(--faded-green) !important;
 	font-weight: 600 !important;
 	-webkit-font-smoothing: antialiased !important;
 	-moz-osx-font-smoothing: grayscale !important;
 	text-rendering: optimizeLegibility !important;
-	
+
 
     transform: translateY(-1px) scale(1.01);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
   }
-  
- 
+
+
 }
 
 /* Chat Message Bubbles */
@@ -1113,7 +1120,7 @@ p.query-text-line.ng-star-inserted {
 .query-content .action-button mat-icon {
 	color: var(--faded-green) !important;
 	transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
-	
+
 	&:hover {
 		transform: scale(1.05) !important;
 	}
@@ -1316,14 +1323,22 @@ color: var(--dim-green) !important;
 	-moz-osx-font-smoothing: grayscale !important;
 	text-rendering: optimizeLegibility !important;
 }
-
+/* Math blocks font and size */
 .katex * {
     -ms-high-contrast-adjust: none !important;
-    border-color: currentColor !important;
-    color: var(--faded-aqua) !important;
+    border-color: currentColor  !important;
+    font-family: newfont !important;
+font-size: 1rem !important;
+color: var(--faded-red) !important;
+font-weight: 550 !important; 
     -webkit-font-smoothing: antialiased !important;
     -moz-osx-font-smoothing: grayscale !important;
     text-rendering: optimizeLegibility !important;
+}
+/* Math blocks padding */
+.katex .mtable .mord {
+  display: inline-block;
+  padding: 0.1em 0.1em;
 }
 
 
@@ -1397,8 +1412,8 @@ border-radius: 3em !important;
 /* HIDDEN STUFF*/
 
 /*Hiding the hallucination disclaimer*/
-/* display none wont be useful here as it hides the 
-contaning elements too 
+/* display none wont be useful here as it hides the
+contaning elements too
 opacity 0 leaves too much gap so use opacity 0 with custom height */
 .capabilities-disclaimer {
 	overflow: hidden !important;
