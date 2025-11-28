@@ -41,484 +41,500 @@
 
 
 @-moz-document domain("gemini.google.com") {
+
 	/* Insert code here... */
-	  /*Font Import */
-	  /*Importing Margon */
-	  /*Margon Medium Import */
-	  @font-face {
-			  font-family: "Margon 360 W08 Medium";
-			  src: url("https://db.onlinewebfonts.com/t/90100147a9b552a477200bfb737766e5.eot");
-			  src: url("https://db.onlinewebfonts.com/t/90100147a9b552a477200bfb737766e5.eot?#iefix")format("embedded-opentype"),
-			  url("https://db.onlinewebfonts.com/t/90100147a9b552a477200bfb737766e5.woff2")format("woff2"),
-			  url("https://db.onlinewebfonts.com/t/90100147a9b552a477200bfb737766e5.woff")format("woff"),
-			  url("https://db.onlinewebfonts.com/t/90100147a9b552a477200bfb737766e5.ttf")format("truetype"),
-			  url("https://db.onlinewebfonts.com/t/90100147a9b552a477200bfb737766e5.svg#Margon 360 W08 Medium")format("svg");
-	  }
-	  @import url(https://db.onlinewebfonts.com/c/90100147a9b552a477200bfb737766e5?family=Margon+360+W08+Medium);
-	  /* bricolage-grotesque-latin-wght-normal */
+	/*Font Import */
+	/*Importing Margon */
+	/*Margon Medium Import */
 	@font-face {
-	font-family: 'Bricolage Grotesque Variable';
-	font-style: normal;
-	font-display: swap;
-	font-weight: 200 800;
-	font-stretch: 75% 100%;
-	src: url(https://cdn.jsdelivr.net/fontsource/fonts/bricolage-grotesque:vf@latest/latin-standard-normal.woff2) format('woff2-variations');
-	unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+		font-family: "Margon 360 W08 Medium";
+		src: url("https://db.onlinewebfonts.com/t/90100147a9b552a477200bfb737766e5.eot");
+		src: url("https://db.onlinewebfonts.com/t/90100147a9b552a477200bfb737766e5.eot?#iefix")format("embedded-opentype"),
+			url("https://db.onlinewebfonts.com/t/90100147a9b552a477200bfb737766e5.woff2")format("woff2"),
+			url("https://db.onlinewebfonts.com/t/90100147a9b552a477200bfb737766e5.woff")format("woff"),
+			url("https://db.onlinewebfonts.com/t/90100147a9b552a477200bfb737766e5.ttf")format("truetype"),
+			url("https://db.onlinewebfonts.com/t/90100147a9b552a477200bfb737766e5.svg#Margon 360 W08 Medium")format("svg");
 	}
-	  /*Lora Font Import*/
-	  @font-face {
-			  font-family: "Lora";
-			  src: url("https://db.onlinewebfonts.com/t/5c803199923a6ed48112bebbb486b3e0.eot");
-			  src: url("https://db.onlinewebfonts.com/t/5c803199923a6ed48112bebbb486b3e0.eot?#iefix")format("embedded-opentype"),
-			  url("https://db.onlinewebfonts.com/t/5c803199923a6ed48112bebbb486b3e0.woff2")format("woff2"),
-			  url("https://db.onlinewebfonts.com/t/5c803199923a6ed48112bebbb486b3e0.woff")format("woff"),
-			  url("https://db.onlinewebfonts.com/t/5c803199923a6ed48112bebbb486b3e0.ttf")format("truetype"),
-			  url("https://db.onlinewebfonts.com/t/5c803199923a6ed48112bebbb486b3e0.svg#Lora")format("svg");
-	  }
-	  @import url(https://db.onlinewebfonts.com/c/5c803199923a6ed48112bebbb486b3e0?family=Lora);
-	  /*Lingistics Pro Font  */
-	  @font-face {
-			  font-family: "Linguistics Pro";
-			  src: url("https://db.onlinewebfonts.com/t/3612352f3b0606a3a5d675e7279f7c17.eot");
-			  src: url("https://db.onlinewebfonts.com/t/3612352f3b0606a3a5d675e7279f7c17.eot?#iefix")format("embedded-opentype"),
-			  url("https://db.onlinewebfonts.com/t/3612352f3b0606a3a5d675e7279f7c17.woff2")format("woff2"),
-			  url("https://db.onlinewebfonts.com/t/3612352f3b0606a3a5d675e7279f7c17.woff")format("woff"),
-			  url("https://db.onlinewebfonts.com/t/3612352f3b0606a3a5d675e7279f7c17.ttf")format("truetype"),
-			  url("https://db.onlinewebfonts.com/t/3612352f3b0606a3a5d675e7279f7c17.svg#Linguistics Pro")format("svg");
-	  }
-	  @import url(https://db.onlinewebfonts.com/c/3612352f3b0606a3a5d675e7279f7c17?family=Linguistics+Pro);
-	  /*Commit Mono*/
-	  @font-face {
-			  font-family: "CommitMono";
-			  src: url("https://db.onlinewebfonts.com/t/3d911dba955015058da8755197d0a58c.eot");
-			  src: url("https://db.onlinewebfonts.com/t/3d911dba955015058da8755197d0a58c.eot?#iefix")format("embedded-opentype"),
-			  url("https://db.onlinewebfonts.com/t/3d911dba955015058da8755197d0a58c.woff2")format("woff2"),
-			  url("https://db.onlinewebfonts.com/t/3d911dba955015058da8755197d0a58c.woff")format("woff"),
-			  url("https://db.onlinewebfonts.com/t/3d911dba955015058da8755197d0a58c.ttf")format("truetype"),
-			  url("https://db.onlinewebfonts.com/t/3d911dba955015058da8755197d0a58c.svg#CommitMono")format("svg");
-	  }
-	  @import url(https://db.onlinewebfonts.com/c/3d911dba955015058da8755197d0a58c?family=CommitMono);
-	  /*Fira Mono */
-	  /*
+
+	@import url(https://db.onlinewebfonts.com/c/90100147a9b552a477200bfb737766e5?family=Margon+360+W08+Medium);
+
+	/* bricolage-grotesque-latin-wght-normal */
+	@font-face {
+		font-family: 'Bricolage Grotesque Variable';
+		font-style: normal;
+		font-display: swap;
+		font-weight: 200 800;
+		font-stretch: 75% 100%;
+		src: url(https://cdn.jsdelivr.net/fontsource/fonts/bricolage-grotesque:vf@latest/latin-standard-normal.woff2) format('woff2-variations');
+		unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+	}
+
+	/*Lora Font Import*/
+	@font-face {
+		font-family: "Lora";
+		src: url("https://db.onlinewebfonts.com/t/5c803199923a6ed48112bebbb486b3e0.eot");
+		src: url("https://db.onlinewebfonts.com/t/5c803199923a6ed48112bebbb486b3e0.eot?#iefix")format("embedded-opentype"),
+			url("https://db.onlinewebfonts.com/t/5c803199923a6ed48112bebbb486b3e0.woff2")format("woff2"),
+			url("https://db.onlinewebfonts.com/t/5c803199923a6ed48112bebbb486b3e0.woff")format("woff"),
+			url("https://db.onlinewebfonts.com/t/5c803199923a6ed48112bebbb486b3e0.ttf")format("truetype"),
+			url("https://db.onlinewebfonts.com/t/5c803199923a6ed48112bebbb486b3e0.svg#Lora")format("svg");
+	}
+
+	@import url(https://db.onlinewebfonts.com/c/5c803199923a6ed48112bebbb486b3e0?family=Lora);
+
+	/*Lingistics Pro Font  */
+	@font-face {
+		font-family: "Linguistics Pro";
+		src: url("https://db.onlinewebfonts.com/t/3612352f3b0606a3a5d675e7279f7c17.eot");
+		src: url("https://db.onlinewebfonts.com/t/3612352f3b0606a3a5d675e7279f7c17.eot?#iefix")format("embedded-opentype"),
+			url("https://db.onlinewebfonts.com/t/3612352f3b0606a3a5d675e7279f7c17.woff2")format("woff2"),
+			url("https://db.onlinewebfonts.com/t/3612352f3b0606a3a5d675e7279f7c17.woff")format("woff"),
+			url("https://db.onlinewebfonts.com/t/3612352f3b0606a3a5d675e7279f7c17.ttf")format("truetype"),
+			url("https://db.onlinewebfonts.com/t/3612352f3b0606a3a5d675e7279f7c17.svg#Linguistics Pro")format("svg");
+	}
+
+	@import url(https://db.onlinewebfonts.com/c/3612352f3b0606a3a5d675e7279f7c17?family=Linguistics+Pro);
+
+	/*Commit Mono*/
+	@font-face {
+		font-family: "CommitMono";
+		src: url("https://db.onlinewebfonts.com/t/3d911dba955015058da8755197d0a58c.eot");
+		src: url("https://db.onlinewebfonts.com/t/3d911dba955015058da8755197d0a58c.eot?#iefix")format("embedded-opentype"),
+			url("https://db.onlinewebfonts.com/t/3d911dba955015058da8755197d0a58c.woff2")format("woff2"),
+			url("https://db.onlinewebfonts.com/t/3d911dba955015058da8755197d0a58c.woff")format("woff"),
+			url("https://db.onlinewebfonts.com/t/3d911dba955015058da8755197d0a58c.ttf")format("truetype"),
+			url("https://db.onlinewebfonts.com/t/3d911dba955015058da8755197d0a58c.svg#CommitMono")format("svg");
+	}
+
+	@import url(https://db.onlinewebfonts.com/c/3d911dba955015058da8755197d0a58c?family=CommitMono);
+
+	/*Fira Mono */
+	/*
 	  Fira Mono font weights:
 	- Fira Mono 400 (Regular)
 	- Fira Mono 500 (Medium)
 	- Fira Mono 700 (Bold)
 	*/
-	  /* fira-mono-regular - latin */
-	  /* fira-mono-latin-400-normal */
-	  /* fira-mono-latin-400-normal */
-	  @font-face {
-			  font-family: 'Fira Mono';
-			  font-style: normal;
-			  font-display: auto;
-			  font-weight: 400;
-			  src: url(https://cdn.jsdelivr.net/fontsource/fonts/fira-mono@latest/latin-400-normal.woff2) format('woff2'), url(https://cdn.jsdelivr.net/fontsource/fonts/fira-mono@latest/latin-400-normal.woff) format('woff'), url(https://cdn.jsdelivr.net/fontsource/fonts/fira-mono@latest/latin-400-normal.ttf) format('truetype');
-			  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-	  }
-	  /* Spline Sans */
-	  /* spline-sans-latin-wght-normal */
-	  @font-face {
-			  font-family: 'Spline Sans Variable';
-			  font-style: normal;
-			  font-display: auto;
-			  font-weight: 300 700;
-			  src: url(https://cdn.jsdelivr.net/fontsource/fonts/spline-sans:vf@latest/latin-wght-normal.woff2) format('woff2-variations');
-			  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-	  }
+	/* fira-mono-regular - latin */
+	/* fira-mono-latin-400-normal */
+	/* fira-mono-latin-400-normal */
+	@font-face {
+		font-family: 'Fira Mono';
+		font-style: normal;
+		font-display: auto;
+		font-weight: 400;
+		src: url(https://cdn.jsdelivr.net/fontsource/fonts/fira-mono@latest/latin-400-normal.woff2) format('woff2'), url(https://cdn.jsdelivr.net/fontsource/fonts/fira-mono@latest/latin-400-normal.woff) format('woff'), url(https://cdn.jsdelivr.net/fontsource/fonts/fira-mono@latest/latin-400-normal.ttf) format('truetype');
+		unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+	}
 
-	  /*Hack Font */
-	  @font-face {
-			  font-family: "Hack";
-			  src: url("https://db.onlinewebfonts.com/t/4fea277591543c1fd64a9cf06ec5803a.eot");
-			  src: url("https://db.onlinewebfonts.com/t/4fea277591543c1fd64a9cf06ec5803a.eot?#iefix")format("embedded-opentype"),
-			  url("https://db.onlinewebfonts.com/t/4fea277591543c1fd64a9cf06ec5803a.woff2")format("woff2"),
-			  url("https://db.onlinewebfonts.com/t/4fea277591543c1fd64a9cf06ec5803a.woff")format("woff"),
-			  url("https://db.onlinewebfonts.com/t/4fea277591543c1fd64a9cf06ec5803a.ttf")format("truetype"),
-			  url("https://db.onlinewebfonts.com/t/4fea277591543c1fd64a9cf06ec5803a.svg#Hack")format("svg");
-	  }
-	  /*Karla Font Testing */
-	  @font-face {
-			  font-family: "Karla";
-			  src: url("https://db.onlinewebfonts.com/t/750e3658d4460a397a551dfac26bb272.eot");
-			  src: url("https://db.onlinewebfonts.com/t/750e3658d4460a397a551dfac26bb272.eot?#iefix")format("embedded-opentype"),
-			  url("https://db.onlinewebfonts.com/t/750e3658d4460a397a551dfac26bb272.woff2")format("woff2"),
-			  url("https://db.onlinewebfonts.com/t/750e3658d4460a397a551dfac26bb272.woff")format("woff"),
-			  url("https://db.onlinewebfonts.com/t/750e3658d4460a397a551dfac26bb272.ttf")format("truetype"),
-			  url("https://db.onlinewebfonts.com/t/750e3658d4460a397a551dfac26bb272.svg#Karla")format("svg");
-	  }
-	  @font-face {
-			  font-family: "Karla Medium";
-			  src: url("https://db.onlinewebfonts.com/t/b2df7a6681d7895a21fc77cda56d14dd.eot");
-			  src: url("https://db.onlinewebfonts.com/t/b2df7a6681d7895a21fc77cda56d14dd.eot?#iefix")format("embedded-opentype"),
-			  url("https://db.onlinewebfonts.com/t/b2df7a6681d7895a21fc77cda56d14dd.woff2")format("woff2"),
-			  url("https://db.onlinewebfonts.com/t/b2df7a6681d7895a21fc77cda56d14dd.woff")format("woff"),
-			  url("https://db.onlinewebfonts.com/t/b2df7a6681d7895a21fc77cda56d14dd.ttf")format("truetype"),
-			  url("https://db.onlinewebfonts.com/t/b2df7a6681d7895a21fc77cda56d14dd.svg#Karla Medium")format("svg");
-	  }
-	  @font-face {
-			  font-family: "Karla Bold";
-			  src: url("https://db.onlinewebfonts.com/t/b45be274b8b65fc9c72b038d72486edd.eot");
-			  src: url("https://db.onlinewebfonts.com/t/b45be274b8b65fc9c72b038d72486edd.eot?#iefix")format("embedded-opentype"),
-			  url("https://db.onlinewebfonts.com/t/b45be274b8b65fc9c72b038d72486edd.woff2")format("woff2"),
-			  url("https://db.onlinewebfonts.com/t/b45be274b8b65fc9c72b038d72486edd.woff")format("woff"),
-			  url("https://db.onlinewebfonts.com/t/b45be274b8b65fc9c72b038d72486edd.ttf")format("truetype"),
-			  url("https://db.onlinewebfonts.com/t/b45be274b8b65fc9c72b038d72486edd.svg#Karla Bold")format("svg");
-	  }
-	  /*Archivo Font */
-	  @font-face {
-			  font-family: "Archivo";
-			  src: url("https://db.onlinewebfonts.com/t/9868bcbea8d6cd3f78182d7829e5dd3e.eot");
-			  src: url("https://db.onlinewebfonts.com/t/9868bcbea8d6cd3f78182d7829e5dd3e.eot?#iefix")format("embedded-opentype"),
-			  url("https://db.onlinewebfonts.com/t/9868bcbea8d6cd3f78182d7829e5dd3e.woff2")format("woff2"),
-			  url("https://db.onlinewebfonts.com/t/9868bcbea8d6cd3f78182d7829e5dd3e.woff")format("woff"),
-			  url("https://db.onlinewebfonts.com/t/9868bcbea8d6cd3f78182d7829e5dd3e.ttf")format("truetype"),
-			  url("https://db.onlinewebfonts.com/t/9868bcbea8d6cd3f78182d7829e5dd3e.svg#Archivo")format("svg");
-	  }
+	/* Spline Sans */
+	/* spline-sans-latin-wght-normal */
+	@font-face {
+		font-family: 'Spline Sans Variable';
+		font-style: normal;
+		font-display: auto;
+		font-weight: 300 700;
+		src: url(https://cdn.jsdelivr.net/fontsource/fonts/spline-sans:vf@latest/latin-wght-normal.woff2) format('woff2-variations');
+		unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+	}
+
+	/*Hack Font */
+	@font-face {
+		font-family: "Hack";
+		src: url("https://db.onlinewebfonts.com/t/4fea277591543c1fd64a9cf06ec5803a.eot");
+		src: url("https://db.onlinewebfonts.com/t/4fea277591543c1fd64a9cf06ec5803a.eot?#iefix")format("embedded-opentype"),
+			url("https://db.onlinewebfonts.com/t/4fea277591543c1fd64a9cf06ec5803a.woff2")format("woff2"),
+			url("https://db.onlinewebfonts.com/t/4fea277591543c1fd64a9cf06ec5803a.woff")format("woff"),
+			url("https://db.onlinewebfonts.com/t/4fea277591543c1fd64a9cf06ec5803a.ttf")format("truetype"),
+			url("https://db.onlinewebfonts.com/t/4fea277591543c1fd64a9cf06ec5803a.svg#Hack")format("svg");
+	}
+
+	/*Karla Font Testing */
+	@font-face {
+		font-family: "Karla";
+		src: url("https://db.onlinewebfonts.com/t/750e3658d4460a397a551dfac26bb272.eot");
+		src: url("https://db.onlinewebfonts.com/t/750e3658d4460a397a551dfac26bb272.eot?#iefix")format("embedded-opentype"),
+			url("https://db.onlinewebfonts.com/t/750e3658d4460a397a551dfac26bb272.woff2")format("woff2"),
+			url("https://db.onlinewebfonts.com/t/750e3658d4460a397a551dfac26bb272.woff")format("woff"),
+			url("https://db.onlinewebfonts.com/t/750e3658d4460a397a551dfac26bb272.ttf")format("truetype"),
+			url("https://db.onlinewebfonts.com/t/750e3658d4460a397a551dfac26bb272.svg#Karla")format("svg");
+	}
+
+	@font-face {
+		font-family: "Karla Medium";
+		src: url("https://db.onlinewebfonts.com/t/b2df7a6681d7895a21fc77cda56d14dd.eot");
+		src: url("https://db.onlinewebfonts.com/t/b2df7a6681d7895a21fc77cda56d14dd.eot?#iefix")format("embedded-opentype"),
+			url("https://db.onlinewebfonts.com/t/b2df7a6681d7895a21fc77cda56d14dd.woff2")format("woff2"),
+			url("https://db.onlinewebfonts.com/t/b2df7a6681d7895a21fc77cda56d14dd.woff")format("woff"),
+			url("https://db.onlinewebfonts.com/t/b2df7a6681d7895a21fc77cda56d14dd.ttf")format("truetype"),
+			url("https://db.onlinewebfonts.com/t/b2df7a6681d7895a21fc77cda56d14dd.svg#Karla Medium")format("svg");
+	}
+
+	@font-face {
+		font-family: "Karla Bold";
+		src: url("https://db.onlinewebfonts.com/t/b45be274b8b65fc9c72b038d72486edd.eot");
+		src: url("https://db.onlinewebfonts.com/t/b45be274b8b65fc9c72b038d72486edd.eot?#iefix")format("embedded-opentype"),
+			url("https://db.onlinewebfonts.com/t/b45be274b8b65fc9c72b038d72486edd.woff2")format("woff2"),
+			url("https://db.onlinewebfonts.com/t/b45be274b8b65fc9c72b038d72486edd.woff")format("woff"),
+			url("https://db.onlinewebfonts.com/t/b45be274b8b65fc9c72b038d72486edd.ttf")format("truetype"),
+			url("https://db.onlinewebfonts.com/t/b45be274b8b65fc9c72b038d72486edd.svg#Karla Bold")format("svg");
+	}
+
+	/*Archivo Font */
+	@font-face {
+		font-family: "Archivo";
+		src: url("https://db.onlinewebfonts.com/t/9868bcbea8d6cd3f78182d7829e5dd3e.eot");
+		src: url("https://db.onlinewebfonts.com/t/9868bcbea8d6cd3f78182d7829e5dd3e.eot?#iefix")format("embedded-opentype"),
+			url("https://db.onlinewebfonts.com/t/9868bcbea8d6cd3f78182d7829e5dd3e.woff2")format("woff2"),
+			url("https://db.onlinewebfonts.com/t/9868bcbea8d6cd3f78182d7829e5dd3e.woff")format("woff"),
+			url("https://db.onlinewebfonts.com/t/9868bcbea8d6cd3f78182d7829e5dd3e.ttf")format("truetype"),
+			url("https://db.onlinewebfonts.com/t/9868bcbea8d6cd3f78182d7829e5dd3e.svg#Archivo")format("svg");
+	}
+
 	/* literata-latin-wght-normal */
 	@font-face {
-	font-family: 'Literata Variable';
-	font-style: normal;
-	font-display: swap;
-	font-weight: 200 900;
-	src: url(https://cdn.jsdelivr.net/fontsource/fonts/literata:vf@latest/latin-wght-normal.woff2) format('woff2-variations');
-	unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
-	}
-	@font-face {
-	font-family: "Fantasque Sans Mono";
-	src: url("https://db.onlinewebfonts.com/t/211343016ad291ba6eb1ac0ccc29761c.eot");
-	src: url("https://db.onlinewebfonts.com/t/211343016ad291ba6eb1ac0ccc29761c.eot?#iefix")format("embedded-opentype"),
-	url("https://db.onlinewebfonts.com/t/211343016ad291ba6eb1ac0ccc29761c.woff2")format("woff2"),
-	url("https://db.onlinewebfonts.com/t/211343016ad291ba6eb1ac0ccc29761c.woff")format("woff"),
-	url("https://db.onlinewebfonts.com/t/211343016ad291ba6eb1ac0ccc29761c.ttf")format("truetype"),
-	url("https://db.onlinewebfonts.com/t/211343016ad291ba6eb1ac0ccc29761c.svg#Fantasque Sans Mono")format("svg");
-	}
-	@font-face {
-	font-family: "Fantasque Sans Mono Bold";
-	src: url("https://db.onlinewebfonts.com/t/9806c95303ad6b6b2a8a45c07479e6a0.eot");
-	src: url("https://db.onlinewebfonts.com/t/9806c95303ad6b6b2a8a45c07479e6a0.eot?#iefix")format("embedded-opentype"),
-	url("https://db.onlinewebfonts.com/t/9806c95303ad6b6b2a8a45c07479e6a0.woff2")format("woff2"),
-	url("https://db.onlinewebfonts.com/t/9806c95303ad6b6b2a8a45c07479e6a0.woff")format("woff"),
-	url("https://db.onlinewebfonts.com/t/9806c95303ad6b6b2a8a45c07479e6a0.ttf")format("truetype"),
-	url("https://db.onlinewebfonts.com/t/9806c95303ad6b6b2a8a45c07479e6a0.svg#Fantasque Sans Mono Bold")format("svg");
+		font-family: 'Literata Variable';
+		font-style: normal;
+		font-display: swap;
+		font-weight: 200 900;
+		src: url(https://cdn.jsdelivr.net/fontsource/fonts/literata:vf@latest/latin-wght-normal.woff2) format('woff2-variations');
+		unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 	}
 
-	  /* jetbrains-mono-latin-wght-normal */
 	@font-face {
-	font-family: 'JetBrains Mono Variable';
-	font-style: normal;
-	font-display: swap;
-	font-weight: 100 800;
-	src: url(https://cdn.jsdelivr.net/fontsource/fonts/jetbrains-mono:vf@latest/latin-wght-normal.woff2) format('woff2-variations');
-	unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+		font-family: "Fantasque Sans Mono";
+		src: url("https://db.onlinewebfonts.com/t/211343016ad291ba6eb1ac0ccc29761c.eot");
+		src: url("https://db.onlinewebfonts.com/t/211343016ad291ba6eb1ac0ccc29761c.eot?#iefix")format("embedded-opentype"),
+			url("https://db.onlinewebfonts.com/t/211343016ad291ba6eb1ac0ccc29761c.woff2")format("woff2"),
+			url("https://db.onlinewebfonts.com/t/211343016ad291ba6eb1ac0ccc29761c.woff")format("woff"),
+			url("https://db.onlinewebfonts.com/t/211343016ad291ba6eb1ac0ccc29761c.ttf")format("truetype"),
+			url("https://db.onlinewebfonts.com/t/211343016ad291ba6eb1ac0ccc29761c.svg#Fantasque Sans Mono")format("svg");
 	}
-	  /* inclusive-sans-latin-400-normal */
+
 	@font-face {
-	font-family: 'Inclusive Sans';
-	font-style: normal;
-	font-display: swap;
-	font-weight: 400;
-	src: url(https://cdn.jsdelivr.net/fontsource/fonts/inclusive-sans@latest/latin-400-normal.woff2) format('woff2'), url(https://cdn.jsdelivr.net/fontsource/fonts/inclusive-sans@latest/latin-400-normal.woff) format('woff');
-	unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+		font-family: "Fantasque Sans Mono Bold";
+		src: url("https://db.onlinewebfonts.com/t/9806c95303ad6b6b2a8a45c07479e6a0.eot");
+		src: url("https://db.onlinewebfonts.com/t/9806c95303ad6b6b2a8a45c07479e6a0.eot?#iefix")format("embedded-opentype"),
+			url("https://db.onlinewebfonts.com/t/9806c95303ad6b6b2a8a45c07479e6a0.woff2")format("woff2"),
+			url("https://db.onlinewebfonts.com/t/9806c95303ad6b6b2a8a45c07479e6a0.woff")format("woff"),
+			url("https://db.onlinewebfonts.com/t/9806c95303ad6b6b2a8a45c07479e6a0.ttf")format("truetype"),
+			url("https://db.onlinewebfonts.com/t/9806c95303ad6b6b2a8a45c07479e6a0.svg#Fantasque Sans Mono Bold")format("svg");
 	}
-	  /* manrope-latin-wght-normal */
+
+	/* jetbrains-mono-latin-wght-normal */
 	@font-face {
-	font-family: 'Manrope Variable';
-	font-style: normal;
-	font-display: swap;
-	font-weight: 200 800;
-	src: url(https://cdn.jsdelivr.net/fontsource/fonts/manrope:vf@latest/latin-wght-normal.woff2) format('woff2-variations');
-	unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+		font-family: 'JetBrains Mono Variable';
+		font-style: normal;
+		font-display: swap;
+		font-weight: 100 800;
+		src: url(https://cdn.jsdelivr.net/fontsource/fonts/jetbrains-mono:vf@latest/latin-wght-normal.woff2) format('woff2-variations');
+		unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+	}
+
+	/* inclusive-sans-latin-400-normal */
+	@font-face {
+		font-family: 'Inclusive Sans';
+		font-style: normal;
+		font-display: swap;
+		font-weight: 400;
+		src: url(https://cdn.jsdelivr.net/fontsource/fonts/inclusive-sans@latest/latin-400-normal.woff2) format('woff2'), url(https://cdn.jsdelivr.net/fontsource/fonts/inclusive-sans@latest/latin-400-normal.woff) format('woff');
+		unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+	}
+
+	/* manrope-latin-wght-normal */
+	@font-face {
+		font-family: 'Manrope Variable';
+		font-style: normal;
+		font-display: swap;
+		font-weight: 200 800;
+		src: url(https://cdn.jsdelivr.net/fontsource/fonts/manrope:vf@latest/latin-wght-normal.woff2) format('woff2-variations');
+		unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 	}
 
 	/*Geist Sans*/
 	/* geist-sans-latin-100-normal */
 	@font-face {
-	font-family: 'Geist Sans';
-	font-style: normal;
-	font-display: swap;
-	font-weight: 100;
-	src: url(https://cdn.jsdelivr.net/fontsource/fonts/geist-sans@latest/latin-100-normal.woff2) format('woff2'), url(https://cdn.jsdelivr.net/fontsource/fonts/geist-sans@latest/latin-100-normal.woff) format('woff'), url(https://cdn.jsdelivr.net/fontsource/fonts/geist-sans@latest/latin-100-normal.ttf) format('truetype');
+		font-family: 'Geist Sans';
+		font-style: normal;
+		font-display: swap;
+		font-weight: 100;
+		src: url(https://cdn.jsdelivr.net/fontsource/fonts/geist-sans@latest/latin-100-normal.woff2) format('woff2'), url(https://cdn.jsdelivr.net/fontsource/fonts/geist-sans@latest/latin-100-normal.woff) format('woff'), url(https://cdn.jsdelivr.net/fontsource/fonts/geist-sans@latest/latin-100-normal.ttf) format('truetype');
 	}
+
 	/* geist-sans-latin-200-normal */
 	@font-face {
-	font-family: 'Geist Sans';
-	font-style: normal;
-	font-display: swap;
-	font-weight: 200;
-	src: url(https://cdn.jsdelivr.net/fontsource/fonts/geist-sans@latest/latin-200-normal.woff2) format('woff2'), url(https://cdn.jsdelivr.net/fontsource/fonts/geist-sans@latest/latin-200-normal.woff) format('woff'), url(https://cdn.jsdelivr.net/fontsource/fonts/geist-sans@latest/latin-200-normal.ttf) format('truetype');
+		font-family: 'Geist Sans';
+		font-style: normal;
+		font-display: swap;
+		font-weight: 200;
+		src: url(https://cdn.jsdelivr.net/fontsource/fonts/geist-sans@latest/latin-200-normal.woff2) format('woff2'), url(https://cdn.jsdelivr.net/fontsource/fonts/geist-sans@latest/latin-200-normal.woff) format('woff'), url(https://cdn.jsdelivr.net/fontsource/fonts/geist-sans@latest/latin-200-normal.ttf) format('truetype');
 	}
 
 	/* geist-sans-latin-300-normal */
 	@font-face {
-	font-family: 'Geist Sans';
-	font-style: normal;
-	font-display: swap;
-	font-weight: 300;
-	src: url(https://cdn.jsdelivr.net/fontsource/fonts/geist-sans@latest/latin-300-normal.woff2) format('woff2'), url(https://cdn.jsdelivr.net/fontsource/fonts/geist-sans@latest/latin-300-normal.woff) format('woff'), url(https://cdn.jsdelivr.net/fontsource/fonts/geist-sans@latest/latin-300-normal.ttf) format('truetype');
+		font-family: 'Geist Sans';
+		font-style: normal;
+		font-display: swap;
+		font-weight: 300;
+		src: url(https://cdn.jsdelivr.net/fontsource/fonts/geist-sans@latest/latin-300-normal.woff2) format('woff2'), url(https://cdn.jsdelivr.net/fontsource/fonts/geist-sans@latest/latin-300-normal.woff) format('woff'), url(https://cdn.jsdelivr.net/fontsource/fonts/geist-sans@latest/latin-300-normal.ttf) format('truetype');
 	}
 
 	/* geist-sans-latin-400-normal */
 	@font-face {
-	font-family: 'Geist Sans';
-	font-style: normal;
-	font-display: swap;
-	font-weight: 400;
-	src: url(https://cdn.jsdelivr.net/fontsource/fonts/geist-sans@latest/latin-400-normal.woff2) format('woff2'), url(https://cdn.jsdelivr.net/fontsource/fonts/geist-sans@latest/latin-400-normal.woff) format('woff'), url(https://cdn.jsdelivr.net/fontsource/fonts/geist-sans@latest/latin-400-normal.ttf) format('truetype');
+		font-family: 'Geist Sans';
+		font-style: normal;
+		font-display: swap;
+		font-weight: 400;
+		src: url(https://cdn.jsdelivr.net/fontsource/fonts/geist-sans@latest/latin-400-normal.woff2) format('woff2'), url(https://cdn.jsdelivr.net/fontsource/fonts/geist-sans@latest/latin-400-normal.woff) format('woff'), url(https://cdn.jsdelivr.net/fontsource/fonts/geist-sans@latest/latin-400-normal.ttf) format('truetype');
 	}
 
 	/* geist-sans-latin-500-normal */
 	@font-face {
-	font-family: 'Geist Sans';
-	font-style: normal;
-	font-display: swap;
-	font-weight: 500;
-	src: url(https://cdn.jsdelivr.net/fontsource/fonts/geist-sans@latest/latin-500-normal.woff2) format('woff2'), url(https://cdn.jsdelivr.net/fontsource/fonts/geist-sans@latest/latin-500-normal.woff) format('woff'), url(https://cdn.jsdelivr.net/fontsource/fonts/geist-sans@latest/latin-500-normal.ttf) format('truetype');
+		font-family: 'Geist Sans';
+		font-style: normal;
+		font-display: swap;
+		font-weight: 500;
+		src: url(https://cdn.jsdelivr.net/fontsource/fonts/geist-sans@latest/latin-500-normal.woff2) format('woff2'), url(https://cdn.jsdelivr.net/fontsource/fonts/geist-sans@latest/latin-500-normal.woff) format('woff'), url(https://cdn.jsdelivr.net/fontsource/fonts/geist-sans@latest/latin-500-normal.ttf) format('truetype');
 	}
 
 	/* geist-sans-latin-600-normal */
 	@font-face {
-	font-family: 'Geist Sans';
-	font-style: normal;
-	font-display: swap;
-	font-weight: 600;
-	src: url(https://cdn.jsdelivr.net/fontsource/fonts/geist-sans@latest/latin-600-normal.woff2) format('woff2'), url(https://cdn.jsdelivr.net/fontsource/fonts/geist-sans@latest/latin-600-normal.woff) format('woff'), url(https://cdn.jsdelivr.net/fontsource/fonts/geist-sans@latest/latin-600-normal.ttf) format('truetype');
+		font-family: 'Geist Sans';
+		font-style: normal;
+		font-display: swap;
+		font-weight: 600;
+		src: url(https://cdn.jsdelivr.net/fontsource/fonts/geist-sans@latest/latin-600-normal.woff2) format('woff2'), url(https://cdn.jsdelivr.net/fontsource/fonts/geist-sans@latest/latin-600-normal.woff) format('woff'), url(https://cdn.jsdelivr.net/fontsource/fonts/geist-sans@latest/latin-600-normal.ttf) format('truetype');
 	}
 
 	/* geist-sans-latin-700-normal */
 	@font-face {
-	font-family: 'Geist Sans';
-	font-style: normal;
-	font-display: swap;
-	font-weight: 700;
-	src: url(https://cdn.jsdelivr.net/fontsource/fonts/geist-sans@latest/latin-700-normal.woff2) format('woff2'), url(https://cdn.jsdelivr.net/fontsource/fonts/geist-sans@latest/latin-700-normal.woff) format('woff'), url(https://cdn.jsdelivr.net/fontsource/fonts/geist-sans@latest/latin-700-normal.ttf) format('truetype');
+		font-family: 'Geist Sans';
+		font-style: normal;
+		font-display: swap;
+		font-weight: 700;
+		src: url(https://cdn.jsdelivr.net/fontsource/fonts/geist-sans@latest/latin-700-normal.woff2) format('woff2'), url(https://cdn.jsdelivr.net/fontsource/fonts/geist-sans@latest/latin-700-normal.woff) format('woff'), url(https://cdn.jsdelivr.net/fontsource/fonts/geist-sans@latest/latin-700-normal.ttf) format('truetype');
 	}
 
 	/* geist-sans-latin-800-normal */
 	@font-face {
-	font-family: 'Geist Sans';
-	font-style: normal;
-	font-display: swap;
-	font-weight: 800;
-	src: url(https://cdn.jsdelivr.net/fontsource/fonts/geist-sans@latest/latin-800-normal.woff2) format('woff2'), url(https://cdn.jsdelivr.net/fontsource/fonts/geist-sans@latest/latin-800-normal.woff) format('woff'), url(https://cdn.jsdelivr.net/fontsource/fonts/geist-sans@latest/latin-800-normal.ttf) format('truetype');
+		font-family: 'Geist Sans';
+		font-style: normal;
+		font-display: swap;
+		font-weight: 800;
+		src: url(https://cdn.jsdelivr.net/fontsource/fonts/geist-sans@latest/latin-800-normal.woff2) format('woff2'), url(https://cdn.jsdelivr.net/fontsource/fonts/geist-sans@latest/latin-800-normal.woff) format('woff'), url(https://cdn.jsdelivr.net/fontsource/fonts/geist-sans@latest/latin-800-normal.ttf) format('truetype');
 	}
 
 	/* geist-sans-latin-900-normal */
 	@font-face {
-	font-family: 'Geist Sans';
-	font-style: normal;
-	font-display: swap;
-	font-weight: 900;
-	src: url(https://cdn.jsdelivr.net/fontsource/fonts/geist-sans@latest/latin-900-normal.woff2) format('woff2'), url(https://cdn.jsdelivr.net/fontsource/fonts/geist-sans@latest/latin-900-normal.woff) format('woff'), url(https://cdn.jsdelivr.net/fontsource/fonts/geist-sans@latest/latin-900-normal.ttf) format('truetype');
+		font-family: 'Geist Sans';
+		font-style: normal;
+		font-display: swap;
+		font-weight: 900;
+		src: url(https://cdn.jsdelivr.net/fontsource/fonts/geist-sans@latest/latin-900-normal.woff2) format('woff2'), url(https://cdn.jsdelivr.net/fontsource/fonts/geist-sans@latest/latin-900-normal.woff) format('woff'), url(https://cdn.jsdelivr.net/fontsource/fonts/geist-sans@latest/latin-900-normal.ttf) format('truetype');
 	}
 
 	/*Geist Mono Variable*/
 	/* geist-mono-latin-wght-normal */
 	@font-face {
-	font-family: 'Geist Mono Variable';
-	font-style: normal;
-	font-display: swap;
-	font-weight: 100 900;
-	src: url(https://cdn.jsdelivr.net/fontsource/fonts/geist-mono:vf@latest/latin-wght-normal.woff2) format('woff2-variations');
-	unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+		font-family: 'Geist Mono Variable';
+		font-style: normal;
+		font-display: swap;
+		font-weight: 100 900;
+		src: url(https://cdn.jsdelivr.net/fontsource/fonts/geist-mono:vf@latest/latin-wght-normal.woff2) format('woff2-variations');
+		unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 	}
+
 	/* baskervville-latin-400-normal */
 	@font-face {
-	font-family: 'Baskervville';
-	font-style: normal;
-	font-display: swap;
-	font-weight: 400;
-	src: url(https://cdn.jsdelivr.net/fontsource/fonts/baskervville@latest/latin-400-normal.woff2) format('woff2'), url(https://cdn.jsdelivr.net/fontsource/fonts/baskervville@latest/latin-400-normal.woff) format('woff');
-	unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+		font-family: 'Baskervville';
+		font-style: normal;
+		font-display: swap;
+		font-weight: 400;
+		src: url(https://cdn.jsdelivr.net/fontsource/fonts/baskervville@latest/latin-400-normal.woff2) format('woff2'), url(https://cdn.jsdelivr.net/fontsource/fonts/baskervville@latest/latin-400-normal.woff) format('woff');
+		unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 	}
 
 	@font-face {
-	font-family: "Tiempos Text Regular";
-	src: url("https://db.onlinewebfonts.com/t/1b3f9cb78376a36884f3908f37a42c91.eot");
-	src: url("https://db.onlinewebfonts.com/t/1b3f9cb78376a36884f3908f37a42c91.eot?#iefix")format("embedded-opentype"),
-	url("https://db.onlinewebfonts.com/t/1b3f9cb78376a36884f3908f37a42c91.woff2")format("woff2"),
-	url("https://db.onlinewebfonts.com/t/1b3f9cb78376a36884f3908f37a42c91.woff")format("woff"),
-	url("https://db.onlinewebfonts.com/t/1b3f9cb78376a36884f3908f37a42c91.ttf")format("truetype"),
-	url("https://db.onlinewebfonts.com/t/1b3f9cb78376a36884f3908f37a42c91.svg#Tiempos Text Regular")format("svg");
+		font-family: "Tiempos Text Regular";
+		src: url("https://db.onlinewebfonts.com/t/1b3f9cb78376a36884f3908f37a42c91.eot");
+		src: url("https://db.onlinewebfonts.com/t/1b3f9cb78376a36884f3908f37a42c91.eot?#iefix")format("embedded-opentype"),
+			url("https://db.onlinewebfonts.com/t/1b3f9cb78376a36884f3908f37a42c91.woff2")format("woff2"),
+			url("https://db.onlinewebfonts.com/t/1b3f9cb78376a36884f3908f37a42c91.woff")format("woff"),
+			url("https://db.onlinewebfonts.com/t/1b3f9cb78376a36884f3908f37a42c91.ttf")format("truetype"),
+			url("https://db.onlinewebfonts.com/t/1b3f9cb78376a36884f3908f37a42c91.svg#Tiempos Text Regular")format("svg");
 	}
+
 	/*Inter Font import*/
 	/* inter-latin-wght-normal */
 	@font-face {
-	font-family: 'Inter Variable';
-	font-style: normal;
-	font-display: swap;
-	font-weight: 100 900;
-	src: url(https://cdn.jsdelivr.net/fontsource/fonts/inter:vf@latest/latin-wght-normal.woff2) format('woff2-variations');
-	unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+		font-family: 'Inter Variable';
+		font-style: normal;
+		font-display: swap;
+		font-weight: 100 900;
+		src: url(https://cdn.jsdelivr.net/fontsource/fonts/inter:vf@latest/latin-wght-normal.woff2) format('woff2-variations');
+		unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 	}
 
-	:root
-	{
-	/* 0 is for darkest
+	:root {
+		/* 0 is for darkest
 	1 is for hard
 	higher values for hard  */
 
 
-	/* 2.1 Dark theme color variables */
-	--bg0-dh:       #1d2021;
-	--bg-dark-new  :  #1F1E1D ;
-	/*For basic text new color added         */
-	--text-normal :#ffd29c ;
+		/* 2.1 Dark theme color variables */
+		--bg0-dh: #1d2021;
+		--bg-dark-new: #1F1E1D;
+		/*For basic text new color added         */
+		--text-normal: #ffd29c;
 
-	--shadow-bg:         #1d1b1a;
-	/* Was picked from the side bar on grok interface  */
-	--bg-def-dark:#171718;
+		--shadow-bg: #1d1b1a;
+		/* Was picked from the side bar on grok interface  */
+		--bg-def-dark: #171718;
 
-	--bg1-dark:       #3c3836;
-	--bg-dark:        #282828;
-	--bg2-dark:       #504945;
-	--bg3-dark:       #665c54;
-	--bg4-dark:       #7c6f64;
-	--bg5-dark:       #928374;
-	--bg_visual:      #503946;
-	--bg_red:         #cc241d;
-	--bg_green:       #98971a;
-	--bg_blue:        #458588;
-	--bg_yellow:      #d79921;
-	--shadow:         #16181a;
-	--shadow-var1:         #17191b;
-	--shadow-cur:         #1a1b1d;
+		--bg1-dark: #3c3836;
+		--bg-dark: #282828;
+		--bg2-dark: #504945;
+		--bg3-dark: #665c54;
+		--bg4-dark: #7c6f64;
+		--bg5-dark: #928374;
+		--bg_visual: #503946;
+		--bg_red: #cc241d;
+		--bg_green: #98971a;
+		--bg_blue: #458588;
+		--bg_yellow: #d79921;
+		--shadow: #16181a;
+		--shadow-var1: #17191b;
+		--shadow-cur: #1a1b1d;
 
-	--fg-dark:        #ebdbb2;
-	--grey0-dark:     #7f897d;
-	--grey1-dark:     #859289;
-	--grey2-dark:     #9aa79d;
+		--fg-dark: #ebdbb2;
+		--grey0-dark: #7f897d;
+		--grey1-dark: #859289;
+		--grey2-dark: #9aa79d;
 
-	--faded-red:     #fb4934;
-	--faded-orange:  #fe8019;
-	--faded-yellow:  #fabd2f;
-	--faded-green:   #b8bb26;
-	--faded-aqua:    #8ec07c;
-	--faded-blue:    #83a598;
-	--faded-purple:  #d3869b;
+		--faded-red: #fb4934;
+		--faded-orange: #fe8019;
+		--faded-yellow: #fabd2f;
+		--faded-green: #b8bb26;
+		--faded-aqua: #8ec07c;
+		--faded-blue: #83a598;
+		--faded-purple: #d3869b;
 
-	--dim-red:       #cc241d;
-	--dim-orange:    #d65d0e;
-	--dim-yellow:    #d79921;
-	--dim-green:     #98971a;
-	--dim-aqua:      #689d6a;
-	--dim-blue:      #458588;
-	--dim-purple:    #b16286;
-
-
-	/* 2.2 Light theme color variables */
-	--bg0-light:     #f0edd8;
-	--bg1-light:     #f6f1dd;
-	--bg-light:      #fdf6e3;
-	--bg2-light:     #f3efda;
-	--bg3-light:     #edead5;
-	--bg4-light:     #e4e1cd;
-	--bg5-light:     #dfdbc8;
-	--grey0-light:   #a4ad9e;
-	--grey1-light:   #939f91;
-	--grey2-light:   #879686;
-	--shadow-light:  #3c474d20;
+		--dim-red: #cc241d;
+		--dim-orange: #d65d0e;
+		--dim-yellow: #d79921;
+		--dim-green: #98971a;
+		--dim-aqua: #689d6a;
+		--dim-blue: #458588;
+		--dim-purple: #b16286;
 
 
-	--text-offwhite: #fbf1c7;
-	--text-offyellowish: #f2e5bc;
-	--text-white: #f9f5d7;
-	--text-offwhite-faded: #ebdbb2;
-	--text--faded: #d5c4a1;
-	--text--veryfade: #928374;
+		/* 2.2 Light theme color variables */
+		--bg0-light: #f0edd8;
+		--bg1-light: #f6f1dd;
+		--bg-light: #fdf6e3;
+		--bg2-light: #f3efda;
+		--bg3-light: #edead5;
+		--bg4-light: #e4e1cd;
+		--bg5-light: #dfdbc8;
+		--grey0-light: #a4ad9e;
+		--grey1-light: #939f91;
+		--grey2-light: #879686;
+		--shadow-light: #3c474d20;
 
 
-
-	--bg_visual_light:      #eaedc8;
-	--bg_red_light:         #fbe3da;
-	--bg_green_light:       #f0f1d2;
-	--bg_blue_light:        #e9f0e9;
-	--bg_yellow_light:      #faedcd;
-
-	--fg-light:       #5c6a72;
-
-	--light-red:     #f85552;
-	--light-orange:  #f57d26;
-	--light-yellow:  #bf983d;
-	--light-green:   #899c40;
-	--light-aqua:    #569d79;
-	--light-blue:    #5a93a2;
-	--light-purple:  #b87b9d;
-
-	--light-dim-red:    #f1706f;
-	--light-dim-orange: #f39459;
-	--light-dim-yellow: #e4b649;
-	--light-dim-green:  #a4bb4a;
-	--light-dim-aqua:   #6ec398;
-	--light-dim-blue:   #6cb3c6;
-	--light-dim-purple: #e092be;
+		--text-offwhite: #fbf1c7;
+		--text-offyellowish: #f2e5bc;
+		--text-white: #f9f5d7;
+		--text-offwhite-faded: #ebdbb2;
+		--text--faded: #d5c4a1;
+		--text--veryfade: #928374;
 
 
 
-	--dark-red: #9d0006;
-	--dark-green: #79740e;
-	--dark-yellow: #b57614;
-	--dark-blue: #076678;
-	--dark-purple: #8f3f71;
-	--dark-aqua: #427b58;
-	--dark-orange: #af3a03;
+		--bg_visual_light: #eaedc8;
+		--bg_red_light: #fbe3da;
+		--bg_green_light: #f0f1d2;
+		--bg_blue_light: #e9f0e9;
+		--bg_yellow_light: #faedcd;
+
+		--fg-light: #5c6a72;
+
+		--light-red: #f85552;
+		--light-orange: #f57d26;
+		--light-yellow: #bf983d;
+		--light-green: #899c40;
+		--light-aqua: #569d79;
+		--light-blue: #5a93a2;
+		--light-purple: #b87b9d;
+
+		--light-dim-red: #f1706f;
+		--light-dim-orange: #f39459;
+		--light-dim-yellow: #e4b649;
+		--light-dim-green: #a4bb4a;
+		--light-dim-aqua: #6ec398;
+		--light-dim-blue: #6cb3c6;
+		--light-dim-purple: #e092be;
 
 
-	/* light colors */
-	--interface-light0-hard: #f9f5d7;
-	--interface-light0: #fbf1c7;
-	--interface-light0-soft: #f2e5bc;
-	--interface-light1: #ebdbb2;
-	--interface-light2: #d5c4a1;
-	--interface-light3: #bdae93;
-	--interface-light4: #a89988;
 
-	  }
+		--dark-red: #9d0006;
+		--dark-green: #79740e;
+		--dark-yellow: #b57614;
+		--dark-blue: #076678;
+		--dark-purple: #8f3f71;
+		--dark-aqua: #427b58;
+		--dark-orange: #af3a03;
 
 
+		/* light colors */
+		--interface-light0-hard: #f9f5d7;
+		--interface-light0: #fbf1c7;
+		--interface-light0-soft: #f2e5bc;
+		--interface-light1: #ebdbb2;
+		--interface-light2: #d5c4a1;
+		--interface-light3: #bdae93;
+		--interface-light4: #a89988;
+
+	}
 
 
 
-/*Root Fonts */
 
-:root {
-	--font-Margon: "Margon 360 W08 Medium";
-	--font-BricolageGrotesque: "Bricolage Grotesque Variable";
-	--font-Lora: "Lora";
-	--font-LinguisticsPro: "Linguistics Pro";
-	--font-CommitMono: "CommitMono";
-	--font-FiraMono: 'Fira Mono';
-	--font-SplineSansVariable: 'Spline Sans Variable';
-	--font-Hack: "Hack";
-	--font-Karla: "Karla";
-	--font-KarlaMedium: "Karla Medium";
-	--font-KarlaBold: "Karla Bold";
-	--font-Archivo: "Archivo";
-	--font-LiterataVariable: 'Literata Variable';
-	--font-JetbrainsVar: 'JetBrains Mono Variable';
-	--font-Jetbrains: 'JetBrains Mono';
-	--font-GeistSans: 'Geist Sans';
-	--font-GeistMono: 'Geist Mono Variable';
-	--font-Basker: 'Baskervville';
-	--font-Tiempo: " Test Tiempos Text";
+
+	/*Root Fonts */
+
+	:root {
+		--font-Margon: "Margon 360 W08 Medium";
+		--font-BricolageGrotesque: "Bricolage Grotesque Variable";
+		--font-Lora: "Lora";
+		--font-LinguisticsPro: "Linguistics Pro";
+		--font-CommitMono: "CommitMono";
+		--font-FiraMono: 'Fira Mono';
+		--font-SplineSansVariable: 'Spline Sans Variable';
+		--font-Hack: "Hack";
+		--font-Karla: "Karla";
+		--font-KarlaMedium: "Karla Medium";
+		--font-KarlaBold: "Karla Bold";
+		--font-Archivo: "Archivo";
+		--font-LiterataVariable: 'Literata Variable';
+		--font-JetbrainsVar: 'JetBrains Mono Variable';
+		--font-Jetbrains: 'JetBrains Mono';
+		--font-GeistSans: 'Geist Sans';
+		--font-GeistMono: 'Geist Mono Variable';
+		--font-Basker: 'Baskervville';
+		--font-Tiempo: " Test Tiempos Text";
 	}
 
 	/* Putting Variables for the most used fonts */
-	$heading-font = Bricoalge Grotesque Variable
-	$sans-serif = Geist Sans
-	$code-font = Geist Mono
-	$text-font =  Test Tiempos Text
+	$heading-font =Bricoalge Grotesque Variable $sans-serif =Geist Sans $code-font =Geist Mono $text-font =Test Tiempos Text
 
-
-
-
-
-/* Html and body tags  */
-html , body {
-	background : #171718  !important ;
-	-webkit-font-smoothing: antialiased !important;
-	-moz-osx-font-smoothing: grayscale !important;
-	text-rendering: optimizeLegibility !important;
+	/* Html and body tags  */
+	html,
+	body {
+		background: #171718 !important;
+		-webkit-font-smoothing: antialiased !important;
+		-moz-osx-font-smoothing: grayscale !important;
+		text-rendering: optimizeLegibility !important;
 	}
 
 
@@ -527,93 +543,102 @@ html , body {
 	/* Colors and other styling options for General Html tags  */
 
 	p {
-	  color : var(--text-offwhite-faded) !important;
-	  font-size: 1rem !important;
-	  -webkit-font-smoothing: antialiased !important;
-	  -moz-osx-font-smoothing: grayscale !important;
-	  text-rendering: optimizeLegibility !important;
-}
+		color: var(--text-offwhite-faded) !important;
+		font-size: 1rem !important;
+		-webkit-font-smoothing: antialiased !important;
+		-moz-osx-font-smoothing: grayscale !important;
+		text-rendering: optimizeLegibility !important;
+	}
 
-	li, ol, ul {
-	  color : var(--text-offwhite) !important;
-	  font-size: 1rem !important;
-	  -webkit-font-smoothing: antialiased !important;
-	  -moz-osx-font-smoothing: grayscale !important;
-	  text-rendering: optimizeLegibility !important;
+	li,
+	ol,
+	ul {
+		color: var(--text-offwhite) !important;
+		font-size: 1rem !important;
+		-webkit-font-smoothing: antialiased !important;
+		-moz-osx-font-smoothing: grayscale !important;
+		text-rendering: optimizeLegibility !important;
 	}
+
 	li::marker {
-	  color: var(--dim-green) !important;
-	  -webkit-font-smoothing: antialiased !important;
-	  -moz-osx-font-smoothing: grayscale !important;
-	  text-rendering: optimizeLegibility !important;
+		color: var(--dim-green) !important;
+		-webkit-font-smoothing: antialiased !important;
+		-moz-osx-font-smoothing: grayscale !important;
+		text-rendering: optimizeLegibility !important;
 	}
+
+
+
+
 
 
 	/* Heading 1  will get a diff color  */
-h1 {
-	  color : var(--dark-orange) !important;
-	  -webkit-font-smoothing: antialiased !important;
-	  -moz-osx-font-smoothing: grayscale !important;
-	  text-rendering: optimizeLegibility !important;
-}
+	h1 {
+		color: var(--dark-orange) !important;
+		-webkit-font-smoothing: antialiased !important;
+		-moz-osx-font-smoothing: grayscale !important;
+		text-rendering: optimizeLegibility !important;
+	}
 
 	/* Heading 2 styles */
 	h2 {
-	color: var(--faded-blue) !important;
-	  font-weight: 500 !important;
-	  -webkit-font-smoothing: antialiased !important;
-	  -moz-osx-font-smoothing: grayscale !important;
-	  text-rendering: optimizeLegibility !important;
+		color: var(--faded-blue) !important;
+		font-weight: 500 !important;
+		-webkit-font-smoothing: antialiased !important;
+		-moz-osx-font-smoothing: grayscale !important;
+		text-rendering: optimizeLegibility !important;
 	}
 
 
 	/* Heading 3 styles */
 	h3 {
-	  color: var(--faded-yellow) !important;
-	  font-weight: 500 !important;
-	  -webkit-font-smoothing: antialiased !important;
-	  text-rendering: optimizeLegibility !important;
+		color: var(--faded-yellow) !important;
+		font-weight: 500 !important;
+		-webkit-font-smoothing: antialiased !important;
+		text-rendering: optimizeLegibility !important;
 	}
-			/* Heading 4 styles */
-h4 {
-	  color: var(--faded-aqua) !important;
-	  -webkit-font-smoothing: antialiased !important;
-	  text-rendering: optimizeLegibility !important;
-}
 
-/* Heading 5 styles */
-h5 {
-	color: var(--faded-aqua) !important;
-	  -webkit-font-smoothing: antialiased !important;
-	  text-rendering: optimizeLegibility !important;
-}
+	/* Heading 4 styles */
+	h4 {
+		color: var(--faded-aqua) !important;
+		-webkit-font-smoothing: antialiased !important;
+		text-rendering: optimizeLegibility !important;
+	}
 
-/* Heading 6 styles */
-h6 {
-	  color: var(--faded-green) !important;
-	  -webkit-font-smoothing: antialiased !important;
-	  text-rendering: optimizeLegibility !important;
-}
+	/* Heading 5 styles */
+	h5 {
+		color: var(--faded-aqua) !important;
+		-webkit-font-smoothing: antialiased !important;
+		text-rendering: optimizeLegibility !important;
+	}
 
-/* SVG colors , mat-icon is for material icons */
-	svg , .mat-icon {
-	  color: var(--faded-green) !important;
-	  stroke-width: 5px !important;
+	/* Heading 6 styles */
+	h6 {
+		color: var(--faded-green) !important;
+		-webkit-font-smoothing: antialiased !important;
+		text-rendering: optimizeLegibility !important;
+	}
+
+	/* SVG colors , mat-icon is for material icons */
+	svg,
+	.mat-icon {
+		color: var(--faded-green) !important;
+		stroke-width: 5px !important;
 	}
 
 	/* Chat History Container */
 	.infinite-scroller.chat-history {
-	  background-color: var(--bg-def-dark) !important;
-	  border: 1px solid var(--bg1-dark) !important;
-	  border-radius: 8px !important;
-	  padding: 12px !important;
-	  margin: 8px 0 !important;
-	  transition: all 0.3s ease-in-out !important;
+		background-color: var(--bg-def-dark) !important;
+		border: 1px solid var(--bg1-dark) !important;
+		border-radius: 8px !important;
+		padding: 12px !important;
+		margin: 8px 0 !important;
+		transition: all 0.3s ease-in-out !important;
 
-	  &:hover{
-	  border-color: var(--faded-blue) !important;
-	  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2) !important;
-	}
+		&:hover {
+			border-color: var(--faded-blue) !important;
+			box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2) !important;
+		}
 	}
 
 
@@ -622,60 +647,69 @@ h6 {
 
 	/* Button with icon styles - Matching Create Image button */
 	.mat-mdc-button:has(.material-icons, mat-icon) {
-	  border: 1px solid var(--bg0-dh) !important;
-	  border-radius: 3em !important;
-	  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1) !important;
+		border: 1px solid var(--bg0-dh) !important;
+		border-radius: 3em !important;
+		transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1) !important;
 
 
-	  &:hover {
-	    background-color: var(--bg-def-dark) !important;
-	    border-color: var(--bg3-dark) !important;
-	    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2) !important;
-		padding: 0rem 2rem  !important;
-	  }
+		&:hover {
+			background-color: var(--bg-def-dark) !important;
+			border-color: var(--bg3-dark) !important;
+			box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2) !important;
+			padding: 0rem 2rem !important;
+		}
 
-	  &:active {
-	    transform: translateY(1px) !important;
-	  }
+		&:active {
+			transform: translateY(1px) !important;
+		}
 	}
 
 
 
 
 	/* Table cell and row text color */
-	td, tr {
-	  color: var(--text-offwhite) !important;
-	  background-color: var(--bg-dark-new) !important;
-	  border: 1px solid var(--bg1-dark) !important;
-	  font-family: inherit !important;
-	  -webkit-font-smoothing: antialiased !important;
-	  -moz-osx-font-smoothing: grayscale !important;
-	  text-rendering: optimizeLegibility !important;
+	td,
+	tr {
+		color: var(--text-offwhite) !important;
+		background-color: var(--bg-dark-new) !important;
+		border: 1px solid var(--bg1-dark) !important;
+		font-family: inherit !important;
+		-webkit-font-smoothing: antialiased !important;
+		-moz-osx-font-smoothing: grayscale !important;
+		text-rendering: optimizeLegibility !important;
 	}
 
 
 
 	/* Bold and strong formatting  */
-	strong , bold  {
-	  font-size: 1rem !important;
-	  font-weight: 600 !important;
-	  -webkit-font-smoothing: antialiased !important;
-	  -moz-osx-font-smoothing: grayscale !important;
-	  text-rendering: optimizeLegibility !important;
-	}
-	/* bold the text wrapped around  the table cells only (makes sure this does not effect the code  cells) */
-	td > b , tr > b{
-	font-family: inherit !important;
-	font-weight: 500 !important;
-	}
-	/* bold the text wrapped around  the paragaph only (makes sure this does not effect the code  cells) */
-	p > b {
-	font-family: inherit !important ;
-	font-weight: 700 !important;
-	font-style: normal !important;
+	strong,
+	bold {
+		font-size: 1rem !important;
+		font-weight: 600 !important;
+		-webkit-font-smoothing: antialiased !important;
+		-moz-osx-font-smoothing: grayscale !important;
+		text-rendering: optimizeLegibility !important;
 	}
 
-	strong, bold, td > b, tr > b, p > b {
+	/* bold the text wrapped around  the table cells only (makes sure this does not effect the code  cells) */
+	td>b,
+	tr>b {
+		font-family: inherit !important;
+		font-weight: 500 !important;
+	}
+
+	/* bold the text wrapped around  the paragaph only (makes sure this does not effect the code  cells) */
+	p>b {
+		font-family: inherit !important;
+		font-weight: 700 !important;
+		font-style: normal !important;
+	}
+
+	strong,
+	bold,
+	td>b,
+	tr>b,
+	p>b {
 		color: var(--faded-green) !important;
 		font-weight: 500 !important;
 		-webkit-font-smoothing: antialiased !important;
@@ -694,7 +728,7 @@ h6 {
 		color: var(--faded-red) !important;
 		text-decoration: none !important;
 		font-family: var(--font-JetbrainsVar) !important;
-		font-weight : 600 !important;
+		font-weight: 600 !important;
 		text-decoration-color: var(--faded-red) !important;
 		-webkit-font-smoothing: antialiased !important;
 		-moz-osx-font-smoothing: grayscale !important;
@@ -705,7 +739,7 @@ h6 {
 
 
 		&:hover {
-	color: var(--faded-orange) !important;
+			color: var(--faded-orange) !important;
 			text-decoration: underline wavy !important;
 			text-decoration-style: wavy !important;
 			text-decoration-thickness: 1px !important;
@@ -720,120 +754,123 @@ h6 {
 	.table-block .table-footer {
 		display: flex;
 		align-items: center;
-		min-height: 32px !important;  /* Reduced from 52px */
+		min-height: 32px !important;
+		/* Reduced from 52px */
 		background: var(--bg-dark-new) !important;
 		border: 1px solid var(--bg1-dark) !important;
 		color: var(--text-normal) !important;
-		padding: 0 var(--gem-sys-spacing--xs) !important;  /* Horizontal padding only */
+		padding: 0 var(--gem-sys-spacing--xs) !important;
+		/* Horizontal padding only */
 		margin-top: var(--gem-sys-spacing--xs);
 		justify-content: flex-start;
 		gap: 0;
 		border-radius: 0 0 var(--gem-sys-shape--corner-large) var(--gem-sys-shape--corner-large);
 	}
 
-/* CITATION BUTTON */
-.source-inline-chip-container {
-    position: relative;
-    display: inline-block;
-}
+	/* CITATION BUTTON */
+	.source-inline-chip-container {
+		position: relative;
+		display: inline-block;
+	}
 
-.source-inline-chip-container > button {
-    background-color: var(--bg-dark-new) !important;
-    border: 1px solid var(--bg1-dark) !important;
-    border-radius: 14px !important;
-    padding: 0px 4px !important;
-    width: 28px !important;
-    height: 28px !important;
-    cursor: pointer !important;
-    transform: scale(1);
-    transition: all 0.2s cubic-bezier(0.68, -0.6, 0.32, 1.6) !important;
-    will-change: transform, box-shadow;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    position: relative;
+	.source-inline-chip-container>button {
+		background-color: var(--bg-dark-new) !important;
+		border: 1px solid var(--bg1-dark) !important;
+		border-radius: 14px !important;
+		padding: 0px 4px !important;
+		width: 28px !important;
+		height: 28px !important;
+		cursor: pointer !important;
+		transform: scale(1);
+		transition: all 0.2s cubic-bezier(0.68, -0.6, 0.32, 1.6) !important;
+		will-change: transform, box-shadow;
+		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+		position: relative;
 
-    &:hover {
-        border-color: var(--dim-green) !important;
-        background-color: var(--bg1-dark) !important;
-        padding: 0px 8px !important;
-        width: 38px !important;
-        transform: scale(1.05) translateY(-2px) !important;
-        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-    }
+		&:hover {
+			border-color: var(--dim-green) !important;
+			background-color: var(--bg1-dark) !important;
+			padding: 0px 8px !important;
+			width: 38px !important;
+			transform: scale(1.05) translateY(-2px) !important;
+			box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+		}
 
-    &:active {
-        transform: scale(0.98) translateY(0) !important;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    }
-
-
-
-    &:hover::after {
-        opacity: 1;
-        transform: translateX(-50%) translateY(-15px);
-    }
-}
-
-/* Style the icon inside the button */
-.source-inline-chip-container > button .mat-icon {
-    color: var(--text-offwhite-faded) !important;
-    width: 16px !important;
-    height: 16px !important;
-    font-size: 16px !important;
-    line-height: 1 !important;
-    transition: transform 0.3s ease-in-out !important;
-}
-
-.source-inline-chip-container > button:hover .mat-icon {
-    transform: scale(1.1) rotate(-5deg) !important;
-}
+		&:active {
+			transform: scale(0.98) translateY(0) !important;
+			box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+		}
 
 
-/* CITATIONS SIDE BAR SOURCES  */
-/* Sources text in the header  */
-.gds-title-l{
-	color: var(--text-normal) !important;
-	font-weight: 500 !important;
-}
 
-/* Title of the hover  */
-.gds-title-s :not(a) {
-    color: var(--text-normal) !important;
-    font-weight: 500 !important;
+		&:hover::after {
+			opacity: 1;
+			transform: translateX(-50%) translateY(-15px);
+		}
+	}
+
+
+	/* Style the icon inside the button */
+	.source-inline-chip-container>button .mat-icon {
+		color: var(--text-offwhite-faded) !important;
+		width: 16px !important;
+		height: 16px !important;
+		font-size: 16px !important;
+		line-height: 1 !important;
+		transition: transform 0.3s ease-in-out !important;
+	}
+
+	.source-inline-chip-container>button:hover .mat-icon {
+		transform: scale(1.1) rotate(-5deg) !important;
+	}
+
+
+	/* CITATIONS SIDE BAR SOURCES  */
+	/* Sources text in the header  */
+	.gds-title-l {
+		color: var(--text-normal) !important;
+		font-weight: 500 !important;
+	}
+
+	/* Title of the hover  */
+	.gds-title-s :not(a) {
+		color: var(--text-normal) !important;
+		font-weight: 500 !important;
 		text-decoration: underline !important;
-}
+	}
 
-/* Title of the Source */
-.title.gds-title-m {
-    color: var(--faded-green) !important;
-    font-style: italic !important;
-    margin-bottom: 4px !important;
-}
+	/* Title of the Source */
+	.title.gds-title-m {
+		color: var(--faded-green) !important;
+		font-style: italic !important;
+		margin-bottom: 4px !important;
+	}
 
-/* Source path under the title */
-.gds-title-s {
-    color: var(--faded-yellow) !important;
-    font-weight: medium !important;
-	font-size: 16px !important;
-    display: block !important;
-    margin-top: 2px !important;
-}
+	/* Source path under the title */
+	.gds-title-s {
+		color: var(--faded-yellow) !important;
+		font-weight: medium !important;
+		font-size: 16px !important;
+		display: block !important;
+		margin-top: 2px !important;
+	}
 
-/* Info label styling */
-.info.gds-label-m-alt {
-    opacity: 0.7 !important;
-    font-size: 0.9em !important;
-    margin-top: 2px !important;
-    color: var(--text-offwhite-faded) !important;
-}
+	/* Info label styling */
+	.info.gds-label-m-alt {
+		opacity: 0.7 !important;
+		font-size: 0.9em !important;
+		margin-top: 2px !important;
+		color: var(--text-offwhite-faded) !important;
+	}
 
-/* Body text snippet */
-.snippet.gds-body-m {
-    color: var(--text-offwhite-faded) !important;
-    opacity: 0.9 !important;
-    font-size: 0.95em !important;
-    line-height: 1.5 !important;
-    margin-top: 4px !important;
-}
+	/* Body text snippet */
+	.snippet.gds-body-m {
+		color: var(--text-offwhite-faded) !important;
+		opacity: 0.9 !important;
+		font-size: 0.95em !important;
+		line-height: 1.5 !important;
+		margin-top: 4px !important;
+	}
 
 
 
@@ -860,8 +897,8 @@ h6 {
 		}
 	}
 
-		/* Container of a single source in the side bar  */
-	.inline-source-card-container{
+	/* Container of a single source in the side bar  */
+	.inline-source-card-container {
 		background: var(--bg-dark-new) !important;
 		border: 1px solid var(--bg1-dark) !important;
 		border-radius: 14px !important;
@@ -871,537 +908,551 @@ h6 {
 
 
 
-/* Custom Styles */
-/* Background color of the scroll container */
-.chat-history-scroll-container {
-	background: var(--bg-def-dark) !important;
-}
-
-/* Background color for the main chat area container */
-.ia-redesign infinite-scroller {
-	background-color: var(--bg-def-dark) !important;
-}
-
-/* Background color for the main chat area container */
-.ia-redesign, .ia-redesign infinite-scroller {
-	background-color: var(--bg-def-dark) !important;
-}
-
-/* Background color for the main chat area container (User requested for sidebar) */
-.ia-redesign infinite-scroller {
-	background-color: var(--bg-def-dark) !important;
-}
-
-/* Styling for the 'Create Image'. 'Deep Research' . 'Guided Learning' button label */
-.card-label.gds-label-l {
-	color: var(--dim-green) !important;
-	font-weight: 500 !important;
-
-}
-
-/* Styling for the Model Selector Titles (e.g., "Fast all-around help") */
-span.mode-title.gds-label-l {
-	color: var(--faded-green) !important;
-	-webkit-font-smoothing: antialiased !important;
-	-moz-osx-font-smoothing: grayscale !important;
-	text-rendering: optimizeLegibility !important;
-}
-
-/* Styling for the Model Selector Subtitle (e.g., "Choose your model") */
-span.title.gds-label-s {
-	color: var(--faded-green) !important;
-	-webkit-font-smoothing: antialiased !important;
-	-moz-osx-font-smoothing: grayscale !important;
-	text-rendering: optimizeLegibility !important;
-}
-
-/* Styling for all action buttons (Write, Build, Deep Research, Learn, etc.) */
-button.mat-ripple.card.card-legacy {
-	background-color: var(--bg-def-dark) !important;
-	border: solid 2px var(--bg1-dark) !important;
-	border-radius: 3em !important;
-	position: relative !important;
-	overflow: hidden !important;
-	transition: background 0.4s ease-in-out , border 0.5s ease-in-out , padding 0.3s ease-in-out !important;
-
-	&:hover {
-
-		background-color: var(--bg-def-dark) !important;
-		border-color: var(--dim-green) !important;
-		border-width: 2px !important;
-		padding: 0rem 2.2rem !important;
+	/* Custom Styles */
+	/* Background color of the scroll container */
+	.chat-history-scroll-container {
+		background: var(--bg-def-dark) !important;
 	}
 
-	&::before {
-		content: "" !important;
-		position: absolute !important;
-		inset: 0 !important;
+	/* Background color for the main chat area container */
+	.ia-redesign infinite-scroller {
+		background-color: var(--bg-def-dark) !important;
+	}
+
+	/* Background color for the main chat area container */
+	.ia-redesign,
+	.ia-redesign infinite-scroller {
+		background-color: var(--bg-def-dark) !important;
+	}
+
+	/* Background color for the main chat area container (User requested for sidebar) */
+	.ia-redesign infinite-scroller {
+		background-color: var(--bg-def-dark) !important;
+	}
+
+	/* Styling for the 'Create Image'. 'Deep Research' . 'Guided Learning' button label */
+	.card-label.gds-label-l {
+		color: var(--dim-green) !important;
+		font-weight: 500 !important;
+
+	}
+
+	/* Styling for the Model Selector Titles (e.g., "Fast all-around help") */
+	span.mode-title.gds-label-l {
+		color: var(--faded-green) !important;
+		-webkit-font-smoothing: antialiased !important;
+		-moz-osx-font-smoothing: grayscale !important;
+		text-rendering: optimizeLegibility !important;
+	}
+
+	/* Styling for the Model Selector Subtitle (e.g., "Choose your model") */
+	span.title.gds-label-s {
+		color: var(--faded-green) !important;
+		-webkit-font-smoothing: antialiased !important;
+		-moz-osx-font-smoothing: grayscale !important;
+		text-rendering: optimizeLegibility !important;
+	}
+
+	/* Styling for all action buttons (Write, Build, Deep Research, Learn, etc.) */
+	button.mat-ripple.card.card-legacy {
+		background-color: var(--bg-def-dark) !important;
+		border: solid 2px var(--bg1-dark) !important;
+		border-radius: 3em !important;
+		position: relative !important;
+		overflow: hidden !important;
+		transition: background 0.4s ease-in-out, border 0.5s ease-in-out, padding 0.3s ease-in-out !important;
+
+		&:hover {
+
+			background-color: var(--bg-def-dark) !important;
+			border-color: var(--dim-green) !important;
+			border-width: 2px !important;
+			padding: 0rem 2.2rem !important;
+		}
+
+		&::before {
+			content: "" !important;
+			position: absolute !important;
+			inset: 0 !important;
+			background-color: transparent !important;
+			opacity: 0 !important;
+			z-index: 1 !important;
+			pointer-events: none !important;
+		}
+	}
+
+
+
+
+	/* Styling for the Model Selector Subtitle (e.g., "Choose your model") */
+	button.card.card-legacy .card-label.gds-label-l {
+		color: var(--dim-green) !important;
+		font-weight: 500 !important;
 		background-color: transparent !important;
-		opacity: 0 !important;
-		z-index: 1 !important;
-		pointer-events: none !important;
+		padding: 0.2em 0.5em !important;
+		transition: background-color 0.3s cubic-bezier(0.68, -0.6, 0.32, 1.6), padding 0.3s cubic-bezier(0.68, -0.6, 0.32, 1.6), color 0.3s cubic-bezier(0.68, -0.6, 0.32, 1.6) !important;
 	}
-}
 
-
-
-
-/* Styling for the Model Selector Subtitle (e.g., "Choose your model") */
-button.card.card-legacy .card-label.gds-label-l {
-	color: var(--dim-green) !important;
-	font-weight: 500 !important;
-	background-color: transparent !important;
-	padding: 0.2em 0.5em !important;
-	transition: background-color 0.3s cubic-bezier(0.68, -0.6, 0.32, 1.6) , padding 0.3s cubic-bezier(0.68, -0.6, 0.32, 1.6) , color 0.3s cubic-bezier(0.68, -0.6, 0.32, 1.6) !important;
-}
-/* Styling for the Model Selector Subtitle (e.g., "Choose your model") */
-button.card.card-legacy:hover .card-label.gds-label-l {
-	color: var(--text--faded) !important;
-	font-weight: 600 !important;
-	border: weight 2px !important;
-	border-color: var(--text--faded) !important;
-}
-
-/* Styling for Model Description (e.g., "2.5 Flash") */
-span.mode-desc.gds-label-m-alt {
-	font-size: 0.9rem !important;
-	font-family: var(--font-GeistMono) !important;
-	color: var(--faded-orange) !important;
-	font-weight: 700 !important;
-}
-.ql-editor.new-input-ui.ql-blank::after {
-	color: var(--text-offwhite) !important;
-	visibility: visible !important;
-}
-
-
-
-
-/* Toolbox drawer item specific styles */
-
- .mat-mdc-card.toolbox-drawer-card {
-	background: var(--bg-def-dark);
-	border-radius: 4px !important;
-	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
-  }
-
- .toolbox-drawer-menu-item {
-	background-color: var(--bg-def-dark) !important;
-	border: solid 1px var(--bg-dark) !important;
-	border-radius: 0.8em !important;
-	transition: background 0.4s ease-in-out , border 0.5s ease-in-out , padding 0.3s ease-in-out !important;
-
-	&:hover{
-		background-color : inherit !important;
-		border-color: var(--text--veryfade) !important;
-		border-width: 2px !important;
+	/* Styling for the Model Selector Subtitle (e.g., "Choose your model") */
+	button.card.card-legacy:hover .card-label.gds-label-l {
+		color: var(--text--faded) !important;
+		font-weight: 600 !important;
+		border: weight 2px !important;
+		border-color: var(--text--faded) !important;
 	}
-}
 
-  .toolbox-drawer-menu-item .mat-mdc-list-item-icon {
-	color: var(--faded-green) !important;
+	/* Styling for Model Description (e.g., "2.5 Flash") */
+	span.mode-desc.gds-label-m-alt {
+		font-size: 0.9rem !important;
+		font-family: var(--font-GeistMono) !important;
+		color: var(--faded-orange) !important;
+		font-weight: 700 !important;
+	}
 
-
-  }
-  .toolbox-drawer-menu-item .gds-label-l {
-	font-weight: bold !important;
-	color: var(--text--faded) !important;
-	transition: background 0.4s ease-in-out , border 0.5s ease-in-out , padding 0.3s ease-in-out !important;
-  }
-
-
-
+	.ql-editor.new-input-ui.ql-blank::after {
+		color: var(--text-offwhite) !important;
+		visibility: visible !important;
+	}
 
 
-/* Bard Sidebar nav  */
-bard-sidenav-container > * {
-  background-color: var(--bg-def-dark) !important;
-  border : solid 2px var(--bg1-dark) !important;
-  border-radius: 0.4em !important;
-}
 
 
-/* New Chat , Explore Gems , Settings and Help text*/
-.side-nav-action-button span.gds-body-m {
-	color: var(--dim-green) !important;
-	font-family: inherit !important;
-	font-style: normal !important;
-	font-size:0.85em !important;
-	font-weight: 500 !important;
-	-webkit-font-smoothing: antialiased !important;
-	-moz-osx-font-smoothing: grayscale !important;
-	text-rendering: optimizeLegibility !important;
-}
+	/* Toolbox drawer item specific styles */
 
-/* SideBar Gems */
-.bot-name.gds-body-m {
-	color: var(--faded-red) !important;
-	font-family: inherit !important;
-	font-style: normal !important;
-	font-size:1.05em !important;
-	font-weight: 500 !important;
-	-webkit-font-smoothing: antialiased !important;
-	-moz-osx-font-smoothing: grayscale !important;
-	text-rendering: optimizeLegibility !important;
-}
+	.mat-mdc-card.toolbox-drawer-card {
+		background: var(--bg-def-dark);
+		border-radius: 4px !important;
+		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
+	}
 
-
-/* Old Conversation history with Gemini (Sidebar) */
-.conversation {
-	color: var(--faded-purple) !important;
-  font-weight: 500 !important;
-  font-family: inherit !important;
-  font-style: normal !important;
-  transition: all 0.5s cubic-bezier(0.118, 1.140, 0.743, 0.913) !important;
-  transform: translateZ(0);
-  backface-visibility: hidden;
-  will-change: transform, box-shadow, border-color;
-  border: 0.2em solid transparent !important;
-  border-radius: 22px !important;
-  padding: 0px 12px !important;
-  margin: 2px 0 !important;
-
-  &:hover {
-    background-color: var(--bg-def-dark) !important;
-    border-color: solid 0.2em var(--bg2-dark) !important;
-    color: var(--faded-green) !important;
-	font-weight: 600 !important;
-	-webkit-font-smoothing: antialiased !important;
-	-moz-osx-font-smoothing: grayscale !important;
-	text-rendering: optimizeLegibility !important;
-
-
-    transform: translateY(-1px) scale(1.01);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-  }
-
-
-}
-
-/* Chat Message Bubbles */
-/* User Query Text Styling (The actual text inside the bubble) */
-p.query-text-line.ng-star-inserted {
-	background-color: var(--bg-dark-new) !important;
-	color: var(--text-normal) !important;
-	border: solid 1px var(--bg1-dark) !important;
-	border-radius: 18px !important;
-	padding: 8px 16px !important;
-	font-size: 1rem !important;
-	font-weight: 500 !important;
-	transition: all 0.3s ease-in-out !important;
-	-webkit-font-smoothing: antialiased !important;
-	-moz-osx-font-smoothing: grayscale !important;
-	text-rendering: optimizeLegibility !important;
-
-	&:hover {
+	.toolbox-drawer-menu-item {
 		background-color: var(--bg-def-dark) !important;
-		border-color: var(--faded-blue) !important;
-		transform: translateY(-1px) scale(1.005) !important;
-		box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2) !important;
+		border: solid 1px var(--bg-dark) !important;
+		border-radius: 0.8em !important;
+		transition: background 0.4s ease-in-out, border 0.5s ease-in-out, padding 0.3s ease-in-out !important;
+
+		&:hover {
+			background-color: inherit !important;
+			border-color: var(--text--veryfade) !important;
+			border-width: 2px !important;
+		}
 	}
-}
 
-/* Styling for action buttons (Copy, Edit) next to user query */
-.query-content .action-button {
-	background-color: var(--bg-dark-new) !important;
-	border: solid 2px var(--bg3-dark) !important;
-	border-radius: 50% !important;
-	transition: all 0.3s ease-in-out !important;
+	.toolbox-drawer-menu-item .mat-mdc-list-item-icon {
+		color: var(--faded-green) !important;
 
-	&:hover {
-		border-color: var(--faded-green) !important;
+
+	}
+
+	.toolbox-drawer-menu-item .gds-label-l {
+		font-weight: bold !important;
+		color: var(--text--faded) !important;
+		transition: background 0.4s ease-in-out, border 0.5s ease-in-out, padding 0.3s ease-in-out !important;
+	}
+
+
+
+
+
+	/* Bard Sidebar nav  */
+	bard-sidenav-container>* {
+		background-color: var(--bg-def-dark) !important;
+		border: solid 2px var(--bg1-dark) !important;
+		border-radius: 0.4em !important;
+	}
+
+
+	/* New Chat , Explore Gems , Settings and Help text*/
+	.side-nav-action-button span.gds-body-m {
+		color: var(--dim-green) !important;
+		font-family: inherit !important;
+		font-style: normal !important;
+		font-size: 0.85em !important;
+		font-weight: 500 !important;
+		-webkit-font-smoothing: antialiased !important;
+		-moz-osx-font-smoothing: grayscale !important;
+		text-rendering: optimizeLegibility !important;
+	}
+
+	/* SideBar Gems */
+	.bot-name.gds-body-m {
+		color: var(--faded-blue) !important;
+		font-family: inherit !important;
+		font-style: normal !important;
+		font-size: 1.05em !important;
+		font-weight: 500 !important;
+		-webkit-font-smoothing: antialiased !important;
+		-moz-osx-font-smoothing: grayscale !important;
+		text-rendering: optimizeLegibility !important;
+	}
+
+
+	/* Old Conversation history with Gemini (Sidebar) */
+	.conversation {
+		color: var(--text--faded) !important;
+		font-weight: 500 !important;
+		font-family: inherit !important;
+		font-style: normal !important;
+		transition: all 0.5s cubic-bezier(0.118, 1.140, 0.743, 0.913) !important;
+		transform: translateZ(0);
+		backface-visibility: hidden;
+		will-change: transform, box-shadow, border-color;
+		border: 0.2em solid transparent !important;
+		border-radius: 22px !important;
+		padding: 0px 12px !important;
+		margin: 2px 0 !important;
+
+		&:hover {
+			background-color: var(--bg-def-dark) !important;
+			border-color: solid 0.2em var(--bg2-dark) !important;
+			color: var(--faded-green) !important;
+			font-weight: 600 !important;
+			-webkit-font-smoothing: antialiased !important;
+			-moz-osx-font-smoothing: grayscale !important;
+			text-rendering: optimizeLegibility !important;
+
+
+			transform: translateY(-1px) scale(1.01);
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+		}
+
+
+	}
+
+	/* Chat Message Bubbles */
+	/* User Query Text Styling (The actual text inside the bubble) */
+	p.query-text-line.ng-star-inserted {
+		background-color: var(--bg-dark-new) !important;
+		color: var(--text-normal) !important;
+		border: solid 1px var(--bg1-dark) !important;
+		border-radius: 18px !important;
+		padding: 8px 16px !important;
+		font-size: 1rem !important;
+		font-weight: 500 !important;
+		transition: all 0.3s ease-in-out !important;
+		-webkit-font-smoothing: antialiased !important;
+		-moz-osx-font-smoothing: grayscale !important;
+		text-rendering: optimizeLegibility !important;
+
+		&:hover {
+			background-color: var(--bg-def-dark) !important;
+			border-color: var(--faded-blue) !important;
+			transform: translateY(-1px) scale(1.005) !important;
+			box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2) !important;
+		}
+	}
+
+	/* Styling for action buttons (Copy, Edit) next to user query */
+	.query-content .action-button {
+		background-color: var(--bg-dark-new) !important;
+		border: solid 2px var(--bg3-dark) !important;
+		border-radius: 50% !important;
+		transition: all 0.3s ease-in-out !important;
+
+		&:hover {
+			border-color: var(--faded-green) !important;
+			background-color: var(--bg-def-dark) !important;
+			transform: scale(1.1) !important;
+			box-shadow: 0 0 10px var(--faded-green) !important;
+		}
+	}
+
+	/* Icon inside the action button */
+	.query-content .action-button mat-icon {
+		color: var(--faded-green) !important;
+		transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
+
+		&:hover {
+			transform: scale(1.05) !important;
+		}
+	}
+
+	/* Temporary Chat Button */
+	button[data-test-id="temp-chat-button"] {
+		background-color: var(--bg-dark-new) !important;
+		border: solid 2px var(--bg3-dark) !important;
+		border-radius: 50% !important;
+		transition: all 0.3s ease-in-out !important;
+		-webkit-font-smoothing: antialiased !important;
+		-moz-osx-font-smoothing: grayscale !important;
+		text-rendering: optimizeLegibility !important;
+	}
+
+	button[data-test-id="temp-chat-button"]:hover {
+		border-color: var(--faded-aqua) !important;
 		background-color: var(--bg-def-dark) !important;
 		transform: scale(1.1) !important;
-		box-shadow: 0 0 10px var(--faded-green) !important;
+		box-shadow: 0 0 10px var(--faded-aqua) !important;
 	}
-}
 
-/* Icon inside the action button */
-.query-content .action-button mat-icon {
-	color: var(--faded-green) !important;
-	transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
-
-	&:hover {
-		transform: scale(1.05) !important;
+	button[data-test-id="temp-chat-button"] svg path {
+		fill: var(--faded-aqua) !important;
+		transition: all 0.3s ease-in-out !important;
 	}
-}
 
-/* Temporary Chat Button */
-button[data-test-id="temp-chat-button"] {
-    background-color: var(--bg-dark-new) !important;
-    border: solid 2px var(--bg3-dark) !important;
-    border-radius: 50% !important;
-    transition: all 0.3s ease-in-out !important;
-    -webkit-font-smoothing: antialiased !important;
-    -moz-osx-font-smoothing: grayscale !important;
-    text-rendering: optimizeLegibility !important;
-}
+	button[data-test-id="temp-chat-button"]:hover svg path {
+		fill: var(--faded-green) !important;
+	}
 
-button[data-test-id="temp-chat-button"]:hover {
-    border-color: var(--faded-aqua) !important;
-    background-color: var(--bg-def-dark) !important;
-    transform: scale(1.1) !important;
-    box-shadow: 0 0 10px var(--faded-aqua) !important;
-}
+	.user-query-bubble-with-background:not(.edit-mode) {
+		background: transparent !important;
+		border-radius: 24px var(--gem-sys-shape--corner-extra-small) 24px 24px;
+		max-width: calc(476px - var(--gem-sys-spacing--m)*2);
+		padding: 12px 16px;
+		margin: 8px 0;
+		transition: all 0.2s ease-out;
+	}
 
-button[data-test-id="temp-chat-button"] svg path {
-    fill: var(--faded-aqua) !important;
-    transition: all 0.3s ease-in-out !important;
-}
+	/* SideBar Chat history hover */
+	.mat-mdc-tooltip-trigger.conversation {
+		background: inherit !important;
 
-button[data-test-id="temp-chat-button"]:hover svg path {
-    fill: var(--faded-green) !important;
-}
-
-.user-query-bubble-with-background:not(.edit-mode) {
-    background: transparent !important;
-    border-radius: 24px var(--gem-sys-shape--corner-extra-small) 24px 24px;
-    max-width: calc(476px - var(--gem-sys-spacing--m)*2);
-    padding: 12px 16px;
-    margin: 8px 0;
-    transition: all 0.2s ease-out;
-}
-
-/* SideBar Chat history hover */
-.mat-mdc-tooltip-trigger.conversation  {
-background: inherit !important;
-
-&:hover {
-background: var(--bg-def-dark) !important;
-border: solid 0.2em var(--bg2-dark) !important;
-}
-}
+		&:hover {
+			background: var(--bg-def-dark) !important;
+			border: solid 0.2em var(--bg2-dark) !important;
+		}
+	}
 
 
-/* Side bar input box */
-input-area-v2 > div.input-area{
-  background-color: var(--bg-dark-new) !important;
-  border: solid 3px var(--bg1-dark) !important;
-  border-radius:12px !important;
-  box-shadow: none !important;
-}
-
-
-
-/* Gems and Recents (Sidebar)*/
-h1.title.gds-label-l {
-  color: var(--dim-green) !important;
-  font-weight: 600 !important;
-  font-family: inherit !important;
-  font-style: normal !important;
-}
-
-
-
-/* Chat Interface  */
-
-/* MODEL SELECTOR  */
-/* Model Selector -> CHOOSE MODEL  */
-button.mdc-button.mat-mdc-button-base.gds-mode-switch-button.logo-pill-btn {
-  background-color: var(--bg-dark-new) !important;
-  padding: 0em 1em !important;
-  color: var(--dim-green) !important;
-
-&:hover {
-background-color: var(--bg-def-dark) !important;
-border: solid 0.2em var(--dim-green) !important;
-transition: border 0.5s ease-in-out !important;
-}
-}
-
-/* Choose your Model container color   */
-.mat-mdc-menu-content {
-font-family: inherit !important;
-font-weight: 500 !important;
-font-style: normal !important;
-font-size: 1em !important;
-background: var(--bg-dark-new) !important;
-border : solid 0.2em var(--bg2-dark) !important;
-}
-
-/* Name of the models */
-.gds-label-m {
-	color: var(--text-offwhite-faded) !important;
-	font-weight: 500 !important;
-	font-size: 0.8em !important;
-	-webkit-font-smoothing: antialiased !important;
-	-moz-osx-font-smoothing: grayscale !important;
-	text-rendering: optimizeLegibility !important;
-}
-
-/* Model info and details */
-.mode-desc.gds-label-m-alt {
-color: var(--faded-red) !important;
-font-weight: 500 !important;
-font-size: 0.8em !important;
--webkit-font-smoothing: antialiased !important;
--moz-osx-font-smoothing: grayscale !important;
-text-rendering: optimizeLegibility !important;
-}
-
-/* Choose your Model text  */
-span.gds-label-l.title {
-color: var(--dim-green) !important;
-font-family: inherit !important;
--webkit-font-smoothing: antialiased !important;
--moz-osx-font-smoothing: grayscale !important;
-text-rendering: optimizeLegibility !important;
-}
-
-
-
-
-
-/* MODEL SELECTOR IN INPUT   */
-span.mdc-button__label{
-	color: var(--text--faded) !important;
-	font-weight: 500 !important;
-}
-
-/* THINNING button labels */
-.mdc-button__label span {
-	font-weight: 400 !important;
-	color: var(--text--faded) !important;
-	-webkit-font-smoothing: antialiased !important;
-	-moz-osx-font-smoothing: grayscale !important;
-	text-rendering: optimizeLegibility !important;
-}
-
-
-/* CHAT PAGE DIVS  */
-
-.response-container-with-gpi {
-background-color: var(--bg-def-dark) !important;
-}
-
-/* INTERACTIVE CANVAS BLOCK  */
-.immersive-entry-chip .container.clickable {
-background-color: var(--bg-dark-new) !important;
-color: var(--dim-green) !important;
-
-&:hover {
-background-color: var(--bg-def-dark) !important;
-border: solid 0.1em var(--dim-green) !important;
-transition: all 0.5s ease-in-out !important;
-}
-}
-
-/* Name of the canvas  */
-.immersive-entry-chip .container.clickable .text {
-color: var(--faded-red) !important;
-}
-/* Date at which the software was craeted  */
-.immersive-entry-chip .container.clickable .creation-timestamp {
-color: var(--faded-yellow) !important;
-
-}
-
-
-
-/* OPEN BUTTON CLEAR */
-.button-section button.mdc-button {
-background-color: var(--bg-dark-new) !important;
-border: solid 0.1em var(--bg3-dark) !important;
-&:hover {
-background-color: var(--bg-def-dark) !important;
-}
-}
-
-/* OPEN text on the Canvas  */
-.button-section .mdc-button__label span {
-color: var(--dim-green) !important;
-}
-
-
-/* Gemini CANVAS */
-
-/* Math blocks */
-.math-block,
-.math-block * {
-	color: var(--faded-red) !important;
-	-webkit-font-smoothing: antialiased !important;
-	-moz-osx-font-smoothing: grayscale !important;
-	text-rendering: optimizeLegibility !important;
-}
-/* Math blocks font and size */
-.katex * {
-    -ms-high-contrast-adjust: none !important;
-    border-color: currentColor  !important;
-    font-family: newfont !important;
-font-size: 1rem !important;
-color: var(--faded-red) !important;
-font-weight: 550 !important; 
-    -webkit-font-smoothing: antialiased !important;
-    -moz-osx-font-smoothing: grayscale !important;
-    text-rendering: optimizeLegibility !important;
-}
-/* Math blocks padding */
-.katex .mtable .mord {
-  display: inline-block;
-  padding: 0.1em 0.1em;
-}
-
-
-/* top tool bar  */
-.toolbar.has-title {
-height: 12px  !important;
-}
-
-
-/* Set canvas font  */
-xap-code-editor .xap-monaco-container .monaco-editor  {
-	background-color: var(--bg-def-dark) !important;
-	font-family: "Geist Mono" !important;
-  }
-  /*Set canvas font for scrollable element */
-  xap-code-editor .xap-monaco-container .monaco-editor .monaco-scrollable-element {
-	background-color: var(--bg-def-dark) !important;
-	font-family: "Geist Mono" !important;
-  }
-  /* Set canvas font for view lines */
-  xap-code-editor .xap-monaco-container .monaco-editor .view-lines {
-	background-color: var(--bg-def-dark) !important;
-	font-family: "Geist Mono" !important;
-  }
-  /* Set canvas font for line numbers */
-  xap-code-editor .xap-monaco-container .monaco-editor .line-numbers , xap-code-editor .xap-monaco-container *  {
-	background-color: var(--bg-def-dark) !important;
-	color: var(--bg3-dark) !important;
-	font-family: "Geist Mono" !important;
-	&:hover {
+	/* Side bar input box */
+	input-area-v2>div.input-area {
 		background-color: var(--bg-dark-new) !important;
-		color : var(--text--faded) !important;
-		transition: all 0.1s ease-in-out !important;
+		border: solid 3px var(--bg1-dark) !important;
+		border-radius: 12px !important;
+		box-shadow: none !important;
 	}
-  }
-  /* Set canvas font for active line number */
-  xap-code-editor .xap-monaco-container .monaco-editor .active-line-number {
-	color: var(--dim-green) !important;
-	font-family: "Geist Mono" !important;
-  }
 
-  /* Set canvas font  */
-  xap-code-editor > * {
-	font-family: "Geist Mono" !important;
-	background-color: var(--bg-def-dark) !important;
-  }
+
+
+	/* Gems and Recents (Sidebar)*/
+	h1.title.gds-label-l {
+		color: var(--dim-green) !important;
+		font-weight: 600 !important;
+		font-family: inherit !important;
+		font-style: normal !important;
+	}
+
+
+
+	/* Chat Interface  */
+
+	/* MODEL SELECTOR  */
+	/* Model Selector -> CHOOSE MODEL  */
+	button.mdc-button.mat-mdc-button-base.gds-mode-switch-button.logo-pill-btn {
+		background-color: var(--bg-dark-new) !important;
+		padding: 0em 1em !important;
+		color: var(--dim-green) !important;
+
+		&:hover {
+			background-color: var(--bg-def-dark) !important;
+			border: solid 0.2em var(--dim-green) !important;
+			transition: border 0.5s ease-in-out !important;
+		}
+	}
+
+	/* Choose your Model container color   */
+	.mat-mdc-menu-content {
+		font-family: inherit !important;
+		font-weight: 500 !important;
+		font-style: normal !important;
+		font-size: 1em !important;
+		background: var(--bg-dark-new) !important;
+		border: solid 0.2em var(--bg2-dark) !important;
+	}
+
+	/* Name of the models */
+	.gds-label-m {
+		color: var(--text-offwhite-faded) !important;
+		font-weight: 500 !important;
+		font-size: 0.8em !important;
+		-webkit-font-smoothing: antialiased !important;
+		-moz-osx-font-smoothing: grayscale !important;
+		text-rendering: optimizeLegibility !important;
+	}
+
+	/* Model info and details */
+	.mode-desc.gds-label-m-alt {
+		color: var(--faded-red) !important;
+		font-weight: 500 !important;
+		font-size: 0.8em !important;
+		-webkit-font-smoothing: antialiased !important;
+		-moz-osx-font-smoothing: grayscale !important;
+		text-rendering: optimizeLegibility !important;
+	}
+
+	/* Choose your Model text  */
+	span.gds-label-l.title {
+		color: var(--dim-green) !important;
+		font-family: inherit !important;
+		-webkit-font-smoothing: antialiased !important;
+		-moz-osx-font-smoothing: grayscale !important;
+		text-rendering: optimizeLegibility !important;
+	}
+
+
+
+
+
+	/* MODEL SELECTOR IN INPUT   */
+	span.mdc-button__label {
+		color: var(--text--faded) !important;
+		font-weight: 500 !important;
+	}
+
+	/* THINNING button labels */
+	.mdc-button__label span {
+		font-weight: 400 !important;
+		color: var(--text--faded) !important;
+		-webkit-font-smoothing: antialiased !important;
+		-moz-osx-font-smoothing: grayscale !important;
+		text-rendering: optimizeLegibility !important;
+	}
+
+
+	/* CHAT PAGE DIVS  */
+
+	.response-container-with-gpi {
+		background-color: var(--bg-def-dark) !important;
+	}
+
+	/* INTERACTIVE CANVAS BLOCK  */
+	.immersive-entry-chip .container.clickable {
+		background-color: var(--bg-dark-new) !important;
+		color: var(--dim-green) !important;
+
+		&:hover {
+			background-color: var(--bg-def-dark) !important;
+			border: solid 0.1em var(--dim-green) !important;
+			transition: all 0.5s ease-in-out !important;
+		}
+	}
+
+	/* Name of the canvas  */
+	.immersive-entry-chip .container.clickable .text {
+		color: var(--faded-red) !important;
+	}
+
+	/* Date at which the software was craeted  */
+	.immersive-entry-chip .container.clickable .creation-timestamp {
+		color: var(--faded-yellow) !important;
+
+	}
+
+
+
+	/* OPEN BUTTON CLEAR */
+	.button-section button.mdc-button {
+		background-color: var(--bg-dark-new) !important;
+		border: solid 0.1em var(--bg3-dark) !important;
+
+		&:hover {
+			background-color: var(--bg-def-dark) !important;
+		}
+	}
+
+	/* OPEN text on the Canvas  */
+	.button-section .mdc-button__label span {
+		color: var(--dim-green) !important;
+	}
+
+
+	/* Gemini CANVAS */
+
+	/* Math blocks */
+	.math-block,
+	.math-block * {
+		color: var(--faded-red) !important;
+		-webkit-font-smoothing: antialiased !important;
+		-moz-osx-font-smoothing: grayscale !important;
+		text-rendering: optimizeLegibility !important;
+	}
+
+	/* Math blocks font and size */
+	.katex * {
+		-ms-high-contrast-adjust: none !important;
+		border-color: currentColor !important;
+		font-family: newfont !important;
+		font-size: 1rem !important;
+		color: var(--faded-red) !important;
+		font-weight: 550 !important;
+		-webkit-font-smoothing: antialiased !important;
+		-moz-osx-font-smoothing: grayscale !important;
+		text-rendering: optimizeLegibility !important;
+	}
+
+	/* Math blocks padding */
+	.katex .mtable .mord {
+		display: inline-block;
+		padding: 0.1em 0.1em;
+	}
+
+
+	/* top tool bar  */
+	.toolbar.has-title {
+		height: 12px !important;
+	}
+
+
+	/* Set canvas font  */
+	xap-code-editor .xap-monaco-container .monaco-editor {
+		background-color: var(--bg-def-dark) !important;
+		font-family: "Geist Mono" !important;
+	}
+
+	/*Set canvas font for scrollable element */
+	xap-code-editor .xap-monaco-container .monaco-editor .monaco-scrollable-element {
+		background-color: var(--bg-def-dark) !important;
+		font-family: "Geist Mono" !important;
+	}
+
+	/* Set canvas font for view lines */
+	xap-code-editor .xap-monaco-container .monaco-editor .view-lines {
+		background-color: var(--bg-def-dark) !important;
+		font-family: "Geist Mono" !important;
+	}
+
+	/* Set canvas font for line numbers */
+	xap-code-editor .xap-monaco-container .monaco-editor .line-numbers,
+	xap-code-editor .xap-monaco-container * {
+		background-color: var(--bg-def-dark) !important;
+		color: var(--bg3-dark) !important;
+		font-family: "Geist Mono" !important;
+
+		&:hover {
+			background-color: var(--bg-dark-new) !important;
+			color: var(--text--faded) !important;
+			transition: all 0.1s ease-in-out !important;
+		}
+	}
+
+	/* Set canvas font for active line number */
+	xap-code-editor .xap-monaco-container .monaco-editor .active-line-number {
+		color: var(--dim-green) !important;
+		font-family: "Geist Mono" !important;
+	}
+
+	/* Set canvas font  */
+	xap-code-editor>* {
+		font-family: "Geist Mono" !important;
+		background-color: var(--bg-def-dark) !important;
+	}
 
 	/* set canvas font globally for all the text in the canvas */
 	xap-code-editor .mtk1 {
-	  color: var(--text-offwhite-faded) !important;
-	  font-family: 'Geist Mono' !important;
-	  font-weight: 600 !important;
-	  -webkit-font-smoothing: antialiased !important;
-	  -moz-osx-font-smoothing: grayscale !important;
-	  text-rendering: optimizeLegibility !important;
+		color: var(--text-offwhite-faded) !important;
+		font-family: 'Geist Mono' !important;
+		font-weight: 600 !important;
+		-webkit-font-smoothing: antialiased !important;
+		-moz-osx-font-smoothing: grayscale !important;
+		text-rendering: optimizeLegibility !important;
 	}
 
 
 
 
 
-/* ADD THIS AS HOVER PLESE  */
-/* .mat-mdc-button-touch-target {
+	/* ADD THIS AS HOVER PLESE  */
+	/* .mat-mdc-button-touch-target {
 background-color: var(--bg-dark-new) !important;
 border: solid 0.2em var(--dim-green) !important;
 border-radius: 3em !important;
@@ -1409,120 +1460,167 @@ border-radius: 3em !important;
 
 
 
-/* HIDDEN STUFF*/
+	/* HIDDEN STUFF*/
 
-/*Hiding the hallucination disclaimer*/
-/* display none wont be useful here as it hides the
+	/*Hiding the hallucination disclaimer*/
+	/* display none wont be useful here as it hides the
 contaning elements too
 opacity 0 leaves too much gap so use opacity 0 with custom height */
-.capabilities-disclaimer {
-	overflow: hidden !important;
-	opacity: 0 !important;
-	height:0.6rem !important;
-	width: 0 !important;
-}
+	.capabilities-disclaimer {
+		overflow: hidden !important;
+		opacity: 0 !important;
+		height: 0.6rem !important;
+		width: 0 !important;
+	}
 
-/* Hiding the Upgrade to Google AI Plus container */
-div.upgrade-container.helium-upsell-container.under-input.ng-star-inserted {
-	display: none !important;
-}
+	/* Hiding the Upgrade to Google AI Plus container */
+	div.upgrade-container.helium-upsell-container.under-input.ng-star-inserted {
+		display: none !important;
+	}
 
 
 
-/*
+	/*
 Loading Fonts from the web for  this
 */
-if  LoadWebFont {
-	p , div , span , button , body , html , p , li , ul , ol  {
-	font-family : "Tiempos Text Regular" !important;
-	-webkit-font-smoothing: antialiased !important;
-	-moz-osx-font-smoothing: grayscale !important;
-	text-rendering: optimizeLegibility !important;
+	if LoadWebFont {
+
+		p,
+		div,
+		span,
+		button,
+		body,
+		html,
+		p,
+		li,
+		ul,
+		ol {
+			font-family: "Tiempos Text Regular" !important;
+			-webkit-font-smoothing: antialiased !important;
+			-moz-osx-font-smoothing: grayscale !important;
+			text-rendering: optimizeLegibility !important;
+		}
 	}
+
+
+
+	/*Hide Grok Logo*/
+	/*Front page Logo*/
+	if noLogo {
+		.text-wrapper {
+			opacity: 0 !important;
+		}
+	}
+
+	.logo {
+		display: none !important;
+	}
+
+
+	/*Hide Upgrade Button*/
+	if noUpgrade {
+		.buttons-container.adv-upsell {
+			opacity: 0 !important;
+		}
+	}
+
+
+	/* NO Google Account button to make it look minimal  */
+
+	if noGoogle {
+		.boqOnegoogleliteOgbOneGoogleBar {
+			opacity: 1 !important;
+		}
+	}
+
+
+	/* Hide your  Location */
+	if noAddress {
+		.location-menu-item-container {
+			opacity: 0;
+			!important
+		}
 	}
 
 
 
-/*Hide Grok Logo*/
-/*Front page Logo*/
-if noLogo {
-    .text-wrapper {
-      opacity: 0 !important;
-    }
-}
-
-.logo{
-	display : none !important ;
-}
-
-
-/*Hide Upgrade Button*/
-if noUpgrade {
-	.buttons-container.adv-upsell{
-      opacity: 0 !important;
-    }
-}
-
-
-/* NO Google Account button to make it look minimal  */
-
-if noGoogle {
-	.boqOnegoogleliteOgbOneGoogleBar{
-		opacity: 1  !important;
+	/* Heading Font Selector  */
+	/* When you select  the h	eading font it will use Bricoalge Grotesque Font and put that in headfont variable  */
+	/* if you select inherit then it will use the default font and just make it bold and appear as heading  */
+	/* new font in else was defined in the function down below based on the text font drop down  */
+	:root {
+		--default-heading-font: headfont;
 	}
-}
 
+	if headfont !='Inherit' {
 
-/* Hide your  Location */
-if noAddress {
-	.location-menu-item-container {
-	 	opacity: 0 ;!important
-}
-}
-
-
-
-/* Heading Font Selector  */
-/* When you select  the h	eading font it will use Bricoalge Grotesque Font and put that in headfont variable  */
-/* if you select inherit then it will use the default font and just make it bold and appear as heading  */
-/* new font in else was defined in the function down below based on the text font drop down  */
-:root{
-	--default-heading-font: headfont ;
-  }
-
-  if headfont != 'Inherit' {
-	h1 , h2 , h3 , h4 , h5 , h6 {
-	  font-family: var(--default-heading-font), system-ui, -apple-system, sans-serif !important;
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			font-family: var(--default-heading-font), system-ui, -apple-system, sans-serif !important;
+		}
 	}
-  } else {
-	h1 , h2 , h3 , h4 , h5 , h6 {
-	  font-family: newfont, sans-serif !important;
+
+	else {
+
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			font-family: newfont, sans-serif !important;
+		}
 	}
-  }
 
 
 
 
 
- /*This was defined in the start of the style , basically this variable will be
+	/*This was defined in the start of the style , basically this variable will be
  used when ever this script is ran*/
- :root {
-	--dropdown-text-font:newfont ;
-	--fallback-text: sans-serif !important ;
-  }
-
-
-/* Text Font Selector */
-if newfont != 'Website Default'{
-	p , li ,  ul , ol , button , input , textarea, strong, span , div  {
-
-		font-family : var(--dropdown-text-font) !important ;
+	:root {
+		--dropdown-text-font: newfont;
+		--fallback-text: sans-serif !important;
 	}
-}else {
-	p, li , ul , ol , button , input , textarea , strong, span , *  {
-		font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
+
+
+	/* Text Font Selector */
+	if newfont !='Website Default' {
+
+		p,
+		li,
+		ul,
+		ol,
+		button,
+		input,
+		textarea,
+		strong,
+		span,
+		div {
+
+			font-family: var(--dropdown-text-font) !important;
+		}
 	}
-}
+
+	else {
+
+		p,
+		li,
+		ul,
+		ol,
+		button,
+		input,
+		textarea,
+		strong,
+		span,
+		* {
+			font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
+		}
+	}
 
 
 
@@ -1534,100 +1632,104 @@ if newfont != 'Website Default'{
 
 
 
-/* CODE */
+	/* CODE */
 
-/* inline code blocks  */
-p >code {
-    font-family: "Geist Mono" !important ;
-    font-size: 0.8em !important ;
-	 font-weight: 700 !important ;
-	 color: var(--dim-green) !important;
-	 background-color: var(--bg-dark-new) !important;
-	border : solid 0.2em var(--bg1-dark) !important;
-	border-radius: 4em !important;
-    padding: 0.2em 1em  !important;
-}
-
-
+	/* inline code blocks  */
+	p>code {
+		font-family: "Geist Mono" !important;
+		font-size: 0.8em !important;
+		font-weight: 700 !important;
+		color: var(--dim-green) !important;
+		background-color: var(--bg-dark-new) !important;
+		border: solid 0.2em var(--bg1-dark) !important;
+		border-radius: 4em !important;
+		padding: 0.2em 1em !important;
+	}
 
 
-/* Background color of code blocks */
-
-code ,  code-block , .code-block-decoration {
-	background-color: var(--bg-dark-new) !important;
-	color: var(--faded-green) !important;
-
-	font-family: "Geist Mono" !important;
-	font-size:0.9rem !important;
-	font-weight: 600 !important;
-	-webkit-font-smoothing: antialiased !important;
-	-moz-osx-font-smoothing: grayscale !important;
-	text-rendering: optimizeLegibility !important;
-  }
-
-/* Changing the font of CODE  */
-  code > *  ,  code > span > * , code > span > span > * {
-	font-family: "Geist Mono" !important;
-	font-size: 0.9rem !important ;
-	 font-weight: 600 !important ;
-  }
 
 
-  code[data-test-id="code-content"]#text {
-	color : var(--dim-green) !important;
-}
+	/* Background color of code blocks */
 
-  /*COLORS OF TOKENS OF CODE   */
-  code[data-test-id="code-content"] .hljs-meta-keyword {
-	color: var(--faded-aqua) !important;
-  }
+	code,
+	code-block,
+	.code-block-decoration {
+		background-color: var(--bg-dark-new) !important;
+		color: var(--faded-green) !important;
+
+		font-family: "Geist Mono" !important;
+		font-size: 0.9rem !important;
+		font-weight: 600 !important;
+		-webkit-font-smoothing: antialiased !important;
+		-moz-osx-font-smoothing: grayscale !important;
+		text-rendering: optimizeLegibility !important;
+	}
+
+	/* Changing the font of CODE  */
+	code>*,
+	code>span>*,
+	code>span>span>* {
+		font-family: "Geist Mono" !important;
+		font-size: 0.9rem !important;
+		font-weight: 600 !important;
+	}
 
 
-  code[data-test-id="code-content"] .hljs-meta{
-	color: var(--faded-red) !important;
-  }
+	code[data-test-id="code-content"]#text {
+		color: var(--dim-green) !important;
+	}
+
+	/*COLORS OF TOKENS OF CODE   */
+	code[data-test-id="code-content"] .hljs-meta-keyword {
+		color: var(--faded-aqua) !important;
+	}
 
 
-  code[data-test-id="code-content"] .hljs-meta-string {
-	color: var(--faded-green) !important;
+	code[data-test-id="code-content"] .hljs-meta {
+		color: var(--faded-red) !important;
+	}
 
-  }
 
-  code[data-test-id="code-content"] .hljs-keyword {
-	color: var(--faded-orange) !important;
-  }
+	code[data-test-id="code-content"] .hljs-meta-string {
+		color: var(--faded-green) !important;
 
-  code[data-test-id="code-content"] .hljs-comment {
-	color: var(--text--veryfade) !important;
-  }
+	}
 
-  code[data-test-id="code-content"] .hljs-string {
-	color: var(--faded-green) !important;
-  }
+	code[data-test-id="code-content"] .hljs-keyword {
+		color: var(--faded-orange) !important;
+	}
 
-  code[data-test-id="code-content"] .hljs-number {
-	color: var(--faded-red) !important;
-  }
+	code[data-test-id="code-content"] .hljs-comment {
+		color: var(--text--veryfade) !important;
+	}
 
-  code[data-test-id="code-content"] .hljs-function .hljs-title {
-	color: var(--faded-red) !important;
-  }
+	code[data-test-id="code-content"] .hljs-string {
+		color: var(--faded-green) !important;
+	}
 
-  code[data-test-id="code-content"] .hljs-built_in {
-	color: var(--faded-purple) !important;
-  }
+	code[data-test-id="code-content"] .hljs-number {
+		color: var(--faded-red) !important;
+	}
 
-  code[data-test-id="code-content"] .hljs-variable {
-	color: var(--faded-aqua) !important;
-  }
+	code[data-test-id="code-content"] .hljs-function .hljs-title {
+		color: var(--faded-red) !important;
+	}
 
-  code[data-test-id="code-content"] .hljs-literal {
-	color: var(--faded-purple) !important;
-  }
+	code[data-test-id="code-content"] .hljs-built_in {
+		color: var(--faded-purple) !important;
+	}
 
-  code[data-test-id="code-content"] .hljs-attribute {
-	color: var(--faded-aqua) !important;
-  }
+	code[data-test-id="code-content"] .hljs-variable {
+		color: var(--faded-aqua) !important;
+	}
+
+	code[data-test-id="code-content"] .hljs-literal {
+		color: var(--faded-purple) !important;
+	}
+
+	code[data-test-id="code-content"] .hljs-attribute {
+		color: var(--faded-aqua) !important;
+	}
 
 
 
