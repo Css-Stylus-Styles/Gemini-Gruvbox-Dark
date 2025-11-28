@@ -1478,6 +1478,11 @@ opacity 0 leaves too much gap so use opacity 0 with custom height */
 		display: none !important;
 	}
 
+	/* Hiding the Announcement Banner */
+	announcement-banner {
+		display: none !important;
+	}
+
 
 
 	/*
