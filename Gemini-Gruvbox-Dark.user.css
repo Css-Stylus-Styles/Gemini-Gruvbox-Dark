@@ -575,7 +575,7 @@
 
 	/* Heading 1  will get a diff color  */
 	h1 {
-		color: var(--dark-orange) !important;
+		color: var(--faded-aqua) !important;
 		-webkit-font-smoothing: antialiased !important;
 		-moz-osx-font-smoothing: grayscale !important;
 		text-rendering: optimizeLegibility !important;
@@ -1364,13 +1364,21 @@
 		border: 1px solid var(--bg1-dark) !important;
 		border-radius: 12px !important;
 		padding: 16px !important;
+		transition: border-color 0.3s ease-in-out !important;
+
+		&:hover {
+			border-color: var(--bg2-dark) !important;
+		}
 	}
 
 	/* Research plan title */
 	.container.hide-from-message-actions .gds-title-m {
-		color: var(--faded-green) !important;
+		color: var(--dim-green) !important;
 		font-weight: 600 !important;
 		margin-bottom: 12px !important;
+		-webkit-font-smoothing: antialiased !important;
+		-moz-osx-font-smoothing: grayscale !important;
+		text-rendering: optimizeLegibility !important;
 	}
 
 	/* Individual research step container */
@@ -1380,6 +1388,13 @@
 		border-radius: 8px !important;
 		padding: 12px !important;
 		margin-bottom: 8px !important;
+		transition: all 0.3s ease-in-out !important;
+
+		&:hover {
+			border-color: var(--bg3-dark) !important;
+			transform: translateY(-1px) !important;
+			box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15) !important;
+		}
 	}
 
 	/* Research step title */
@@ -1389,13 +1404,46 @@
 		display: flex !important;
 		align-items: center !important;
 		gap: 8px !important;
+		-webkit-font-smoothing: antialiased !important;
+		-moz-osx-font-smoothing: grayscale !important;
+		text-rendering: optimizeLegibility !important;
+	}
+
+	/* Research step title icons */
+	.research-step-title.gds-title-s .mat-icon {
+		color: var(--faded-blue) !important;
+		transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
+	}
+
+	.research-step:hover .research-step-title.gds-title-s .mat-icon {
+		transform: scale(1.05) !important;
 	}
 
 	/* Research step description */
 	.research-step-description {
-		color: var(--text-offwhite-faded) !important;
+		color: var(--text--faded) !important;
 		margin-top: 8px !important;
 		line-height: 1.5 !important;
+		-webkit-font-smoothing: antialiased !important;
+		-moz-osx-font-smoothing: grayscale !important;
+		text-rendering: optimizeLegibility !important;
+	}
+
+	/* More/Less toggle button */
+	.toggle-description-expansion-button {
+		background-color: transparent !important;
+		color: var(--faded-aqua) !important;
+		border: none !important;
+		font-size: 0.9em !important;
+		transition: color 0.3s ease-in-out !important;
+		-webkit-font-smoothing: antialiased !important;
+		-moz-osx-font-smoothing: grayscale !important;
+		text-rendering: optimizeLegibility !important;
+
+		&:hover {
+			color: var(--faded-blue) !important;
+			text-decoration: underline !important;
+		}
 	}
 
 	/* Time estimation message */
@@ -1405,6 +1453,13 @@
 		align-items: center !important;
 		gap: 6px !important;
 		margin-top: 12px !important;
+		-webkit-font-smoothing: antialiased !important;
+		-moz-osx-font-smoothing: grayscale !important;
+		text-rendering: optimizeLegidity !important;
+	}
+
+	.time-estimation-message .mat-icon {
+		color: var(--faded-yellow) !important;
 	}
 
 	/* Action buttons wrapper */
@@ -1414,33 +1469,66 @@
 		margin-top: 16px !important;
 	}
 
-	/* Edit plan button */
+	/* Edit plan button (outlined style) */
 	.action-button-wrapper .edit-button {
 		background-color: var(--bg-dark-new) !important;
-		border: 1px solid var(--bg3-dark) !important;
+		border: 2px solid var(--bg3-dark) !important;
 		color: var(--text--faded) !important;
 		border-radius: 8px !important;
-		transition: all 0.3s ease-in-out !important;
+		padding: 8px 16px !important;
+		transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out, color 0.3s ease-in-out, transform 0.2s ease-in-out !important;
+		-webkit-font-smoothing: antialiased !important;
+		-moz-osx-font-smoothing: grayscale !important;
+		text-rendering: optimizeLegibility !important;
 
 		&:hover {
 			background-color: var(--bg-def-dark) !important;
 			border-color: var(--faded-blue) !important;
 			color: var(--faded-blue) !important;
+			transform: scale(1.02) !important;
+		}
+
+		&:active {
+			transform: scale(0.98) !important;
 		}
 	}
 
-	/* Start research button */
+	/* Start research button (solid style) */
 	.action-button-wrapper .confirm-button {
-		background-color: var(--dim-green) !important;
-		color: var(--bg-dark) !important;
+		background-color: var(--dark-red) !important;
+		color: var(--text-offwhite) !important;
+		border: 2px solid var(--dark-red) !important;
 		border-radius: 8px !important;
-		transition: all 0.3s ease-in-out !important;
+		padding: 8px 16px !important;
+		font-weight: 600 !important;
+		transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out, border-color 0.3s ease-in-out !important;
+		-webkit-font-smoothing: antialiased !important;
+		-moz-osx-font-smoothing: grayscale !important;
+		text-rendering: optimizeLegibility !important;
 
 		&:hover {
-			background-color: var(--faded-green) !important;
-			transform: translateY(-1px) !important;
-			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2) !important;
+			background-color: var(--dark-red) !important;
+			color: var(--bg-dark) !important;
+			border-color: var(--text-normal) !important;
+
 		}
+
+		&:active {
+			transform: translateY(0) scale(0.98) !important;
+		}
+	}
+
+	/* Canvas Create Button - dark theme */
+	.create-button {
+		background-color: var(--dark-green) !important;
+		color: var(--text-offwhite) !important;
+	}
+
+	/* Button labels */
+	.action-button-wrapper button .mdc-button__label {
+		-webkit-font-smoothing: antialiased !important;
+		-moz-osx-font-smoothing: grayscale !important;
+		text-rendering: optimizeLegibility !important;
 	}
 
 
@@ -1450,7 +1538,7 @@
 
 
 
-	
+
 
 
 	/* Gemini CANVAS */
@@ -1834,9 +1922,72 @@ Loading Fonts from the web for  this
 	}
 
 
+	/* Deep Research Entry Chip Styling */
+	div.container:has(deep-research-entry-chip-content) {
+		background-color: transparent !important;
+		border: none !important;
+		box-shadow: none !important;
+	}
 
+	deep-research-entry-chip-content {
+		display: block !important;
+		width: 100% !important;
+		background-color: transparent !important;
+		border: none !important;
+	}
 
+	deep-research-entry-chip-content .content-container {
+		background-color: var(--bg-def-dark) !important;
+		border: 1px solid var(--bg1-dark) !important;
+		border-radius: 8px !important;
+		padding: 12px 16px !important;
+		margin: 8px 0 !important;
+		display: flex !important;
+		align-items: center !important;
+		gap: 12px !important;
+		font-family: var(--font-GeistSans) !important;
+	}
 
+	deep-research-entry-chip-content .content-container:hover {
+		background-color: var(--bg-dark-new) !important;
+		border-color: var(--faded-blue) !important;
+	}
+
+	deep-research-entry-chip-content .icon-container {
+		display: flex !important;
+		align-items: center !important;
+		flex-shrink: 0 !important;
+	}
+
+	deep-research-entry-chip-content .mat-icon {
+		color: var(--faded-blue) !important;
+		font-size: 24px !important;
+		width: 24px !important;
+		height: 24px !important;
+	}
+
+	deep-research-entry-chip-content .text {
+		display: flex !important;
+		flex-direction: column !important;
+		gap: 4px !important;
+		flex: 1 !important;
+	}
+
+	deep-research-entry-chip-content .title-text {
+		color: var(--text-offwhite) !important;
+		font-size: 0.95rem !important;
+		font-weight: 500 !important;
+	}
+
+	deep-research-entry-chip-content .creation-timestamp {
+		color: var(--text--faded) !important;
+		font-size: 0.8rem !important;
+		font-weight: 400 !important;
+	}
+
+	deep-research-entry-chip-content .sr-only {
+		display: none !important;
+	}
 
 
 }
