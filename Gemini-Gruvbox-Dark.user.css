@@ -1357,6 +1357,102 @@
 	}
 
 
+	/* DEEP RESEARCH STYLES */
+	/* Research roadmap container */
+	.container.hide-from-message-actions {
+		background-color: var(--bg-dark-new) !important;
+		border: 1px solid var(--bg1-dark) !important;
+		border-radius: 12px !important;
+		padding: 16px !important;
+	}
+
+	/* Research plan title */
+	.container.hide-from-message-actions .gds-title-m {
+		color: var(--faded-green) !important;
+		font-weight: 600 !important;
+		margin-bottom: 12px !important;
+	}
+
+	/* Individual research step container */
+	.research-step {
+		background-color: var(--bg-def-dark) !important;
+		border: 1px solid var(--bg2-dark) !important;
+		border-radius: 8px !important;
+		padding: 12px !important;
+		margin-bottom: 8px !important;
+	}
+
+	/* Research step title */
+	.research-step-title.gds-title-s {
+		color: var(--faded-blue) !important;
+		font-weight: 500 !important;
+		display: flex !important;
+		align-items: center !important;
+		gap: 8px !important;
+	}
+
+	/* Research step description */
+	.research-step-description {
+		color: var(--text-offwhite-faded) !important;
+		margin-top: 8px !important;
+		line-height: 1.5 !important;
+	}
+
+	/* Time estimation message */
+	.time-estimation-message {
+		color: var(--faded-yellow) !important;
+		display: flex !important;
+		align-items: center !important;
+		gap: 6px !important;
+		margin-top: 12px !important;
+	}
+
+	/* Action buttons wrapper */
+	.action-button-wrapper {
+		display: flex !important;
+		gap: 8px !important;
+		margin-top: 16px !important;
+	}
+
+	/* Edit plan button */
+	.action-button-wrapper .edit-button {
+		background-color: var(--bg-dark-new) !important;
+		border: 1px solid var(--bg3-dark) !important;
+		color: var(--text--faded) !important;
+		border-radius: 8px !important;
+		transition: all 0.3s ease-in-out !important;
+
+		&:hover {
+			background-color: var(--bg-def-dark) !important;
+			border-color: var(--faded-blue) !important;
+			color: var(--faded-blue) !important;
+		}
+	}
+
+	/* Start research button */
+	.action-button-wrapper .confirm-button {
+		background-color: var(--dim-green) !important;
+		color: var(--bg-dark) !important;
+		border-radius: 8px !important;
+		transition: all 0.3s ease-in-out !important;
+
+		&:hover {
+			background-color: var(--faded-green) !important;
+			transform: translateY(-1px) !important;
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2) !important;
+		}
+	}
+
+
+
+
+
+
+
+
+	
+
+
 	/* Gemini CANVAS */
 
 	/* Math blocks */
