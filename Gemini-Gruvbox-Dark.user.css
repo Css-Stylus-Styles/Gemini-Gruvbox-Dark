@@ -544,7 +544,7 @@
 
 	.bard-sidenav-content { 
 
-	background-color: var(--bg-def-dark) !important ; 
+	background-color: transparent !important ; 
 
 
 	}
@@ -689,8 +689,9 @@
     --bard-color-product-card-image-container-background: #fff; */
 
 
-	/* not setting to transparent here causes werid artifacts and does not work properly  */
-    --bard-color-surface-dim-tmp: none !important ; 
+	
+
+    
 
     /* --bard-color-sidenav-tile-background-aurora: #202424;
     --bard-color-sidenav-tile-text-aurora: #adb0bc;
@@ -698,6 +699,14 @@
     --bard-color-input-companion-button-active-background: #383d45; */
 }
 
+/* This style is very important to remove the ugly seam that is there in the home page  */
+
+:root .dark-theme {
+
+--bard-color-surface-dim-tmp: none  !important; 
+
+
+}
 
 
 
