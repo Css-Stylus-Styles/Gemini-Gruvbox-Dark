@@ -1883,7 +1883,7 @@ Loading Fonts from the web for  this
 	/*Hide Grok Logo*/
 	/*Front page Logo*/
 	if noLogo {
-		.greeting-container {
+		.greeting-container , .message-text{
 			opacity: 0 !important;
 		}
 	}
