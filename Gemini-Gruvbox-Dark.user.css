@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Gemini-Gruvbox-Dark
 @namespace      github.com/Css-Styles-Styles/Gemini-Gruvbox-Dark
-@version        1.1.1
+@version        1.1.2
 @description    Gemini-Gruvbox-Dark style - Removed background lines
 @author         Me
 @preprocessor   stylus
@@ -912,13 +912,13 @@
 
 		&:hover {
 			color: var(--faded-orange) !important;
-			text-decoration: underline wavy !important;
+			text-decoration: underline  !important;
 			text-decoration-style: wavy !important;
 			text-decoration-thickness: 1px !important;
 			text-underline-offset: 2px !important;
 			transition: all 0.3s ease-in-out !important;
 			transform: translateY(-1px) !important;
-			text-shadow: 0 0 8px var(--faded-orange) !important;
+			text-shadow: 0 0 2px var(--faded-orange) !important;
 		}
 	}
 
