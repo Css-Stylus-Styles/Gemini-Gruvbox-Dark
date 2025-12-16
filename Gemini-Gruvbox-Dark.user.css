@@ -913,12 +913,12 @@
 		&:hover {
 			color: var(--faded-orange) !important;
 			text-decoration: underline  !important;
-			text-decoration-style: wavy !important;
+
 			text-decoration-thickness: 1px !important;
 			text-underline-offset: 2px !important;
 			transition: all 0.3s ease-in-out !important;
 			transform: translateY(-1px) !important;
-			text-shadow: 0 0 2px var(--faded-orange) !important;
+
 		}
 	}
 
@@ -2173,6 +2173,92 @@ Loading Fonts from the web for  this
 
 	deep-research-entry-chip-content .sr-only {
 		display: none !important;
+	}
+	
+	/* ==================================== */
+	/* GEM CARD (Gems Page) STYLES          */
+
+	/* ==================================== */
+
+	/* Ensure the custom element container is transparent */
+	template-gallery-card,
+	.premade-gems-card {
+		background-color: transparent !important;
+		border: none !important;
+		box-shadow: none !important;
+	}
+
+	/* Main card style applied to the anchor element */
+	a.template-gallery-card {
+		background-color: var(--bg-dark-new) !important;
+		border: 1px solid var(--bg1-dark) !important;
+		border-radius: 12px !important;
+		padding: 16px !important;
+		transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
+		box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2) !important;
+		display: flex !important;
+		flex-direction: column !important;
+		text-decoration: none !important;
+
+		&:hover {
+			border-color: var(--dim-green) !important;
+			background-color: var(--bg-def-dark) !important;
+
+			box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3) !important;
+		}
+	}
+
+	.template-gallery-card-title.gds-title-m {
+		color: var(--faded-green) !important;
+		font-weight: 600 !important;
+		margin-bottom: 4px !important;
+		/* Font Smoothing */
+		-webkit-font-smoothing: antialiased !important;
+		-moz-osx-font-smoothing: grayscale !important;
+		text-rendering: optimizeLegibility !important;
+	}
+
+	.template-gallery-card-content.gds-body-m {
+		color: var(--text--faded) !important;
+		font-size: 0.95rem !important;
+		/* Font Smoothing */
+		-webkit-font-smoothing: antialiased !important;
+		-moz-osx-font-smoothing: grayscale !important;
+		text-rendering: optimizeLegibility !important;
+	}
+
+	/* Gem Card Logo and Badge */
+	.template-gallery-card-header {
+		display: flex !important;
+		align-items: center !important;
+		justify-content: space-between !important;
+		margin-bottom: 12px !important;
+	}
+
+	bot-logo.is-dark-mode {
+		/* Override inline variables from the HTML snippet */
+		--bot-logo-text: var(--text-normal) !important;
+		--bot-logo-bg: var(--bg-dark) !important;
+		--bot-logo-border: var(--bg1-dark) !important;
+	}
+
+	bot-logo .mat-icon {
+		color: var(--faded-aqua) !important;
+	}
+
+
+	xap-status-badge {
+		background-color: var(--bg-dark-new) !important;
+		color: var(--text--veryfade) !important;
+		border-radius: 4px !important;
+		padding: 2px 8px !important;
+		font-size: 0.8rem !important;
+		font-weight: 500 !important;
+		border: 1px solid var(--bg2-dark) !important;
+		/* Font Smoothing */
+		-webkit-font-smoothing: antialiased !important;
+		-moz-osx-font-smoothing: grayscale !important;
+		text-rendering: optimizeLegibility !important;
 	}
 
 
