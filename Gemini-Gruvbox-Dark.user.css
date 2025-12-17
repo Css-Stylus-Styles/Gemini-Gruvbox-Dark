@@ -1850,8 +1850,43 @@ opacity 0 leaves too much gap so use opacity 0 with custom height */
 	}
 
 	/* Hiding the Announcement Banner */
+/* Styling for the Notification Banner (Replaces hidden state) */
 	announcement-banner {
-		display: none !important;
+		background-color: var(--bg-dark-new) !important;
+		border-top: 1px solid var(--bg1-dark) !important;
+		color: var(--text-offwhite) !important;
+		font-family: var(--sans-serif) !important;
+		-webkit-font-smoothing: antialiased !important;
+		-moz-osx-font-smoothing: grayscale !important;
+		text-rendering: optimizeLegibility !important;
+	}
+
+	/* Banner Text */
+	announcement-banner .banner-text {
+		color: var(--text-normal) !important;
+		font-weight: 500 !important;
+		font-size: 1rem !important;
+		-webkit-font-smoothing: antialiased !important;
+		-moz-osx-font-smoothing: grayscale !important;
+		text-rendering: optimizeLegibility !important;
+	}
+
+	/* Try Now Button (Assuming it's a mat-button) */
+	announcement-banner button.mat-mdc-button {
+		background-color: var(--bg-def-dark) !important;
+		color: var(--faded-green) !important;
+		border: 1px solid var(--dim-green) !important;
+		border-radius: 3em !important;
+		padding: 0 16px !important;
+		font-weight: 600 !important;
+		transition: all 0.3s ease-in-out !important;
+
+		&:hover {
+			background-color: var(--bg1-dark) !important;
+			border-color: var(--faded-aqua) !important;
+			color: var(--faded-aqua) !important;
+			transform: scale(1.05) !important;
+		}
 	}
 
 
