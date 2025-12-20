@@ -543,7 +543,7 @@
 
 
 
-	.bard-sidenav-content { 
+	.bard-sidenav-content {
 
 		background-color: transparent !important;
 
@@ -552,10 +552,10 @@
 
 
 
-/* Direct Theme information  */
+	/* Direct Theme information  */
 
-:root .dark-theme {
-    /* --bard-color-neutral-90: #37393b;
+	:root .dark-theme {
+		/* --bard-color-neutral-90: #37393b;
     --bard-color-neutral-95: #2a2a2a;
     --bard-color-neutral-96: #2a2ad2;
     --bard-color-enterprise-greeting: #474747;
@@ -690,24 +690,24 @@
     --bard-color-product-card-image-container-background: #fff; */
 
 
-	
 
-    
 
-    /* --bard-color-sidenav-tile-background-aurora: #202424;
+
+
+		/* --bard-color-sidenav-tile-background-aurora: #202424;
     --bard-color-sidenav-tile-text-aurora: #adb0bc;
     --bard-color-input-companion-button-hover-background: #32373c;
     --bard-color-input-companion-button-active-background: #383d45; */
-}
+	}
 
-/* This style is very important to remove the ugly seam that is there in the home page  */
+	/* This style is very important to remove the ugly seam that is there in the home page  */
 
-:root .dark-theme {
+	:root .dark-theme {
 
 --bard-color-surface-dim-tmp: none  !important; 
 
 
-}
+	}
 
 
 
@@ -913,7 +913,7 @@
 
 		&:hover {
 			color: var(--faded-orange) !important;
-			text-decoration: underline  !important;
+			text-decoration: underline !important;
 
 			text-decoration-thickness: 1px !important;
 			text-underline-offset: 2px !important;
@@ -1131,7 +1131,7 @@
 				padding 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6) !important;
 		}
 	}
-	
+
 
 
 	/* Styling for the Model Selector Titles (e.g., "Fast all-around help") */
@@ -1296,7 +1296,7 @@
 
 		&:hover {
 			background-color: var(--bg-dark-new) !important;
-			border-color: var(--dim-green) !important;	
+			border-color: var(--dim-green) !important;
 			border-width: 0.14em !important;
 			padding: 0.5rem 2.2rem !important;
 		}
@@ -1328,6 +1328,8 @@
 		}
 	}
 
+
+	/*OPAL  */
 	/* Opal Gems Banner Styling */
 	.opal-banner {
 		background: var(--bg-def-dark) !important;
@@ -1344,15 +1346,19 @@
 
 
 	/* Opal Banner Emphasis button */
-.banner-emphasis {
-    color: var(--dim-green) !important;
-}
+	.banner-emphasis {
+		color: var(--dim-green) !important;
+	}
 
-/* Google Labs Text in the opal Banner */
-h3.gds-title-m.banner-title {
-    color: var(--text--veryfade) !important;
-}
+	/* Google Labs Text in the opal Banner */
+	h3.gds-title-m.banner-title {
+		color: var(--text--veryfade) !important;
+	}
 
+	/* Opal Banner Body text  */
+.gds-body-m {
+		color: var(--text--faded) !important;
+}
 
 
 	/* Old Conversation history with Gemini (Sidebar) */
@@ -1931,7 +1937,7 @@ opacity 0 leaves too much gap so use opacity 0 with custom height */
 	}
 
 	/* Hiding the Announcement Banner */
-/* Styling for the Notification Banner (Replaces hidden state) */
+	/* Styling for the Notification Banner (Replaces hidden state) */
 	announcement-banner {
 		background-color: var(--bg-dark-new) !important;
 		border-top: 1px solid var(--bg1-dark) !important;
@@ -1999,7 +2005,9 @@ Loading Fonts from the web for  this
 	/*Hide Grok Logo*/
 	/*Front page Logo*/
 	if noLogo {
-		.greeting-container , .message-text{
+
+		.greeting-container,
+		.message-text {
 			opacity: 0 !important;
 		}
 	}
@@ -2290,7 +2298,7 @@ Loading Fonts from the web for  this
 	deep-research-entry-chip-content .sr-only {
 		display: none !important;
 	}
-	
+
 	/* ==================================== */
 	/* GEM CARD (Gems Page) STYLES          */
 
