@@ -39,6 +39,7 @@
 
 ==/UserStyle== */
 @-moz-document domain("gemini.google.com") {
+
 	/* Insert code here... */
 	/*Font Import */
 	/*Importing Margon */
@@ -544,7 +545,7 @@
 
 	.bard-sidenav-content { 
 
-	background-color: transparent !important ; 
+		background-color: transparent !important;
 
 
 	}
@@ -1272,6 +1273,86 @@
 		-moz-osx-font-smoothing: grayscale !important;
 		text-rendering: optimizeLegibility !important;
 	}
+
+	/* Create New Gem Button Styling */
+	.create-btn-container {
+		display: flex !important;
+		justify-content: center !important;
+		padding: 12px 0 !important;
+	}
+
+	/* Gem Creation button */
+	.bot-creation-button {
+		background-color: var(--bg-def-dark) !important;
+		border: solid 2px var(--bg1-dark) !important;
+		border-radius: 3em !important;
+		position: relative !important;
+		overflow: hidden !important;
+		padding: 0rem 1.5rem !important;
+		transition: background 0.4s ease-in-out, border 0.2s ease-in-out, padding 0.2s ease-in-out !important;
+		display: flex !important;
+		align-items: center !important;
+		justify-content: center !important;
+
+		&:hover {
+			background-color: var(--bg-dark-new) !important;
+			border-color: var(--dim-green) !important;	
+			border-width: 0.14em !important;
+			padding: 0.5rem 2.2rem !important;
+		}
+
+		/* Icon inside the button */
+		mat-icon {
+			color: var(--faded-green) !important;
+			margin-right: 8px !important;
+			transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
+		}
+
+		&:hover mat-icon {
+			transform: scale(1.1) !important;
+		}
+
+		/* Label inside the button */
+		.gds-title-s {
+			color: var(--dim-green) !important;
+			font-weight: 500 !important;
+			transition: color 0.3s ease-in-out !important;
+			-webkit-font-smoothing: antialiased !important;
+			-moz-osx-font-smoothing: grayscale !important;
+			text-rendering: optimizeLegibility !important;
+		}
+
+		&:hover .gds-title-s {
+			color: var(--text--faded) !important;
+			font-weight: 600 !important;
+		}
+	}
+
+	/* Opal Gems Banner Styling */
+	.opal-banner {
+		background: var(--bg-def-dark) !important;
+		border: solid 2px var(--bg1-dark) !important;
+		border-radius: 12px !important;
+		padding: 16px !important;
+		transition: all 0.3s ease-in-out !important;
+
+		&:hover {
+			background-color: var(--bg-dark-new) !important;
+			border-color: var(--dim-green) !important;
+		}
+	}
+
+
+	/* Opal Banner Emphasis button */
+.banner-emphasis {
+    color: var(--dim-green) !important;
+}
+
+/* Google Labs Text in the opal Banner */
+h3.gds-title-m.banner-title {
+    color: var(--text--veryfade) !important;
+}
+
 
 
 	/* Old Conversation history with Gemini (Sidebar) */
