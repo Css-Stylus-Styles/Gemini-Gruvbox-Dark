@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Gemini-Gruvbox-Dark
 @namespace      github.com/Css-Styles-Styles/Gemini-Gruvbox-Dark
-@version        1.1.2
+@version        1.1.3
 @description    Gemini-Gruvbox-Dark style - Removed background lines
 @author         Me
 @preprocessor   stylus
@@ -704,7 +704,7 @@
 
 	:root .dark-theme {
 
---bard-color-surface-dim-tmp: none  !important; 
+		--bard-color-surface-dim-tmp: none !important;
 
 
 	}
@@ -819,9 +819,10 @@
 
 	/* Chat Title  */
 	/* Chat page Title */
-.conversation-title {
-	color: var(--text--veryfade) !important;
-}
+	.conversation-title {
+		color: var(--text--veryfade) !important;
+		font-weight: 500 !important;
+	}
 
 
 	/* Button with icon styles - Matching Create Image button */
@@ -843,7 +844,7 @@
 		}
 	}
 
-	
+
 
 
 
@@ -1087,17 +1088,10 @@
 
 
 	/* Side bar button options container button  */
-.conversation-items-container.selected.conversation-actions-menu-button{
-    background-color: var(--bg0-dh) !important	;
-    color: var(--text-normal) !important;
-	
-	&:hover {
-		background-color: var(--bg1-dark) !important;
-		border: 0.2em solid var(--bg4-dark) !important;
+	.conversation-items-container .selected .conversation-actions-menu-button {
+		background-color: var(--bg0-dh) !important;
 		color: var(--text-normal) !important;
-		transition: all 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6) !important;
 	}
-}
 
 	/* Custom Styles */
 	/* Background color of the scroll container */
@@ -1374,9 +1368,9 @@
 	}
 
 	/* Opal Banner Body text  */
-.gds-body-m {
+	.gds-body-m {
 		color: var(--text--faded) !important;
-}
+	}
 
 
 	/* Old Conversation history with Gemini (Sidebar) */
