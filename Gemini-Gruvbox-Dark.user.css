@@ -817,6 +817,12 @@
 
 
 
+	/* Chat Title  */
+	/* Chat page Title */
+.conversation-title {
+	color: var(--text--veryfade) !important;
+}
+
 
 	/* Button with icon styles - Matching Create Image button */
 	.mat-mdc-button:has(.material-icons, mat-icon) {
@@ -837,6 +843,7 @@
 		}
 	}
 
+	
 
 
 
@@ -1079,7 +1086,18 @@
 	}
 
 
-
+	/* Side bar button options container button  */
+.conversation-items-container.selected.conversation-actions-menu-button{
+    background-color: var(--bg0-dh) !important	;
+    color: var(--text-normal) !important;
+	
+	&:hover {
+		background-color: var(--bg1-dark) !important;
+		border: 0.2em solid var(--bg4-dark) !important;
+		color: var(--text-normal) !important;
+		transition: all 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6) !important;
+	}
+}
 
 	/* Custom Styles */
 	/* Background color of the scroll container */
