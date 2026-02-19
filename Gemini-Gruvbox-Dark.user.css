@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Gemini-Gruvbox-Dark
 @namespace      github.com/Css-Styles-Styles/Gemini-Gruvbox-Dark
-@version        1.1.3
+@version        1.1.4
 @description    Gemini-Gruvbox-Dark style - Removed background lines
 @author         Me
 @preprocessor   stylus
@@ -2396,6 +2396,29 @@ Loading Fonts from the web for  this
 		-moz-osx-font-smoothing: grayscale !important;
 		text-rendering: optimizeLegibility !important;
 	}
+
+
+
+
+
+
+
+
+
+	/* Try new Experimental Features */
+	/* Try new Experimental Features */
+	
+
+
+		div.toolbox-drawer-item-new-badge {
+			display: none !important;
+		}
+		
+	
+
+
+
+
 
 
 }
